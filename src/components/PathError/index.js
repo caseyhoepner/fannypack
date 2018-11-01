@@ -1,0 +1,13 @@
+import React from 'react';
+
+import './PathError.css';
+
+const PathError = () => {
+  return (
+    <div>
+      <h1>This page does not exist.</h1>
+    </div>
+  )
+}
+
+export default PathError;
