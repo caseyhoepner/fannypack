@@ -9,8 +9,11 @@ const App = (props) => {
   return (
     <div className="App">
       <Switch>
-        <Route exact path='/' component={ TravelForm } />
-        <Route component={ PathError }/>
+        <Route 
+          exact path='/' 
+          component={ TravelForm } />
+        <Route 
+          component={ PathError }/>
       </Switch>
     </div>
   );
