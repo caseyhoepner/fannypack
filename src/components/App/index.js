@@ -3,12 +3,12 @@ import { Route, Switch } from 'react-router-dom';
 
 import TravelForm from '../../containers/TravelForm';
 import PathError from '../PathError';
-import { getLatLong } from '../../utils';
+import { fetchWeather } from '../../utils';
 import './App.css';
 
 class App extends Component {
   componentDidMount() {
-    getLatLong()
+    fetchWeather('denver')
   }
 
   render() {

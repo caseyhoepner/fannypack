@@ -1,33 +1,25 @@
 import Geocode from "react-geocode";
+import apiKey from './API-key.js'
 
 
-export const fetchWeather = async (apiKey) => {
-  const url = `http://api.openweathermap.org/data/2.5/forecast?q=London,uk&APPID=${apiKey}`;
-
+export const fetchWeather = async (city) => {
+  const latLong = await getLatLong(city)
+  const url = `https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/${apiKey}/${latLong.lat},${latLong.lng}`;
   const response = await fetch(url);
-
   if (!response.ok) {
     console.log(response.statusText)
-
   } else {
-  return await response.json();
+  console.log(await response.json());
   }
 }
 
-
-
-export const getLatLong = () => {
+export const getLatLong = async (city) => {
   Geocode.setApiKey('AIzaSyCB9XbEI1TFAF8rz13uVbKiOq2a_B9bAhM');
   Geocode.enableDebug();
-  Geocode.fromAddress("london").then(
-    response => {
-      const { lat, lng } = response.results[0].geometry.location;
-      console.log(lat, lng);
-    },
-    error => {
-      console.error(error);
-    }
-  );
+  const response = await Geocode.fromAddress(city)
+  const data = await response.results[0].geometry.location;
+
+  return(data)
 }
 
 
