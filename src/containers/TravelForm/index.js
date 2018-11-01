@@ -30,13 +30,13 @@ export class TravelForm extends Component {
       <form onSubmit={this.handleSubmit}>
         <input 
           onChange={this.handleChange}
-          placeholder='City'
+          placeholder='Destination'
           name='city'
           value={city}
         />
         <input 
           onChange={this.handleChange}
-          placeholder='Date of travel'
+          placeholder='Date of Travel'
           name='date'
           value={date}
         />

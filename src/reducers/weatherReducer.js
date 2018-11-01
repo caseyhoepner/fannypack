@@ -4,6 +4,7 @@ export const weatherReducer = (state = {}, action) => {
       return {
         weatherData: action.weatherData,
       }
+      
     default:
       return state
   }
