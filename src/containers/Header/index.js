@@ -13,7 +13,7 @@ export class Header extends Component {
   render() {
     return (
       <div className='h-header-container'>
-        <h1 clasaName='h-title'>FannyPack</h1>
+        <h1 className='h-title'>FannyPack</h1>
       </div>
     )
   }
