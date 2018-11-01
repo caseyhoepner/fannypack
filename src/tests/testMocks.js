@@ -1,0 +1,1 @@
+export const mockWeatherData = { city: 'London', temp: 90 }

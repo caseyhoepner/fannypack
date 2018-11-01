@@ -16,7 +16,8 @@ export class TravelForm extends Component {
   }
 
   handleChange = (event) => {
-    this.setState({[event.name]: event.target.value})
+    event.preventDefault()
+    this.setState({[event.target.name]: event.target.value})
   }
 
   handleClick = async () => {
