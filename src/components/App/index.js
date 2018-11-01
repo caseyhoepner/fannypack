@@ -7,9 +7,6 @@ import { fetchWeather } from '../../utils';
 import './App.css';
 
 class App extends Component {
-  componentDidMount() {
-    fetchWeather('denver')
-  }
 
   render() {
     return (

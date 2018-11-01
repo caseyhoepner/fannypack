@@ -21,9 +21,11 @@ export class TravelForm extends Component {
     this.setState({[event.target.name]: event.target.value})
   }
 
-  handleClick = async () => {
-    const { city, date } = this.state;
-    const weatherData = await API.fetchWeather(city, date, apiKey);
+  handleSubmit = async (event) => {
+    event.preventDefault()
+    const { city } = this.state;
+    const weatherData = await API.fetchWeather(city);
+    this.props.setWeather(weatherData);
   }
 
   render() {
@@ -60,7 +62,7 @@ export class TravelForm extends Component {
 }
 
 const mapDispatchToProps = (dispatch) => ({
-  setWeather: () => dispatch(setWeather()) 
+  setWeather: (weatherData) => dispatch(setWeather(weatherData)) 
 })
 
 export default connect(null, mapDispatchToProps)(TravelForm);

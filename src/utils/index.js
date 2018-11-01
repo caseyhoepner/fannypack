@@ -9,17 +9,28 @@ export const fetchWeather = async (city) => {
   if (!response.ok) {
     console.log(response.statusText)
   } else {
-  console.log(await response.json());
+  const weatherData = await response.json();
+  return cleanData(weatherData)
   }
 }
 
-export const getLatLong = async (city) => {
+const getLatLong = async (city) => {
   Geocode.setApiKey('AIzaSyCB9XbEI1TFAF8rz13uVbKiOq2a_B9bAhM');
   Geocode.enableDebug();
   const response = await Geocode.fromAddress(city)
-  const data = await response.results[0].geometry.location;
+  const latLong = await response.results[0].geometry.location;
 
-  return(data)
+  return(latLong)
+}
+
+const cleanData = (weatherData) => {
+  const { summary, temperatureHigh, temperatureLow, icon } = weatherData.daily.data[0]
+  return { 
+    highTemp: temperatureHigh,
+    lowTemp: temperatureLow,
+    summary,
+    icon
+  }
 }
 
 
