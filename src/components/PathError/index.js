@@ -10,7 +10,7 @@ const PathError = () => {
       <Link 
           className='pe-back-btn' 
           to="/">
-          &#8592; Return to homepage
+          &#8592; Reroute to homepage
         </Link>
     </div>
   )
