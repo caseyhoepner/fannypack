@@ -1,0 +1,10 @@
+.wc-icon {
+  width: 100px;
+}
+
+.wc-container {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+}

@@ -1,22 +1,22 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { Header } from '../../containers/Header'
+import Header from '../Header';
 
-import './WeatherResults.css'
+import WeatherCard from '../../components/WeatherCard';
+import './WeatherResults.css';
 
 const WeatherResults = (props) => {
   const { highTemp, lowTemp, icon, summary } = props.weatherData;
+  const cards = props.weatherData.map(city => {
+    return <WeatherCard {...city}/>;
+  })
+
   return (
     <div>
       <Header />
         <div className='wr-container'>
-          <div className='wr-weather-container'>
-            <h2 >Day 1</h2>
-              <p>High: {highTemp}</p>
-              <p>Low: {lowTemp}</p>
-              <p>{summary}</p>
-              <img className='wr-icon' src={require(`../../assets/rain.svg`)} />
-          </div>
+          { cards }
         </div>
     </div>
   )
@@ -26,4 +26,4 @@ const mapStateToProps = (state) => ({
   weatherData: state.weatherData
 })
 
-export default connect(mapStateToProps)(WeatherResults);
+export default withRouter(connect(mapStateToProps)(WeatherResults));
