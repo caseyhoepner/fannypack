@@ -12,7 +12,7 @@ const WeatherCard = ({ highTemp, lowTemp, summary, icon, city, day}) => {
           <p>High: {highTemp}</p>
           <p>Low: {lowTemp}</p>
           <p>{summary}</p>
-          <img className='wc-icon' src={require(`../../assets/rain.svg`)} />
+          <img className='wc-icon' src={require(`../../assets/${icon}.svg`)} />
       </div>
     </div>
   );
