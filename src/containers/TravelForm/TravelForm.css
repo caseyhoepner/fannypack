@@ -8,19 +8,19 @@
 }
 
 .tf-title {
-  font-size: 2rem;
-  margin: 100px 0 20px;
+  font-size: 1.5rem;
+  margin: 40px 0 20px;
 }
 
 .tf-input-component {
-  height: 50px;
+  height: 40px;
   border: none;
-}
-
-.tf-input-components {
+  margin-bottom: 5px;
+  font-color: grey;
 }
 
 .tf-btn {
+  margin-top: 20px;
   background-color: #E45C8F;
   border: none;
   width: 100%;
@@ -55,3 +55,6 @@
   height: 100vh;
 }
 
+.tf-form-components {
+  font-color: grey;
+}

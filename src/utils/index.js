@@ -1,10 +1,10 @@
 import Geocode from "react-geocode";
-import apiKey from './API-key.js'
+import { weatherApiKey, googleApiKey } from './API-key.js'
 
 
 export const fetchWeather = async (city) => {
   const latLong = await getLatLong(city)
-  const url = `https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/${apiKey}/${latLong.lat},${latLong.lng}`;
+  const url = `https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/${weatherApiKey}/${latLong.lat},${latLong.lng}`;
   const response = await fetch(url);
   if (!response.ok) {
     console.log(response.statusText)
@@ -15,7 +15,7 @@ export const fetchWeather = async (city) => {
 }
 
 const getLatLong = async (city) => {
-  Geocode.setApiKey('AIzaSyCB9XbEI1TFAF8rz13uVbKiOq2a_B9bAhM');
+  Geocode.setApiKey(googleApiKey);
   Geocode.enableDebug();
   const response = await Geocode.fromAddress(city)
   const latLong = await response.results[0].geometry.location;
