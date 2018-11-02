@@ -28,14 +28,19 @@ const WeatherCard = ({ highTemp = 90, lowTemp, summary, icon, city, day}) => {
 
     essentials = [...essentials, ...packingData[icon]];
 
-    const filteredEssentials = essentials.reduce((filteredEssentials, essential) => {
+    const filteredEssentials = filterEssentials(essentials)
+    console.log(filteredEssentials)
+
+    return filteredEssentials.map(filteredEssential => <li key={filteredEssential}>{filteredEssential}</li>)
+  }
+
+  const filterEssentials = (essentials) => {
+    return essentials.reduce((filteredEssentials, essential) => {
       if (!filteredEssentials.includes(essential)) {
         filteredEssentials.push(essential);
       }
       return filteredEssentials;
     }, []);
-
-    return filteredEssentials.map(filteredEssential => <li key={filteredEssential}>{filteredEssential}</li>)
   }
 
   return (
