@@ -3,8 +3,8 @@ import { connect } from 'react-redux';
 import { setWeather } from '../../actions';
 
 import Header from '../../containers/Header';
+import { withRouter } from 'react-router-dom';
 import * as API from '../../utils';
-import apiKey from '../../utils/API-key';
 import './TravelForm.css'
 
 export class TravelForm extends Component {
@@ -25,7 +25,8 @@ export class TravelForm extends Component {
     event.preventDefault()
     const { city } = this.state;
     const weatherData = await API.fetchWeather(city);
-    this.props.setWeather(weatherData);
+    await this.props.setWeather(weatherData);
+    this.props.history.push('/results');
   }
 
   render() {
@@ -65,4 +66,4 @@ const mapDispatchToProps = (dispatch) => ({
   setWeather: (weatherData) => dispatch(setWeather(weatherData)) 
 })
 
-export default connect(null, mapDispatchToProps)(TravelForm);
+export default withRouter(connect(null, mapDispatchToProps)(TravelForm));

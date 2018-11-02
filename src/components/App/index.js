@@ -2,12 +2,11 @@ import React, { Component }from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 import TravelForm from '../../containers/TravelForm';
+import WeatherResults from '../WeatherResults';
 import PathError from '../PathError';
-import { fetchWeather } from '../../utils';
 import './App.css';
 
 class App extends Component {
-
   render() {
     return (
       <div className="App">
@@ -16,7 +15,10 @@ class App extends Component {
             exact path='/' 
             component={ TravelForm } />
           <Route 
-            component={ PathError }/>
+            path='/results'
+            component={ WeatherResults } />
+          <Route 
+            component={ PathError } />
         </Switch>
       </div>
     );
