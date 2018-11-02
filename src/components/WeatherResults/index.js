@@ -9,11 +9,18 @@ const WeatherResults = (props) => {
   return (
     <div>
       <Header />
-      <div>WeatherResults</div>
-        <p>High: {highTemp}</p>
-        <p>Low: {lowTemp}</p>
-        <p>{summary}</p>
-        <img src={require(`../../assets/${icon}-gradient.svg`)} />
+        <div className='wr-container'>
+          <div className='wr-weather-container'>
+            <h2>Weather</h2>
+              <p>High: {highTemp}</p>
+              <p>Low: {lowTemp}</p>
+              <p>{summary}</p>
+              <img className='wr-icon' src={require(`../../assets/rain.svg`)} />
+          </div>
+          <div className='wr-pack-container'>
+            <h2>What to Pack</h2>
+          </div>
+        </div>
     </div>
   )
 }

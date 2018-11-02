@@ -1,0 +1,18 @@
+.wr-icon {
+  width: 100px;
+}
+
+.wr-container {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.wr-weather-container {
+
+}
+
+.wr-pack-container {
+
+}
