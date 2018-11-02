@@ -7,19 +7,21 @@ import WeatherCard from '../../components/WeatherCard';
 import './WeatherResults.css';
 
 const WeatherResults = (props) => {
-  const { highTemp, lowTemp, icon, summary } = props.weatherData;
-  const cards = props.weatherData.map(city => {
-    return <WeatherCard {...city}/>;
-  })
+  if (props.weatherData) {
+    const { highTemp, lowTemp, icon, summary } = props.weatherData;
+    const cards = props.weatherData.map(city => {
+      return <WeatherCard {...city}/>;
+    })
 
-  return (
-    <div>
-      <Header />
-        <div className='wr-container'>
-          { cards }
-        </div>
-    </div>
-  )
+    return (
+      <div>
+        <Header />
+          <div className='wr-container'>
+            { cards }
+          </div>
+      </div>
+    )
+  }
 }
 
 const mapStateToProps = (state) => ({
