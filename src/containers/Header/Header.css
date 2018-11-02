@@ -1,4 +1,18 @@
 .h-header-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.h-title {
+  font-family: 'Shrikhand', cursive;
+  color: #FFFFFF;
+  font-size: 5rem;
+  margin: 0;
+  margin: 20px 0 0;
+}
+
+.h-fanny-pack {
+  width: 100px;
+  margin: -10px 0 20px;
 }

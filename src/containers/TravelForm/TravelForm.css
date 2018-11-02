@@ -1,13 +1,54 @@
-.tf-title {
-}
-
 .tf-form {
   width: 50%;
-  margin: auto;
   display: flex;
-  justify-content: cetner;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.tf-title {
+  font-size: 2rem;
+  margin: 100px 0 20px;
+}
+
+.tf-input-component {
+  height: 50px;
+  border: none;
 }
 
 .tf-input-components {
-  
 }
+
+.tf-btn {
+  background-color: #E45C8F;
+  border: none;
+  width: 100%;
+  border-radius: 25px;
+  height: 50px;
+  font-family: 'Shrikhand', cursive;
+  font-size: 1.75rem;
+}
+
+.tf-form-components {
+  width: 100%;
+}
+
+.tf-day-input {
+  display: flex;
+  align-items: center;
+}
+
+.tf-day {
+  width: 100px;
+}
+
+.hide {
+  display: none;
+}
+
+.tf-add-btn {
+  color: #E45C8F;
+}
+
+
