@@ -29,10 +29,10 @@ export class TravelForm extends Component {
   }
 
   render() {
-    const { city, date } = this.state;
+    const { city } = this.state;
 
     return (
-      <div>
+      <div className='parent-container'>
         <Header />
         <form className='tf-form'onSubmit={this.handleSubmit}>
           <h2 className='tf-title'>Where are you going?</h2>

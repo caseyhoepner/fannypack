@@ -25,6 +25,10 @@ ShallowWrapper {
         />
         <Route
           component={[Function]}
+          path="/results"
+        />
+        <Route
+          component={[Function]}
         />
       </Switch>,
       "className": "App",
@@ -43,6 +47,10 @@ ShallowWrapper {
           />,
           <Route
             component={[Function]}
+            path="/results"
+          />,
+          <Route
+            component={[Function]}
           />,
         ],
       },
@@ -56,6 +64,18 @@ ShallowWrapper {
             "component": [Function],
             "exact": true,
             "path": "/",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "component": [Function],
+            "path": "/results",
           },
           "ref": null,
           "rendered": null,
@@ -91,6 +111,10 @@ ShallowWrapper {
           />
           <Route
             component={[Function]}
+            path="/results"
+          />
+          <Route
+            component={[Function]}
           />
         </Switch>,
         "className": "App",
@@ -109,6 +133,10 @@ ShallowWrapper {
             />,
             <Route
               component={[Function]}
+              path="/results"
+            />,
+            <Route
+              component={[Function]}
             />,
           ],
         },
@@ -122,6 +150,18 @@ ShallowWrapper {
               "component": [Function],
               "exact": true,
               "path": "/",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "path": "/results",
             },
             "ref": null,
             "rendered": null,

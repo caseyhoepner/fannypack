@@ -18,67 +18,949 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <input
-          name="city"
-          onChange={[Function]}
-          placeholder="Destination"
-          value=""
-        />,
-        <input
-          name="date"
-          onChange={[Function]}
-          placeholder="Date of Travel"
-          value=""
-        />,
-        <button>
-          Get Packing List
-        </button>,
+        <Connect(Header) />,
+        <form
+          className="tf-form"
+          onSubmit={[Function]}
+        >
+          <h2
+            className="tf-title"
+          >
+            Where are you going?
+          </h2>
+          <div
+            className="tf-form-components"
+          >
+            <section
+              className="tf-tomorrow tf-day-input"
+            >
+              <p
+                className="tf-day"
+              >
+                Tomorrow
+              </p>
+              <input
+                className="tf-form-component tf-input-component"
+                name="city"
+                onChange={[Function]}
+                placeholder="Destination"
+                value=""
+              />
+            </section>
+            <section
+              className="tf-day-2 tf-day-input hide"
+            >
+              <p
+                className="tf-day"
+              >
+                Day 2
+              </p>
+              <input
+                className="tf-form-component tf-input-component"
+                name="city"
+                onChange={[Function]}
+                placeholder="Destination"
+                value=""
+              />
+            </section>
+            <section
+              className="tf-day-3 tf-day-input hide"
+            >
+              <p
+                className="tf-day"
+              >
+                Day 3
+              </p>
+              <input
+                className="tf-form-component tf-input-component"
+                name="city"
+                onChange={[Function]}
+                placeholder="Destination"
+                value=""
+              />
+            </section>
+            <section
+              className="tf-day-4 tf-day-input hide"
+            >
+              <p
+                className="tf-day"
+              >
+                Day 4
+              </p>
+              <input
+                className="tf-form-component tf-input-component"
+                name="city"
+                onChange={[Function]}
+                placeholder="Destination"
+                value=""
+              />
+            </section>
+            <section
+              className="tf-day-5 tf-day-input hide"
+            >
+              <p
+                className="tf-day"
+              >
+                Day 5
+              </p>
+              <input
+                className="tf-form-component tf-input-component"
+                name="city"
+                onChange={[Function]}
+                placeholder="Destination"
+                value=""
+              />
+            </section>
+            <section
+              className="tf-day-6 tf-day-input hide"
+            >
+              <p
+                className="tf-day"
+              >
+                Day 6
+              </p>
+              <input
+                className="tf-form-component tf-input-component"
+                name="city"
+                onChange={[Function]}
+                placeholder="Destination"
+                value=""
+              />
+            </section>
+            <section
+              className="tf-day-7 tf-day-input hide"
+            >
+              <p
+                className="tf-day"
+              >
+                Day 7
+              </p>
+              <input
+                className="tf-form-component tf-input-component"
+                name="city"
+                onChange={[Function]}
+                placeholder="Destination"
+                value=""
+              />
+            </section>
+            <section
+              className="tf-day-8 tf-day-input hide"
+            >
+              <p
+                className="tf-day"
+              >
+                Day 8
+              </p>
+              <input
+                className="tf-form-component tf-input-component"
+                name="city"
+                onChange={[Function]}
+                placeholder="Destination"
+                value=""
+              />
+            </section>
+            <button
+              className="tf-add-btn"
+            >
+              + Add a Day
+            </button>
+            <button
+              className="tf-form-component tf-btn"
+            >
+              Get Packing List
+            </button>
+          </div>
+        </form>,
       ],
-      "onSubmit": undefined,
+      "className": "parent-container",
     },
     "ref": null,
     "rendered": Array [
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "name": "city",
-          "onChange": [Function],
-          "placeholder": "Destination",
-          "value": "",
-        },
+        "nodeType": "class",
+        "props": Object {},
         "ref": null,
         "rendered": null,
-        "type": "input",
+        "type": [Function],
       },
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "name": "date",
-          "onChange": [Function],
-          "placeholder": "Date of Travel",
-          "value": "",
+          "children": Array [
+            <h2
+              className="tf-title"
+            >
+              Where are you going?
+            </h2>,
+            <div
+              className="tf-form-components"
+            >
+              <section
+                className="tf-tomorrow tf-day-input"
+              >
+                <p
+                  className="tf-day"
+                >
+                  Tomorrow
+                </p>
+                <input
+                  className="tf-form-component tf-input-component"
+                  name="city"
+                  onChange={[Function]}
+                  placeholder="Destination"
+                  value=""
+                />
+              </section>
+              <section
+                className="tf-day-2 tf-day-input hide"
+              >
+                <p
+                  className="tf-day"
+                >
+                  Day 2
+                </p>
+                <input
+                  className="tf-form-component tf-input-component"
+                  name="city"
+                  onChange={[Function]}
+                  placeholder="Destination"
+                  value=""
+                />
+              </section>
+              <section
+                className="tf-day-3 tf-day-input hide"
+              >
+                <p
+                  className="tf-day"
+                >
+                  Day 3
+                </p>
+                <input
+                  className="tf-form-component tf-input-component"
+                  name="city"
+                  onChange={[Function]}
+                  placeholder="Destination"
+                  value=""
+                />
+              </section>
+              <section
+                className="tf-day-4 tf-day-input hide"
+              >
+                <p
+                  className="tf-day"
+                >
+                  Day 4
+                </p>
+                <input
+                  className="tf-form-component tf-input-component"
+                  name="city"
+                  onChange={[Function]}
+                  placeholder="Destination"
+                  value=""
+                />
+              </section>
+              <section
+                className="tf-day-5 tf-day-input hide"
+              >
+                <p
+                  className="tf-day"
+                >
+                  Day 5
+                </p>
+                <input
+                  className="tf-form-component tf-input-component"
+                  name="city"
+                  onChange={[Function]}
+                  placeholder="Destination"
+                  value=""
+                />
+              </section>
+              <section
+                className="tf-day-6 tf-day-input hide"
+              >
+                <p
+                  className="tf-day"
+                >
+                  Day 6
+                </p>
+                <input
+                  className="tf-form-component tf-input-component"
+                  name="city"
+                  onChange={[Function]}
+                  placeholder="Destination"
+                  value=""
+                />
+              </section>
+              <section
+                className="tf-day-7 tf-day-input hide"
+              >
+                <p
+                  className="tf-day"
+                >
+                  Day 7
+                </p>
+                <input
+                  className="tf-form-component tf-input-component"
+                  name="city"
+                  onChange={[Function]}
+                  placeholder="Destination"
+                  value=""
+                />
+              </section>
+              <section
+                className="tf-day-8 tf-day-input hide"
+              >
+                <p
+                  className="tf-day"
+                >
+                  Day 8
+                </p>
+                <input
+                  className="tf-form-component tf-input-component"
+                  name="city"
+                  onChange={[Function]}
+                  placeholder="Destination"
+                  value=""
+                />
+              </section>
+              <button
+                className="tf-add-btn"
+              >
+                + Add a Day
+              </button>
+              <button
+                className="tf-form-component tf-btn"
+              >
+                Get Packing List
+              </button>
+            </div>,
+          ],
+          "className": "tf-form",
+          "onSubmit": [Function],
         },
         "ref": null,
-        "rendered": null,
-        "type": "input",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Get Packing List",
-        },
-        "ref": null,
-        "rendered": "Get Packing List",
-        "type": "button",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Where are you going?",
+              "className": "tf-title",
+            },
+            "ref": null,
+            "rendered": "Where are you going?",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <section
+                  className="tf-tomorrow tf-day-input"
+                >
+                  <p
+                    className="tf-day"
+                  >
+                    Tomorrow
+                  </p>
+                  <input
+                    className="tf-form-component tf-input-component"
+                    name="city"
+                    onChange={[Function]}
+                    placeholder="Destination"
+                    value=""
+                  />
+                </section>,
+                <section
+                  className="tf-day-2 tf-day-input hide"
+                >
+                  <p
+                    className="tf-day"
+                  >
+                    Day 2
+                  </p>
+                  <input
+                    className="tf-form-component tf-input-component"
+                    name="city"
+                    onChange={[Function]}
+                    placeholder="Destination"
+                    value=""
+                  />
+                </section>,
+                <section
+                  className="tf-day-3 tf-day-input hide"
+                >
+                  <p
+                    className="tf-day"
+                  >
+                    Day 3
+                  </p>
+                  <input
+                    className="tf-form-component tf-input-component"
+                    name="city"
+                    onChange={[Function]}
+                    placeholder="Destination"
+                    value=""
+                  />
+                </section>,
+                <section
+                  className="tf-day-4 tf-day-input hide"
+                >
+                  <p
+                    className="tf-day"
+                  >
+                    Day 4
+                  </p>
+                  <input
+                    className="tf-form-component tf-input-component"
+                    name="city"
+                    onChange={[Function]}
+                    placeholder="Destination"
+                    value=""
+                  />
+                </section>,
+                <section
+                  className="tf-day-5 tf-day-input hide"
+                >
+                  <p
+                    className="tf-day"
+                  >
+                    Day 5
+                  </p>
+                  <input
+                    className="tf-form-component tf-input-component"
+                    name="city"
+                    onChange={[Function]}
+                    placeholder="Destination"
+                    value=""
+                  />
+                </section>,
+                <section
+                  className="tf-day-6 tf-day-input hide"
+                >
+                  <p
+                    className="tf-day"
+                  >
+                    Day 6
+                  </p>
+                  <input
+                    className="tf-form-component tf-input-component"
+                    name="city"
+                    onChange={[Function]}
+                    placeholder="Destination"
+                    value=""
+                  />
+                </section>,
+                <section
+                  className="tf-day-7 tf-day-input hide"
+                >
+                  <p
+                    className="tf-day"
+                  >
+                    Day 7
+                  </p>
+                  <input
+                    className="tf-form-component tf-input-component"
+                    name="city"
+                    onChange={[Function]}
+                    placeholder="Destination"
+                    value=""
+                  />
+                </section>,
+                <section
+                  className="tf-day-8 tf-day-input hide"
+                >
+                  <p
+                    className="tf-day"
+                  >
+                    Day 8
+                  </p>
+                  <input
+                    className="tf-form-component tf-input-component"
+                    name="city"
+                    onChange={[Function]}
+                    placeholder="Destination"
+                    value=""
+                  />
+                </section>,
+                <button
+                  className="tf-add-btn"
+                >
+                  + Add a Day
+                </button>,
+                <button
+                  className="tf-form-component tf-btn"
+                >
+                  Get Packing List
+                </button>,
+              ],
+              "className": "tf-form-components",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <p
+                      className="tf-day"
+                    >
+                      Tomorrow
+                    </p>,
+                    <input
+                      className="tf-form-component tf-input-component"
+                      name="city"
+                      onChange={[Function]}
+                      placeholder="Destination"
+                      value=""
+                    />,
+                  ],
+                  "className": "tf-tomorrow tf-day-input",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Tomorrow",
+                      "className": "tf-day",
+                    },
+                    "ref": null,
+                    "rendered": "Tomorrow",
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "tf-form-component tf-input-component",
+                      "name": "city",
+                      "onChange": [Function],
+                      "placeholder": "Destination",
+                      "value": "",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                ],
+                "type": "section",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <p
+                      className="tf-day"
+                    >
+                      Day 2
+                    </p>,
+                    <input
+                      className="tf-form-component tf-input-component"
+                      name="city"
+                      onChange={[Function]}
+                      placeholder="Destination"
+                      value=""
+                    />,
+                  ],
+                  "className": "tf-day-2 tf-day-input hide",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Day 2",
+                      "className": "tf-day",
+                    },
+                    "ref": null,
+                    "rendered": "Day 2",
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "tf-form-component tf-input-component",
+                      "name": "city",
+                      "onChange": [Function],
+                      "placeholder": "Destination",
+                      "value": "",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                ],
+                "type": "section",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <p
+                      className="tf-day"
+                    >
+                      Day 3
+                    </p>,
+                    <input
+                      className="tf-form-component tf-input-component"
+                      name="city"
+                      onChange={[Function]}
+                      placeholder="Destination"
+                      value=""
+                    />,
+                  ],
+                  "className": "tf-day-3 tf-day-input hide",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Day 3",
+                      "className": "tf-day",
+                    },
+                    "ref": null,
+                    "rendered": "Day 3",
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "tf-form-component tf-input-component",
+                      "name": "city",
+                      "onChange": [Function],
+                      "placeholder": "Destination",
+                      "value": "",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                ],
+                "type": "section",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <p
+                      className="tf-day"
+                    >
+                      Day 4
+                    </p>,
+                    <input
+                      className="tf-form-component tf-input-component"
+                      name="city"
+                      onChange={[Function]}
+                      placeholder="Destination"
+                      value=""
+                    />,
+                  ],
+                  "className": "tf-day-4 tf-day-input hide",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Day 4",
+                      "className": "tf-day",
+                    },
+                    "ref": null,
+                    "rendered": "Day 4",
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "tf-form-component tf-input-component",
+                      "name": "city",
+                      "onChange": [Function],
+                      "placeholder": "Destination",
+                      "value": "",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                ],
+                "type": "section",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <p
+                      className="tf-day"
+                    >
+                      Day 5
+                    </p>,
+                    <input
+                      className="tf-form-component tf-input-component"
+                      name="city"
+                      onChange={[Function]}
+                      placeholder="Destination"
+                      value=""
+                    />,
+                  ],
+                  "className": "tf-day-5 tf-day-input hide",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Day 5",
+                      "className": "tf-day",
+                    },
+                    "ref": null,
+                    "rendered": "Day 5",
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "tf-form-component tf-input-component",
+                      "name": "city",
+                      "onChange": [Function],
+                      "placeholder": "Destination",
+                      "value": "",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                ],
+                "type": "section",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <p
+                      className="tf-day"
+                    >
+                      Day 6
+                    </p>,
+                    <input
+                      className="tf-form-component tf-input-component"
+                      name="city"
+                      onChange={[Function]}
+                      placeholder="Destination"
+                      value=""
+                    />,
+                  ],
+                  "className": "tf-day-6 tf-day-input hide",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Day 6",
+                      "className": "tf-day",
+                    },
+                    "ref": null,
+                    "rendered": "Day 6",
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "tf-form-component tf-input-component",
+                      "name": "city",
+                      "onChange": [Function],
+                      "placeholder": "Destination",
+                      "value": "",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                ],
+                "type": "section",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <p
+                      className="tf-day"
+                    >
+                      Day 7
+                    </p>,
+                    <input
+                      className="tf-form-component tf-input-component"
+                      name="city"
+                      onChange={[Function]}
+                      placeholder="Destination"
+                      value=""
+                    />,
+                  ],
+                  "className": "tf-day-7 tf-day-input hide",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Day 7",
+                      "className": "tf-day",
+                    },
+                    "ref": null,
+                    "rendered": "Day 7",
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "tf-form-component tf-input-component",
+                      "name": "city",
+                      "onChange": [Function],
+                      "placeholder": "Destination",
+                      "value": "",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                ],
+                "type": "section",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <p
+                      className="tf-day"
+                    >
+                      Day 8
+                    </p>,
+                    <input
+                      className="tf-form-component tf-input-component"
+                      name="city"
+                      onChange={[Function]}
+                      placeholder="Destination"
+                      value=""
+                    />,
+                  ],
+                  "className": "tf-day-8 tf-day-input hide",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Day 8",
+                      "className": "tf-day",
+                    },
+                    "ref": null,
+                    "rendered": "Day 8",
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "tf-form-component tf-input-component",
+                      "name": "city",
+                      "onChange": [Function],
+                      "placeholder": "Destination",
+                      "value": "",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                ],
+                "type": "section",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "+ Add a Day",
+                  "className": "tf-add-btn",
+                },
+                "ref": null,
+                "rendered": "+ Add a Day",
+                "type": "button",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Get Packing List",
+                  "className": "tf-form-component tf-btn",
+                },
+                "ref": null,
+                "rendered": "Get Packing List",
+                "type": "button",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "form",
       },
     ],
-    "type": "form",
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
@@ -87,67 +969,949 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <input
-            name="city"
-            onChange={[Function]}
-            placeholder="Destination"
-            value=""
-          />,
-          <input
-            name="date"
-            onChange={[Function]}
-            placeholder="Date of Travel"
-            value=""
-          />,
-          <button>
-            Get Packing List
-          </button>,
+          <Connect(Header) />,
+          <form
+            className="tf-form"
+            onSubmit={[Function]}
+          >
+            <h2
+              className="tf-title"
+            >
+              Where are you going?
+            </h2>
+            <div
+              className="tf-form-components"
+            >
+              <section
+                className="tf-tomorrow tf-day-input"
+              >
+                <p
+                  className="tf-day"
+                >
+                  Tomorrow
+                </p>
+                <input
+                  className="tf-form-component tf-input-component"
+                  name="city"
+                  onChange={[Function]}
+                  placeholder="Destination"
+                  value=""
+                />
+              </section>
+              <section
+                className="tf-day-2 tf-day-input hide"
+              >
+                <p
+                  className="tf-day"
+                >
+                  Day 2
+                </p>
+                <input
+                  className="tf-form-component tf-input-component"
+                  name="city"
+                  onChange={[Function]}
+                  placeholder="Destination"
+                  value=""
+                />
+              </section>
+              <section
+                className="tf-day-3 tf-day-input hide"
+              >
+                <p
+                  className="tf-day"
+                >
+                  Day 3
+                </p>
+                <input
+                  className="tf-form-component tf-input-component"
+                  name="city"
+                  onChange={[Function]}
+                  placeholder="Destination"
+                  value=""
+                />
+              </section>
+              <section
+                className="tf-day-4 tf-day-input hide"
+              >
+                <p
+                  className="tf-day"
+                >
+                  Day 4
+                </p>
+                <input
+                  className="tf-form-component tf-input-component"
+                  name="city"
+                  onChange={[Function]}
+                  placeholder="Destination"
+                  value=""
+                />
+              </section>
+              <section
+                className="tf-day-5 tf-day-input hide"
+              >
+                <p
+                  className="tf-day"
+                >
+                  Day 5
+                </p>
+                <input
+                  className="tf-form-component tf-input-component"
+                  name="city"
+                  onChange={[Function]}
+                  placeholder="Destination"
+                  value=""
+                />
+              </section>
+              <section
+                className="tf-day-6 tf-day-input hide"
+              >
+                <p
+                  className="tf-day"
+                >
+                  Day 6
+                </p>
+                <input
+                  className="tf-form-component tf-input-component"
+                  name="city"
+                  onChange={[Function]}
+                  placeholder="Destination"
+                  value=""
+                />
+              </section>
+              <section
+                className="tf-day-7 tf-day-input hide"
+              >
+                <p
+                  className="tf-day"
+                >
+                  Day 7
+                </p>
+                <input
+                  className="tf-form-component tf-input-component"
+                  name="city"
+                  onChange={[Function]}
+                  placeholder="Destination"
+                  value=""
+                />
+              </section>
+              <section
+                className="tf-day-8 tf-day-input hide"
+              >
+                <p
+                  className="tf-day"
+                >
+                  Day 8
+                </p>
+                <input
+                  className="tf-form-component tf-input-component"
+                  name="city"
+                  onChange={[Function]}
+                  placeholder="Destination"
+                  value=""
+                />
+              </section>
+              <button
+                className="tf-add-btn"
+              >
+                + Add a Day
+              </button>
+              <button
+                className="tf-form-component tf-btn"
+              >
+                Get Packing List
+              </button>
+            </div>
+          </form>,
         ],
-        "onSubmit": undefined,
+        "className": "parent-container",
       },
       "ref": null,
       "rendered": Array [
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "name": "city",
-            "onChange": [Function],
-            "placeholder": "Destination",
-            "value": "",
-          },
+          "nodeType": "class",
+          "props": Object {},
           "ref": null,
           "rendered": null,
-          "type": "input",
+          "type": [Function],
         },
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "name": "date",
-            "onChange": [Function],
-            "placeholder": "Date of Travel",
-            "value": "",
+            "children": Array [
+              <h2
+                className="tf-title"
+              >
+                Where are you going?
+              </h2>,
+              <div
+                className="tf-form-components"
+              >
+                <section
+                  className="tf-tomorrow tf-day-input"
+                >
+                  <p
+                    className="tf-day"
+                  >
+                    Tomorrow
+                  </p>
+                  <input
+                    className="tf-form-component tf-input-component"
+                    name="city"
+                    onChange={[Function]}
+                    placeholder="Destination"
+                    value=""
+                  />
+                </section>
+                <section
+                  className="tf-day-2 tf-day-input hide"
+                >
+                  <p
+                    className="tf-day"
+                  >
+                    Day 2
+                  </p>
+                  <input
+                    className="tf-form-component tf-input-component"
+                    name="city"
+                    onChange={[Function]}
+                    placeholder="Destination"
+                    value=""
+                  />
+                </section>
+                <section
+                  className="tf-day-3 tf-day-input hide"
+                >
+                  <p
+                    className="tf-day"
+                  >
+                    Day 3
+                  </p>
+                  <input
+                    className="tf-form-component tf-input-component"
+                    name="city"
+                    onChange={[Function]}
+                    placeholder="Destination"
+                    value=""
+                  />
+                </section>
+                <section
+                  className="tf-day-4 tf-day-input hide"
+                >
+                  <p
+                    className="tf-day"
+                  >
+                    Day 4
+                  </p>
+                  <input
+                    className="tf-form-component tf-input-component"
+                    name="city"
+                    onChange={[Function]}
+                    placeholder="Destination"
+                    value=""
+                  />
+                </section>
+                <section
+                  className="tf-day-5 tf-day-input hide"
+                >
+                  <p
+                    className="tf-day"
+                  >
+                    Day 5
+                  </p>
+                  <input
+                    className="tf-form-component tf-input-component"
+                    name="city"
+                    onChange={[Function]}
+                    placeholder="Destination"
+                    value=""
+                  />
+                </section>
+                <section
+                  className="tf-day-6 tf-day-input hide"
+                >
+                  <p
+                    className="tf-day"
+                  >
+                    Day 6
+                  </p>
+                  <input
+                    className="tf-form-component tf-input-component"
+                    name="city"
+                    onChange={[Function]}
+                    placeholder="Destination"
+                    value=""
+                  />
+                </section>
+                <section
+                  className="tf-day-7 tf-day-input hide"
+                >
+                  <p
+                    className="tf-day"
+                  >
+                    Day 7
+                  </p>
+                  <input
+                    className="tf-form-component tf-input-component"
+                    name="city"
+                    onChange={[Function]}
+                    placeholder="Destination"
+                    value=""
+                  />
+                </section>
+                <section
+                  className="tf-day-8 tf-day-input hide"
+                >
+                  <p
+                    className="tf-day"
+                  >
+                    Day 8
+                  </p>
+                  <input
+                    className="tf-form-component tf-input-component"
+                    name="city"
+                    onChange={[Function]}
+                    placeholder="Destination"
+                    value=""
+                  />
+                </section>
+                <button
+                  className="tf-add-btn"
+                >
+                  + Add a Day
+                </button>
+                <button
+                  className="tf-form-component tf-btn"
+                >
+                  Get Packing List
+                </button>
+              </div>,
+            ],
+            "className": "tf-form",
+            "onSubmit": [Function],
           },
           "ref": null,
-          "rendered": null,
-          "type": "input",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Get Packing List",
-          },
-          "ref": null,
-          "rendered": "Get Packing List",
-          "type": "button",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Where are you going?",
+                "className": "tf-title",
+              },
+              "ref": null,
+              "rendered": "Where are you going?",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <section
+                    className="tf-tomorrow tf-day-input"
+                  >
+                    <p
+                      className="tf-day"
+                    >
+                      Tomorrow
+                    </p>
+                    <input
+                      className="tf-form-component tf-input-component"
+                      name="city"
+                      onChange={[Function]}
+                      placeholder="Destination"
+                      value=""
+                    />
+                  </section>,
+                  <section
+                    className="tf-day-2 tf-day-input hide"
+                  >
+                    <p
+                      className="tf-day"
+                    >
+                      Day 2
+                    </p>
+                    <input
+                      className="tf-form-component tf-input-component"
+                      name="city"
+                      onChange={[Function]}
+                      placeholder="Destination"
+                      value=""
+                    />
+                  </section>,
+                  <section
+                    className="tf-day-3 tf-day-input hide"
+                  >
+                    <p
+                      className="tf-day"
+                    >
+                      Day 3
+                    </p>
+                    <input
+                      className="tf-form-component tf-input-component"
+                      name="city"
+                      onChange={[Function]}
+                      placeholder="Destination"
+                      value=""
+                    />
+                  </section>,
+                  <section
+                    className="tf-day-4 tf-day-input hide"
+                  >
+                    <p
+                      className="tf-day"
+                    >
+                      Day 4
+                    </p>
+                    <input
+                      className="tf-form-component tf-input-component"
+                      name="city"
+                      onChange={[Function]}
+                      placeholder="Destination"
+                      value=""
+                    />
+                  </section>,
+                  <section
+                    className="tf-day-5 tf-day-input hide"
+                  >
+                    <p
+                      className="tf-day"
+                    >
+                      Day 5
+                    </p>
+                    <input
+                      className="tf-form-component tf-input-component"
+                      name="city"
+                      onChange={[Function]}
+                      placeholder="Destination"
+                      value=""
+                    />
+                  </section>,
+                  <section
+                    className="tf-day-6 tf-day-input hide"
+                  >
+                    <p
+                      className="tf-day"
+                    >
+                      Day 6
+                    </p>
+                    <input
+                      className="tf-form-component tf-input-component"
+                      name="city"
+                      onChange={[Function]}
+                      placeholder="Destination"
+                      value=""
+                    />
+                  </section>,
+                  <section
+                    className="tf-day-7 tf-day-input hide"
+                  >
+                    <p
+                      className="tf-day"
+                    >
+                      Day 7
+                    </p>
+                    <input
+                      className="tf-form-component tf-input-component"
+                      name="city"
+                      onChange={[Function]}
+                      placeholder="Destination"
+                      value=""
+                    />
+                  </section>,
+                  <section
+                    className="tf-day-8 tf-day-input hide"
+                  >
+                    <p
+                      className="tf-day"
+                    >
+                      Day 8
+                    </p>
+                    <input
+                      className="tf-form-component tf-input-component"
+                      name="city"
+                      onChange={[Function]}
+                      placeholder="Destination"
+                      value=""
+                    />
+                  </section>,
+                  <button
+                    className="tf-add-btn"
+                  >
+                    + Add a Day
+                  </button>,
+                  <button
+                    className="tf-form-component tf-btn"
+                  >
+                    Get Packing List
+                  </button>,
+                ],
+                "className": "tf-form-components",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <p
+                        className="tf-day"
+                      >
+                        Tomorrow
+                      </p>,
+                      <input
+                        className="tf-form-component tf-input-component"
+                        name="city"
+                        onChange={[Function]}
+                        placeholder="Destination"
+                        value=""
+                      />,
+                    ],
+                    "className": "tf-tomorrow tf-day-input",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Tomorrow",
+                        "className": "tf-day",
+                      },
+                      "ref": null,
+                      "rendered": "Tomorrow",
+                      "type": "p",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "tf-form-component tf-input-component",
+                        "name": "city",
+                        "onChange": [Function],
+                        "placeholder": "Destination",
+                        "value": "",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "input",
+                    },
+                  ],
+                  "type": "section",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <p
+                        className="tf-day"
+                      >
+                        Day 2
+                      </p>,
+                      <input
+                        className="tf-form-component tf-input-component"
+                        name="city"
+                        onChange={[Function]}
+                        placeholder="Destination"
+                        value=""
+                      />,
+                    ],
+                    "className": "tf-day-2 tf-day-input hide",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Day 2",
+                        "className": "tf-day",
+                      },
+                      "ref": null,
+                      "rendered": "Day 2",
+                      "type": "p",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "tf-form-component tf-input-component",
+                        "name": "city",
+                        "onChange": [Function],
+                        "placeholder": "Destination",
+                        "value": "",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "input",
+                    },
+                  ],
+                  "type": "section",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <p
+                        className="tf-day"
+                      >
+                        Day 3
+                      </p>,
+                      <input
+                        className="tf-form-component tf-input-component"
+                        name="city"
+                        onChange={[Function]}
+                        placeholder="Destination"
+                        value=""
+                      />,
+                    ],
+                    "className": "tf-day-3 tf-day-input hide",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Day 3",
+                        "className": "tf-day",
+                      },
+                      "ref": null,
+                      "rendered": "Day 3",
+                      "type": "p",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "tf-form-component tf-input-component",
+                        "name": "city",
+                        "onChange": [Function],
+                        "placeholder": "Destination",
+                        "value": "",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "input",
+                    },
+                  ],
+                  "type": "section",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <p
+                        className="tf-day"
+                      >
+                        Day 4
+                      </p>,
+                      <input
+                        className="tf-form-component tf-input-component"
+                        name="city"
+                        onChange={[Function]}
+                        placeholder="Destination"
+                        value=""
+                      />,
+                    ],
+                    "className": "tf-day-4 tf-day-input hide",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Day 4",
+                        "className": "tf-day",
+                      },
+                      "ref": null,
+                      "rendered": "Day 4",
+                      "type": "p",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "tf-form-component tf-input-component",
+                        "name": "city",
+                        "onChange": [Function],
+                        "placeholder": "Destination",
+                        "value": "",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "input",
+                    },
+                  ],
+                  "type": "section",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <p
+                        className="tf-day"
+                      >
+                        Day 5
+                      </p>,
+                      <input
+                        className="tf-form-component tf-input-component"
+                        name="city"
+                        onChange={[Function]}
+                        placeholder="Destination"
+                        value=""
+                      />,
+                    ],
+                    "className": "tf-day-5 tf-day-input hide",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Day 5",
+                        "className": "tf-day",
+                      },
+                      "ref": null,
+                      "rendered": "Day 5",
+                      "type": "p",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "tf-form-component tf-input-component",
+                        "name": "city",
+                        "onChange": [Function],
+                        "placeholder": "Destination",
+                        "value": "",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "input",
+                    },
+                  ],
+                  "type": "section",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <p
+                        className="tf-day"
+                      >
+                        Day 6
+                      </p>,
+                      <input
+                        className="tf-form-component tf-input-component"
+                        name="city"
+                        onChange={[Function]}
+                        placeholder="Destination"
+                        value=""
+                      />,
+                    ],
+                    "className": "tf-day-6 tf-day-input hide",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Day 6",
+                        "className": "tf-day",
+                      },
+                      "ref": null,
+                      "rendered": "Day 6",
+                      "type": "p",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "tf-form-component tf-input-component",
+                        "name": "city",
+                        "onChange": [Function],
+                        "placeholder": "Destination",
+                        "value": "",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "input",
+                    },
+                  ],
+                  "type": "section",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <p
+                        className="tf-day"
+                      >
+                        Day 7
+                      </p>,
+                      <input
+                        className="tf-form-component tf-input-component"
+                        name="city"
+                        onChange={[Function]}
+                        placeholder="Destination"
+                        value=""
+                      />,
+                    ],
+                    "className": "tf-day-7 tf-day-input hide",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Day 7",
+                        "className": "tf-day",
+                      },
+                      "ref": null,
+                      "rendered": "Day 7",
+                      "type": "p",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "tf-form-component tf-input-component",
+                        "name": "city",
+                        "onChange": [Function],
+                        "placeholder": "Destination",
+                        "value": "",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "input",
+                    },
+                  ],
+                  "type": "section",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <p
+                        className="tf-day"
+                      >
+                        Day 8
+                      </p>,
+                      <input
+                        className="tf-form-component tf-input-component"
+                        name="city"
+                        onChange={[Function]}
+                        placeholder="Destination"
+                        value=""
+                      />,
+                    ],
+                    "className": "tf-day-8 tf-day-input hide",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Day 8",
+                        "className": "tf-day",
+                      },
+                      "ref": null,
+                      "rendered": "Day 8",
+                      "type": "p",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "tf-form-component tf-input-component",
+                        "name": "city",
+                        "onChange": [Function],
+                        "placeholder": "Destination",
+                        "value": "",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "input",
+                    },
+                  ],
+                  "type": "section",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "+ Add a Day",
+                    "className": "tf-add-btn",
+                  },
+                  "ref": null,
+                  "rendered": "+ Add a Day",
+                  "type": "button",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Get Packing List",
+                    "className": "tf-form-component tf-btn",
+                  },
+                  "ref": null,
+                  "rendered": "Get Packing List",
+                  "type": "button",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "form",
         },
       ],
-      "type": "form",
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {
