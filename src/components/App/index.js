@@ -2,7 +2,7 @@ import React, { Component }from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 import TravelForm from '../../containers/TravelForm';
-import WeatherResults from '../WeatherResults';
+import WeatherResults from '../../containers/WeatherResults';
 import PathError from '../PathError';
 import './App.css';
 

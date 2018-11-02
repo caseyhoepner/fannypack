@@ -1,1 +1,6 @@
-export const mockWeatherData = { city: 'London', temp: 90 }
+export const mockWeatherData = { 
+    highTemp: 70,
+    lowTemp: 50,
+    summary: 'Mostly cloudy.',
+    icon: 'rain-clouds.svg'
+  }
