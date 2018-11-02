@@ -11,14 +11,11 @@ const WeatherResults = (props) => {
       <Header />
         <div className='wr-container'>
           <div className='wr-weather-container'>
-            <h2>Weather</h2>
+            <h2 >Day 1</h2>
               <p>High: {highTemp}</p>
               <p>Low: {lowTemp}</p>
               <p>{summary}</p>
               <img className='wr-icon' src={require(`../../assets/rain.svg`)} />
-          </div>
-          <div className='wr-pack-container'>
-            <h2>What to Pack</h2>
           </div>
         </div>
     </div>
