@@ -8,10 +8,9 @@ import './WeatherResults.css';
 
 const WeatherResults = (props) => {
   if (props.weatherData) {
-    const { highTemp, lowTemp, icon, summary } = props.weatherData;
     const cards = props.weatherData.map(city => {
-      return <WeatherCard {...city}/>;
-    })
+      return <WeatherCard {...city} key={props.weatherData.summary}/>;
+    });
 
     return (
       <div>
@@ -22,10 +21,10 @@ const WeatherResults = (props) => {
       </div>
     )
   }
-}
+};
 
 const mapStateToProps = (state) => ({
   weatherData: state.weatherData
-})
+});
 
 export default withRouter(connect(mapStateToProps)(WeatherResults));

@@ -2,10 +2,10 @@
   font-family: 'Raleway', sans-serif;
   box-sizing: border-box;
   margin: 0;
-  color: #FFFFFF;
 }
 
 .App {
   background-image: linear-gradient(#C96EDD, #7F9DEB);
   height: 100%;
+  color: #FFFFFF;
 }
