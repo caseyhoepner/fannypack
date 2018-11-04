@@ -3,8 +3,10 @@
 }
 
 .wc-container {
-  display: flex;
-  width: 80%;
-  margin: auto;
-  justify-content: space-between;
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
+  border-radius: 50px;
+  color: black;
+  padding: 30px;
 }
+

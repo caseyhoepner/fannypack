@@ -1,15 +1,22 @@
 import Geocode from "react-geocode";
 import { weatherApiKey, googleApiKey } from './API-key.js'
-
+import Moment from 'react-moment';
+import 'moment-timezone';
+var moment = require('moment');
 
 export const fetchWeather = async (city) => {
   const latLong = await getLatLong(city)
-  const url = `https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/${weatherApiKey}/${latLong.lat},${latLong.lng}`;
+  const time = moment().format(); 
+  const url = `https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/${weatherApiKey}/${latLong.lat},${latLong.lng},${time}`;
+
+// [YYYY]-[MM]-[DD]T[HH]:[MM]:[SS][timezone]
+
   const response = await fetch(url);
   if (!response.ok) {
     console.log(response.statusText)
   } else {
   const weatherData = await response.json();
+  console.log(weatherData)
   return cleanData(weatherData)
   }
 }
@@ -32,37 +39,3 @@ const cleanData = (weatherData) => {
     icon
   }
 }
-
-
-
-
-
-
-// export const getLatLong = async (city, state) => {
-//   const geocoder = require('geocoder');
-//   const data = await geocoder.geocode(`${city}, ${state}`, function ( err, data ) {
-//     console.log(data)
-//   });
-// }
-
-
-
- 
-// set Google Maps Geocoding API for purposes of quota management. Its optional but recommended.
-// Geocode.setApiKey("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
- 
-// Geocode.enableDebug();
- 
-// Get address from latidude & longitude.
-// Geocode.fromLatLng("48.8583701", "2.2922926").then(
-//   response => {
-//     const address = response.results[0].formatted_address;
-//     console.log(address);
-//   },
-//   error => {
-//     console.error(error);
-//   }
-// );
- 
-// Get latidude & longitude from address.
-

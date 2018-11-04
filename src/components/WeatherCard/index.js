@@ -30,7 +30,9 @@ const WeatherCard = ({ highTemp = 90, lowTemp, summary, icon, city, day}) => {
 
     const filteredEssentials = filterEssentials(essentials)
 
-    return filteredEssentials.map(filteredEssential => <li key={filteredEssential}>{filteredEssential}</li>)
+    return filteredEssentials.map(filteredEssential => {
+      return <li key={filteredEssential}>{filteredEssential}</li>
+      })
   }
 
   const filterEssentials = (essentials) => {
@@ -46,13 +48,13 @@ const WeatherCard = ({ highTemp = 90, lowTemp, summary, icon, city, day}) => {
     <div className="wc-container">
       <div className='wc-weather-container'>
         <h2>{`Day ${day}: ${city}`}</h2>
-          <p>High: {highTemp}</p>
-          <p>Low: {lowTemp}</p>
+          <p>High: {highTemp.toFixed(0)}</p>
+          <p>Low: {lowTemp.toFixed(0)}</p>
           <p>{summary}</p>
-          <img className='wc-icon' src={require(`../../assets/${icon}.svg`)} />
+          <img className='wc-icon' src={require(`../../assets/${icon}-gradient.svg`)} />
       </div>
       <section>
-        <h3>Essentials to Bring:</h3>
+        <h3>What to Pack:</h3>
           <ul>
             { getEssentials() }
           </ul>
