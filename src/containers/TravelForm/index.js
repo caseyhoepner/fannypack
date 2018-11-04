@@ -17,13 +17,15 @@ export class TravelForm extends Component {
       day4: '',
       day5: '',
       day6: '',
-      day7: '',
+      day7: ''
     }
   }
 
   handleChange = (event) => {
     event.preventDefault()
-    this.setState({[event.target.name]: event.target.value})
+    const { name, value } = event.target;
+
+    this.setState({[name]: value})
   }
 
   handleSubmit = async (event) => {
@@ -85,7 +87,7 @@ export class TravelForm extends Component {
               <section className='tf-tomorrow tf-day-input'>
                 <p className='tf-day'>Tomorrow</p>
                   <input 
-                    className='tf-form-component tf-input-component'
+                    className='test-input tf-form-component tf-input-component'
                     onChange={this.handleChange}
                     placeholder='Destination'
                     name='day1'
@@ -168,7 +170,7 @@ export class TravelForm extends Component {
   }
 }
 
-const mapDispatchToProps = (dispatch) => ({
+export const mapDispatchToProps = (dispatch) => ({
   setWeather: (weatherData, city, day) => dispatch(setWeather(weatherData, city, day)), 
   changeToLoaded: (bool) => dispatch(changeToLoaded(bool))
 })

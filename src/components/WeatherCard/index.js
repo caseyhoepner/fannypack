@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { packingData } from '../../utils/packingData';
 import './WeatherCard.css';
 
-const WeatherCard = ({ highTemp = 90, lowTemp, summary, icon, city, day}) => {
+export const WeatherCard = ({ highTemp, lowTemp, summary, icon, city, day}) => {
 
   const getEssentials = () => {
     let essentials = [];
@@ -44,14 +44,26 @@ const WeatherCard = ({ highTemp = 90, lowTemp, summary, icon, city, day}) => {
     }, []);
   }
 
+  const formatCity = function (city) {
+    city = city.toLowerCase().split(' ');
+    for (var i = 0; i < city.length; i++) {
+      city[i] = city[i].charAt(0).toUpperCase() + city[i].slice(1);
+    }
+    return city.join(' ');
+  };
+
   return (
     <div className="wc-container">
       <div className='wc-weather-container'>
-        <h2>{`Day ${day}: ${city}`}</h2>
-          <p>High: {highTemp.toFixed(0)}</p>
-          <p>Low: {lowTemp.toFixed(0)}</p>
-          <p>{summary}</p>
-          <img className='wc-icon' src={require(`../../assets/${icon}-gradient.svg`)} />
+        <h2>{`Day ${day}: ${formatCity(city)}`}</h2>
+          <section className='wc-temp-icon-container'>
+            <img className='wc-icon' src={require(`../../assets/${icon}-gradient.svg`)} />
+            <section className='wc-temp-container'>
+              <p>High: {highTemp.toFixed(0)}</p>
+              <p>Low: {lowTemp.toFixed(0)}</p>
+              <p className='wc-summary'>{summary}</p>
+            </section>
+          </section>
       </div>
       <section>
         <h3>What to Pack:</h3>
@@ -63,7 +75,7 @@ const WeatherCard = ({ highTemp = 90, lowTemp, summary, icon, city, day}) => {
   );
 }
 
-const mapStateToProps = (state) => ({
+export const mapStateToProps = (state) => ({
   weatherData: state.weatherData
 })
 

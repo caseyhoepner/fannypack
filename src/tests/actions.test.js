@@ -8,8 +8,17 @@ describe('actions', () => {
       type: 'SET_WEATHER',
       weatherData
     }
-    const result = Actions.setWeather(mockWeatherData);
+    const result = Actions.setWeather(mockWeatherData, 'Denver', 1);
 
     expect(result).toEqual(expectedAction);
+  })
+
+  it('should have a type of CHANGE_TO_LOADED', () => {
+    const bool = true;
+    const expectedAction = {
+      type: 'CHANGE_TO_LOADED',
+      isLoaded: true
+    }
+    const result = Actions.changeToLoaded(bool)
   })
 })

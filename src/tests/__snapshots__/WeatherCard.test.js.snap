@@ -1,0 +1,3413 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WeatherCard WeatherCard Component should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <WeatherCard
+    city="Denver"
+    highTemp={81}
+    icon="clear-day"
+    lowTemp={80}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="wc-weather-container"
+        >
+          <h2>
+            Day undefined: Denver
+          </h2>
+          <section
+            className="wc-temp-icon-container"
+          >
+            <img
+              className="wc-icon"
+              src={
+                Object {
+                  "ReactComponent": [Function],
+                  "__esModule": true,
+                  "default": "clear-day-gradient.svg",
+                }
+              }
+            />
+            <section
+              className="wc-temp-container"
+            >
+              <p>
+                High: 
+                81
+              </p>
+              <p>
+                Low: 
+                80
+              </p>
+              <p
+                className="wc-summary"
+              />
+            </section>
+          </section>
+        </div>,
+        <section>
+          <h3>
+            What to Pack:
+          </h3>
+          <ul>
+            <li>
+              short-sleeves
+            </li>
+            <li>
+              shorts/skirt
+            </li>
+            <li>
+              open-toed shoes
+            </li>
+            <li>
+              sunglasses
+            </li>
+            <li>
+              sunscreen
+            </li>
+            <li>
+              hat
+            </li>
+          </ul>
+        </section>,
+      ],
+      "className": "wc-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h2>
+              Day undefined: Denver
+            </h2>,
+            <section
+              className="wc-temp-icon-container"
+            >
+              <img
+                className="wc-icon"
+                src={
+                  Object {
+                    "ReactComponent": [Function],
+                    "__esModule": true,
+                    "default": "clear-day-gradient.svg",
+                  }
+                }
+              />
+              <section
+                className="wc-temp-container"
+              >
+                <p>
+                  High: 
+                  81
+                </p>
+                <p>
+                  Low: 
+                  80
+                </p>
+                <p
+                  className="wc-summary"
+                />
+              </section>
+            </section>,
+          ],
+          "className": "wc-weather-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Day undefined: Denver",
+            },
+            "ref": null,
+            "rendered": "Day undefined: Denver",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <img
+                  className="wc-icon"
+                  src={
+                    Object {
+                      "ReactComponent": [Function],
+                      "__esModule": true,
+                      "default": "clear-day-gradient.svg",
+                    }
+                  }
+                />,
+                <section
+                  className="wc-temp-container"
+                >
+                  <p>
+                    High: 
+                    81
+                  </p>
+                  <p>
+                    Low: 
+                    80
+                  </p>
+                  <p
+                    className="wc-summary"
+                  />
+                </section>,
+              ],
+              "className": "wc-temp-icon-container",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "wc-icon",
+                  "src": Object {
+                    "ReactComponent": [Function],
+                    "__esModule": true,
+                    "default": "clear-day-gradient.svg",
+                  },
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <p>
+                      High: 
+                      81
+                    </p>,
+                    <p>
+                      Low: 
+                      80
+                    </p>,
+                    <p
+                      className="wc-summary"
+                    />,
+                  ],
+                  "className": "wc-temp-container",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "High: ",
+                        "81",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "High: ",
+                      "81",
+                    ],
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "Low: ",
+                        "80",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Low: ",
+                      "80",
+                    ],
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": undefined,
+                      "className": "wc-summary",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "p",
+                  },
+                ],
+                "type": "section",
+              },
+            ],
+            "type": "section",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h3>
+              What to Pack:
+            </h3>,
+            <ul>
+              <li>
+                short-sleeves
+              </li>
+              <li>
+                shorts/skirt
+              </li>
+              <li>
+                open-toed shoes
+              </li>
+              <li>
+                sunglasses
+              </li>
+              <li>
+                sunscreen
+              </li>
+              <li>
+                hat
+              </li>
+            </ul>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "What to Pack:",
+            },
+            "ref": null,
+            "rendered": "What to Pack:",
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <li>
+                  short-sleeves
+                </li>,
+                <li>
+                  shorts/skirt
+                </li>,
+                <li>
+                  open-toed shoes
+                </li>,
+                <li>
+                  sunglasses
+                </li>,
+                <li>
+                  sunscreen
+                </li>,
+                <li>
+                  hat
+                </li>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "short-sleeves",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "short-sleeves",
+                },
+                "ref": null,
+                "rendered": "short-sleeves",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": "shorts/skirt",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "shorts/skirt",
+                },
+                "ref": null,
+                "rendered": "shorts/skirt",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": "open-toed shoes",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "open-toed shoes",
+                },
+                "ref": null,
+                "rendered": "open-toed shoes",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": "sunglasses",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "sunglasses",
+                },
+                "ref": null,
+                "rendered": "sunglasses",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": "sunscreen",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "sunscreen",
+                },
+                "ref": null,
+                "rendered": "sunscreen",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": "hat",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "hat",
+                },
+                "ref": null,
+                "rendered": "hat",
+                "type": "li",
+              },
+            ],
+            "type": "ul",
+          },
+        ],
+        "type": "section",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="wc-weather-container"
+          >
+            <h2>
+              Day undefined: Denver
+            </h2>
+            <section
+              className="wc-temp-icon-container"
+            >
+              <img
+                className="wc-icon"
+                src={
+                  Object {
+                    "ReactComponent": [Function],
+                    "__esModule": true,
+                    "default": "clear-day-gradient.svg",
+                  }
+                }
+              />
+              <section
+                className="wc-temp-container"
+              >
+                <p>
+                  High: 
+                  81
+                </p>
+                <p>
+                  Low: 
+                  80
+                </p>
+                <p
+                  className="wc-summary"
+                />
+              </section>
+            </section>
+          </div>,
+          <section>
+            <h3>
+              What to Pack:
+            </h3>
+            <ul>
+              <li>
+                short-sleeves
+              </li>
+              <li>
+                shorts/skirt
+              </li>
+              <li>
+                open-toed shoes
+              </li>
+              <li>
+                sunglasses
+              </li>
+              <li>
+                sunscreen
+              </li>
+              <li>
+                hat
+              </li>
+            </ul>
+          </section>,
+        ],
+        "className": "wc-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h2>
+                Day undefined: Denver
+              </h2>,
+              <section
+                className="wc-temp-icon-container"
+              >
+                <img
+                  className="wc-icon"
+                  src={
+                    Object {
+                      "ReactComponent": [Function],
+                      "__esModule": true,
+                      "default": "clear-day-gradient.svg",
+                    }
+                  }
+                />
+                <section
+                  className="wc-temp-container"
+                >
+                  <p>
+                    High: 
+                    81
+                  </p>
+                  <p>
+                    Low: 
+                    80
+                  </p>
+                  <p
+                    className="wc-summary"
+                  />
+                </section>
+              </section>,
+            ],
+            "className": "wc-weather-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Day undefined: Denver",
+              },
+              "ref": null,
+              "rendered": "Day undefined: Denver",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <img
+                    className="wc-icon"
+                    src={
+                      Object {
+                        "ReactComponent": [Function],
+                        "__esModule": true,
+                        "default": "clear-day-gradient.svg",
+                      }
+                    }
+                  />,
+                  <section
+                    className="wc-temp-container"
+                  >
+                    <p>
+                      High: 
+                      81
+                    </p>
+                    <p>
+                      Low: 
+                      80
+                    </p>
+                    <p
+                      className="wc-summary"
+                    />
+                  </section>,
+                ],
+                "className": "wc-temp-icon-container",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "wc-icon",
+                    "src": Object {
+                      "ReactComponent": [Function],
+                      "__esModule": true,
+                      "default": "clear-day-gradient.svg",
+                    },
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "img",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <p>
+                        High: 
+                        81
+                      </p>,
+                      <p>
+                        Low: 
+                        80
+                      </p>,
+                      <p
+                        className="wc-summary"
+                      />,
+                    ],
+                    "className": "wc-temp-container",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "High: ",
+                          "81",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "High: ",
+                        "81",
+                      ],
+                      "type": "p",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "Low: ",
+                          "80",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "Low: ",
+                        "80",
+                      ],
+                      "type": "p",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": undefined,
+                        "className": "wc-summary",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "p",
+                    },
+                  ],
+                  "type": "section",
+                },
+              ],
+              "type": "section",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h3>
+                What to Pack:
+              </h3>,
+              <ul>
+                <li>
+                  short-sleeves
+                </li>
+                <li>
+                  shorts/skirt
+                </li>
+                <li>
+                  open-toed shoes
+                </li>
+                <li>
+                  sunglasses
+                </li>
+                <li>
+                  sunscreen
+                </li>
+                <li>
+                  hat
+                </li>
+              </ul>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "What to Pack:",
+              },
+              "ref": null,
+              "rendered": "What to Pack:",
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <li>
+                    short-sleeves
+                  </li>,
+                  <li>
+                    shorts/skirt
+                  </li>,
+                  <li>
+                    open-toed shoes
+                  </li>,
+                  <li>
+                    sunglasses
+                  </li>,
+                  <li>
+                    sunscreen
+                  </li>,
+                  <li>
+                    hat
+                  </li>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": "short-sleeves",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "short-sleeves",
+                  },
+                  "ref": null,
+                  "rendered": "short-sleeves",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": "shorts/skirt",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "shorts/skirt",
+                  },
+                  "ref": null,
+                  "rendered": "shorts/skirt",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": "open-toed shoes",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "open-toed shoes",
+                  },
+                  "ref": null,
+                  "rendered": "open-toed shoes",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": "sunglasses",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "sunglasses",
+                  },
+                  "ref": null,
+                  "rendered": "sunglasses",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": "sunscreen",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "sunscreen",
+                  },
+                  "ref": null,
+                  "rendered": "sunscreen",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": "hat",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "hat",
+                  },
+                  "ref": null,
+                  "rendered": "hat",
+                  "type": "li",
+                },
+              ],
+              "type": "ul",
+            },
+          ],
+          "type": "section",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`WeatherCard WeatherCard Component should match the snapshot 2`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <WeatherCard
+    city="Denver"
+    highTemp={79}
+    icon="clear-day"
+    lowTemp={71}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="wc-weather-container"
+        >
+          <h2>
+            Day undefined: Denver
+          </h2>
+          <section
+            className="wc-temp-icon-container"
+          >
+            <img
+              className="wc-icon"
+              src={
+                Object {
+                  "ReactComponent": [Function],
+                  "__esModule": true,
+                  "default": "clear-day-gradient.svg",
+                }
+              }
+            />
+            <section
+              className="wc-temp-container"
+            >
+              <p>
+                High: 
+                79
+              </p>
+              <p>
+                Low: 
+                71
+              </p>
+              <p
+                className="wc-summary"
+              />
+            </section>
+          </section>
+        </div>,
+        <section>
+          <h3>
+            What to Pack:
+          </h3>
+          <ul>
+            <li>
+              short-sleeves
+            </li>
+            <li>
+              open-toed shoes
+            </li>
+            <li>
+              sunglasses
+            </li>
+            <li>
+              sunscreen
+            </li>
+            <li>
+              hat
+            </li>
+          </ul>
+        </section>,
+      ],
+      "className": "wc-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h2>
+              Day undefined: Denver
+            </h2>,
+            <section
+              className="wc-temp-icon-container"
+            >
+              <img
+                className="wc-icon"
+                src={
+                  Object {
+                    "ReactComponent": [Function],
+                    "__esModule": true,
+                    "default": "clear-day-gradient.svg",
+                  }
+                }
+              />
+              <section
+                className="wc-temp-container"
+              >
+                <p>
+                  High: 
+                  79
+                </p>
+                <p>
+                  Low: 
+                  71
+                </p>
+                <p
+                  className="wc-summary"
+                />
+              </section>
+            </section>,
+          ],
+          "className": "wc-weather-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Day undefined: Denver",
+            },
+            "ref": null,
+            "rendered": "Day undefined: Denver",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <img
+                  className="wc-icon"
+                  src={
+                    Object {
+                      "ReactComponent": [Function],
+                      "__esModule": true,
+                      "default": "clear-day-gradient.svg",
+                    }
+                  }
+                />,
+                <section
+                  className="wc-temp-container"
+                >
+                  <p>
+                    High: 
+                    79
+                  </p>
+                  <p>
+                    Low: 
+                    71
+                  </p>
+                  <p
+                    className="wc-summary"
+                  />
+                </section>,
+              ],
+              "className": "wc-temp-icon-container",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "wc-icon",
+                  "src": Object {
+                    "ReactComponent": [Function],
+                    "__esModule": true,
+                    "default": "clear-day-gradient.svg",
+                  },
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <p>
+                      High: 
+                      79
+                    </p>,
+                    <p>
+                      Low: 
+                      71
+                    </p>,
+                    <p
+                      className="wc-summary"
+                    />,
+                  ],
+                  "className": "wc-temp-container",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "High: ",
+                        "79",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "High: ",
+                      "79",
+                    ],
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "Low: ",
+                        "71",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Low: ",
+                      "71",
+                    ],
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": undefined,
+                      "className": "wc-summary",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "p",
+                  },
+                ],
+                "type": "section",
+              },
+            ],
+            "type": "section",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h3>
+              What to Pack:
+            </h3>,
+            <ul>
+              <li>
+                short-sleeves
+              </li>
+              <li>
+                open-toed shoes
+              </li>
+              <li>
+                sunglasses
+              </li>
+              <li>
+                sunscreen
+              </li>
+              <li>
+                hat
+              </li>
+            </ul>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "What to Pack:",
+            },
+            "ref": null,
+            "rendered": "What to Pack:",
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <li>
+                  short-sleeves
+                </li>,
+                <li>
+                  open-toed shoes
+                </li>,
+                <li>
+                  sunglasses
+                </li>,
+                <li>
+                  sunscreen
+                </li>,
+                <li>
+                  hat
+                </li>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "short-sleeves",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "short-sleeves",
+                },
+                "ref": null,
+                "rendered": "short-sleeves",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": "open-toed shoes",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "open-toed shoes",
+                },
+                "ref": null,
+                "rendered": "open-toed shoes",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": "sunglasses",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "sunglasses",
+                },
+                "ref": null,
+                "rendered": "sunglasses",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": "sunscreen",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "sunscreen",
+                },
+                "ref": null,
+                "rendered": "sunscreen",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": "hat",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "hat",
+                },
+                "ref": null,
+                "rendered": "hat",
+                "type": "li",
+              },
+            ],
+            "type": "ul",
+          },
+        ],
+        "type": "section",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="wc-weather-container"
+          >
+            <h2>
+              Day undefined: Denver
+            </h2>
+            <section
+              className="wc-temp-icon-container"
+            >
+              <img
+                className="wc-icon"
+                src={
+                  Object {
+                    "ReactComponent": [Function],
+                    "__esModule": true,
+                    "default": "clear-day-gradient.svg",
+                  }
+                }
+              />
+              <section
+                className="wc-temp-container"
+              >
+                <p>
+                  High: 
+                  79
+                </p>
+                <p>
+                  Low: 
+                  71
+                </p>
+                <p
+                  className="wc-summary"
+                />
+              </section>
+            </section>
+          </div>,
+          <section>
+            <h3>
+              What to Pack:
+            </h3>
+            <ul>
+              <li>
+                short-sleeves
+              </li>
+              <li>
+                open-toed shoes
+              </li>
+              <li>
+                sunglasses
+              </li>
+              <li>
+                sunscreen
+              </li>
+              <li>
+                hat
+              </li>
+            </ul>
+          </section>,
+        ],
+        "className": "wc-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h2>
+                Day undefined: Denver
+              </h2>,
+              <section
+                className="wc-temp-icon-container"
+              >
+                <img
+                  className="wc-icon"
+                  src={
+                    Object {
+                      "ReactComponent": [Function],
+                      "__esModule": true,
+                      "default": "clear-day-gradient.svg",
+                    }
+                  }
+                />
+                <section
+                  className="wc-temp-container"
+                >
+                  <p>
+                    High: 
+                    79
+                  </p>
+                  <p>
+                    Low: 
+                    71
+                  </p>
+                  <p
+                    className="wc-summary"
+                  />
+                </section>
+              </section>,
+            ],
+            "className": "wc-weather-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Day undefined: Denver",
+              },
+              "ref": null,
+              "rendered": "Day undefined: Denver",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <img
+                    className="wc-icon"
+                    src={
+                      Object {
+                        "ReactComponent": [Function],
+                        "__esModule": true,
+                        "default": "clear-day-gradient.svg",
+                      }
+                    }
+                  />,
+                  <section
+                    className="wc-temp-container"
+                  >
+                    <p>
+                      High: 
+                      79
+                    </p>
+                    <p>
+                      Low: 
+                      71
+                    </p>
+                    <p
+                      className="wc-summary"
+                    />
+                  </section>,
+                ],
+                "className": "wc-temp-icon-container",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "wc-icon",
+                    "src": Object {
+                      "ReactComponent": [Function],
+                      "__esModule": true,
+                      "default": "clear-day-gradient.svg",
+                    },
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "img",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <p>
+                        High: 
+                        79
+                      </p>,
+                      <p>
+                        Low: 
+                        71
+                      </p>,
+                      <p
+                        className="wc-summary"
+                      />,
+                    ],
+                    "className": "wc-temp-container",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "High: ",
+                          "79",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "High: ",
+                        "79",
+                      ],
+                      "type": "p",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "Low: ",
+                          "71",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "Low: ",
+                        "71",
+                      ],
+                      "type": "p",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": undefined,
+                        "className": "wc-summary",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "p",
+                    },
+                  ],
+                  "type": "section",
+                },
+              ],
+              "type": "section",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h3>
+                What to Pack:
+              </h3>,
+              <ul>
+                <li>
+                  short-sleeves
+                </li>
+                <li>
+                  open-toed shoes
+                </li>
+                <li>
+                  sunglasses
+                </li>
+                <li>
+                  sunscreen
+                </li>
+                <li>
+                  hat
+                </li>
+              </ul>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "What to Pack:",
+              },
+              "ref": null,
+              "rendered": "What to Pack:",
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <li>
+                    short-sleeves
+                  </li>,
+                  <li>
+                    open-toed shoes
+                  </li>,
+                  <li>
+                    sunglasses
+                  </li>,
+                  <li>
+                    sunscreen
+                  </li>,
+                  <li>
+                    hat
+                  </li>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": "short-sleeves",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "short-sleeves",
+                  },
+                  "ref": null,
+                  "rendered": "short-sleeves",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": "open-toed shoes",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "open-toed shoes",
+                  },
+                  "ref": null,
+                  "rendered": "open-toed shoes",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": "sunglasses",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "sunglasses",
+                  },
+                  "ref": null,
+                  "rendered": "sunglasses",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": "sunscreen",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "sunscreen",
+                  },
+                  "ref": null,
+                  "rendered": "sunscreen",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": "hat",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "hat",
+                  },
+                  "ref": null,
+                  "rendered": "hat",
+                  "type": "li",
+                },
+              ],
+              "type": "ul",
+            },
+          ],
+          "type": "section",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`WeatherCard WeatherCard Component should match the snapshot 3`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <WeatherCard
+    city="Denver"
+    highTemp={69}
+    icon="clear-day"
+    lowTemp={41}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="wc-weather-container"
+        >
+          <h2>
+            Day undefined: Denver
+          </h2>
+          <section
+            className="wc-temp-icon-container"
+          >
+            <img
+              className="wc-icon"
+              src={
+                Object {
+                  "ReactComponent": [Function],
+                  "__esModule": true,
+                  "default": "clear-day-gradient.svg",
+                }
+              }
+            />
+            <section
+              className="wc-temp-container"
+            >
+              <p>
+                High: 
+                69
+              </p>
+              <p>
+                Low: 
+                41
+              </p>
+              <p
+                className="wc-summary"
+              />
+            </section>
+          </section>
+        </div>,
+        <section>
+          <h3>
+            What to Pack:
+          </h3>
+          <ul>
+            <li>
+              jacket
+            </li>
+            <li>
+              warm hat
+            </li>
+            <li>
+              close-toed shoes
+            </li>
+            <li>
+              sunglasses
+            </li>
+            <li>
+              sunscreen
+            </li>
+            <li>
+              hat
+            </li>
+          </ul>
+        </section>,
+      ],
+      "className": "wc-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h2>
+              Day undefined: Denver
+            </h2>,
+            <section
+              className="wc-temp-icon-container"
+            >
+              <img
+                className="wc-icon"
+                src={
+                  Object {
+                    "ReactComponent": [Function],
+                    "__esModule": true,
+                    "default": "clear-day-gradient.svg",
+                  }
+                }
+              />
+              <section
+                className="wc-temp-container"
+              >
+                <p>
+                  High: 
+                  69
+                </p>
+                <p>
+                  Low: 
+                  41
+                </p>
+                <p
+                  className="wc-summary"
+                />
+              </section>
+            </section>,
+          ],
+          "className": "wc-weather-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Day undefined: Denver",
+            },
+            "ref": null,
+            "rendered": "Day undefined: Denver",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <img
+                  className="wc-icon"
+                  src={
+                    Object {
+                      "ReactComponent": [Function],
+                      "__esModule": true,
+                      "default": "clear-day-gradient.svg",
+                    }
+                  }
+                />,
+                <section
+                  className="wc-temp-container"
+                >
+                  <p>
+                    High: 
+                    69
+                  </p>
+                  <p>
+                    Low: 
+                    41
+                  </p>
+                  <p
+                    className="wc-summary"
+                  />
+                </section>,
+              ],
+              "className": "wc-temp-icon-container",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "wc-icon",
+                  "src": Object {
+                    "ReactComponent": [Function],
+                    "__esModule": true,
+                    "default": "clear-day-gradient.svg",
+                  },
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <p>
+                      High: 
+                      69
+                    </p>,
+                    <p>
+                      Low: 
+                      41
+                    </p>,
+                    <p
+                      className="wc-summary"
+                    />,
+                  ],
+                  "className": "wc-temp-container",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "High: ",
+                        "69",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "High: ",
+                      "69",
+                    ],
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "Low: ",
+                        "41",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Low: ",
+                      "41",
+                    ],
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": undefined,
+                      "className": "wc-summary",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "p",
+                  },
+                ],
+                "type": "section",
+              },
+            ],
+            "type": "section",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h3>
+              What to Pack:
+            </h3>,
+            <ul>
+              <li>
+                jacket
+              </li>
+              <li>
+                warm hat
+              </li>
+              <li>
+                close-toed shoes
+              </li>
+              <li>
+                sunglasses
+              </li>
+              <li>
+                sunscreen
+              </li>
+              <li>
+                hat
+              </li>
+            </ul>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "What to Pack:",
+            },
+            "ref": null,
+            "rendered": "What to Pack:",
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <li>
+                  jacket
+                </li>,
+                <li>
+                  warm hat
+                </li>,
+                <li>
+                  close-toed shoes
+                </li>,
+                <li>
+                  sunglasses
+                </li>,
+                <li>
+                  sunscreen
+                </li>,
+                <li>
+                  hat
+                </li>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "jacket",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "jacket",
+                },
+                "ref": null,
+                "rendered": "jacket",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": "warm hat",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "warm hat",
+                },
+                "ref": null,
+                "rendered": "warm hat",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": "close-toed shoes",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "close-toed shoes",
+                },
+                "ref": null,
+                "rendered": "close-toed shoes",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": "sunglasses",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "sunglasses",
+                },
+                "ref": null,
+                "rendered": "sunglasses",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": "sunscreen",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "sunscreen",
+                },
+                "ref": null,
+                "rendered": "sunscreen",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": "hat",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "hat",
+                },
+                "ref": null,
+                "rendered": "hat",
+                "type": "li",
+              },
+            ],
+            "type": "ul",
+          },
+        ],
+        "type": "section",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="wc-weather-container"
+          >
+            <h2>
+              Day undefined: Denver
+            </h2>
+            <section
+              className="wc-temp-icon-container"
+            >
+              <img
+                className="wc-icon"
+                src={
+                  Object {
+                    "ReactComponent": [Function],
+                    "__esModule": true,
+                    "default": "clear-day-gradient.svg",
+                  }
+                }
+              />
+              <section
+                className="wc-temp-container"
+              >
+                <p>
+                  High: 
+                  69
+                </p>
+                <p>
+                  Low: 
+                  41
+                </p>
+                <p
+                  className="wc-summary"
+                />
+              </section>
+            </section>
+          </div>,
+          <section>
+            <h3>
+              What to Pack:
+            </h3>
+            <ul>
+              <li>
+                jacket
+              </li>
+              <li>
+                warm hat
+              </li>
+              <li>
+                close-toed shoes
+              </li>
+              <li>
+                sunglasses
+              </li>
+              <li>
+                sunscreen
+              </li>
+              <li>
+                hat
+              </li>
+            </ul>
+          </section>,
+        ],
+        "className": "wc-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h2>
+                Day undefined: Denver
+              </h2>,
+              <section
+                className="wc-temp-icon-container"
+              >
+                <img
+                  className="wc-icon"
+                  src={
+                    Object {
+                      "ReactComponent": [Function],
+                      "__esModule": true,
+                      "default": "clear-day-gradient.svg",
+                    }
+                  }
+                />
+                <section
+                  className="wc-temp-container"
+                >
+                  <p>
+                    High: 
+                    69
+                  </p>
+                  <p>
+                    Low: 
+                    41
+                  </p>
+                  <p
+                    className="wc-summary"
+                  />
+                </section>
+              </section>,
+            ],
+            "className": "wc-weather-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Day undefined: Denver",
+              },
+              "ref": null,
+              "rendered": "Day undefined: Denver",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <img
+                    className="wc-icon"
+                    src={
+                      Object {
+                        "ReactComponent": [Function],
+                        "__esModule": true,
+                        "default": "clear-day-gradient.svg",
+                      }
+                    }
+                  />,
+                  <section
+                    className="wc-temp-container"
+                  >
+                    <p>
+                      High: 
+                      69
+                    </p>
+                    <p>
+                      Low: 
+                      41
+                    </p>
+                    <p
+                      className="wc-summary"
+                    />
+                  </section>,
+                ],
+                "className": "wc-temp-icon-container",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "wc-icon",
+                    "src": Object {
+                      "ReactComponent": [Function],
+                      "__esModule": true,
+                      "default": "clear-day-gradient.svg",
+                    },
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "img",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <p>
+                        High: 
+                        69
+                      </p>,
+                      <p>
+                        Low: 
+                        41
+                      </p>,
+                      <p
+                        className="wc-summary"
+                      />,
+                    ],
+                    "className": "wc-temp-container",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "High: ",
+                          "69",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "High: ",
+                        "69",
+                      ],
+                      "type": "p",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "Low: ",
+                          "41",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "Low: ",
+                        "41",
+                      ],
+                      "type": "p",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": undefined,
+                        "className": "wc-summary",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "p",
+                    },
+                  ],
+                  "type": "section",
+                },
+              ],
+              "type": "section",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h3>
+                What to Pack:
+              </h3>,
+              <ul>
+                <li>
+                  jacket
+                </li>
+                <li>
+                  warm hat
+                </li>
+                <li>
+                  close-toed shoes
+                </li>
+                <li>
+                  sunglasses
+                </li>
+                <li>
+                  sunscreen
+                </li>
+                <li>
+                  hat
+                </li>
+              </ul>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "What to Pack:",
+              },
+              "ref": null,
+              "rendered": "What to Pack:",
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <li>
+                    jacket
+                  </li>,
+                  <li>
+                    warm hat
+                  </li>,
+                  <li>
+                    close-toed shoes
+                  </li>,
+                  <li>
+                    sunglasses
+                  </li>,
+                  <li>
+                    sunscreen
+                  </li>,
+                  <li>
+                    hat
+                  </li>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": "jacket",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "jacket",
+                  },
+                  "ref": null,
+                  "rendered": "jacket",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": "warm hat",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "warm hat",
+                  },
+                  "ref": null,
+                  "rendered": "warm hat",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": "close-toed shoes",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "close-toed shoes",
+                  },
+                  "ref": null,
+                  "rendered": "close-toed shoes",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": "sunglasses",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "sunglasses",
+                  },
+                  "ref": null,
+                  "rendered": "sunglasses",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": "sunscreen",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "sunscreen",
+                  },
+                  "ref": null,
+                  "rendered": "sunscreen",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": "hat",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "hat",
+                  },
+                  "ref": null,
+                  "rendered": "hat",
+                  "type": "li",
+                },
+              ],
+              "type": "ul",
+            },
+          ],
+          "type": "section",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`WeatherCard WeatherCard Component should match the snapshot 4`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <WeatherCard
+    city="Denver"
+    highTemp={39}
+    icon="clear-day"
+    lowTemp={38}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="wc-weather-container"
+        >
+          <h2>
+            Day undefined: Denver
+          </h2>
+          <section
+            className="wc-temp-icon-container"
+          >
+            <img
+              className="wc-icon"
+              src={
+                Object {
+                  "ReactComponent": [Function],
+                  "__esModule": true,
+                  "default": "clear-day-gradient.svg",
+                }
+              }
+            />
+            <section
+              className="wc-temp-container"
+            >
+              <p>
+                High: 
+                39
+              </p>
+              <p>
+                Low: 
+                38
+              </p>
+              <p
+                className="wc-summary"
+              />
+            </section>
+          </section>
+        </div>,
+        <section>
+          <h3>
+            What to Pack:
+          </h3>
+          <ul>
+            <li>
+              heavy coat
+            </li>
+            <li>
+              close-toed shoes
+            </li>
+            <li>
+              scarf
+            </li>
+            <li>
+              gloves
+            </li>
+            <li>
+              warm hat
+            </li>
+            <li>
+              sunglasses
+            </li>
+            <li>
+              sunscreen
+            </li>
+            <li>
+              hat
+            </li>
+          </ul>
+        </section>,
+      ],
+      "className": "wc-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h2>
+              Day undefined: Denver
+            </h2>,
+            <section
+              className="wc-temp-icon-container"
+            >
+              <img
+                className="wc-icon"
+                src={
+                  Object {
+                    "ReactComponent": [Function],
+                    "__esModule": true,
+                    "default": "clear-day-gradient.svg",
+                  }
+                }
+              />
+              <section
+                className="wc-temp-container"
+              >
+                <p>
+                  High: 
+                  39
+                </p>
+                <p>
+                  Low: 
+                  38
+                </p>
+                <p
+                  className="wc-summary"
+                />
+              </section>
+            </section>,
+          ],
+          "className": "wc-weather-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Day undefined: Denver",
+            },
+            "ref": null,
+            "rendered": "Day undefined: Denver",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <img
+                  className="wc-icon"
+                  src={
+                    Object {
+                      "ReactComponent": [Function],
+                      "__esModule": true,
+                      "default": "clear-day-gradient.svg",
+                    }
+                  }
+                />,
+                <section
+                  className="wc-temp-container"
+                >
+                  <p>
+                    High: 
+                    39
+                  </p>
+                  <p>
+                    Low: 
+                    38
+                  </p>
+                  <p
+                    className="wc-summary"
+                  />
+                </section>,
+              ],
+              "className": "wc-temp-icon-container",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "wc-icon",
+                  "src": Object {
+                    "ReactComponent": [Function],
+                    "__esModule": true,
+                    "default": "clear-day-gradient.svg",
+                  },
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <p>
+                      High: 
+                      39
+                    </p>,
+                    <p>
+                      Low: 
+                      38
+                    </p>,
+                    <p
+                      className="wc-summary"
+                    />,
+                  ],
+                  "className": "wc-temp-container",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "High: ",
+                        "39",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "High: ",
+                      "39",
+                    ],
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "Low: ",
+                        "38",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Low: ",
+                      "38",
+                    ],
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": undefined,
+                      "className": "wc-summary",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "p",
+                  },
+                ],
+                "type": "section",
+              },
+            ],
+            "type": "section",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h3>
+              What to Pack:
+            </h3>,
+            <ul>
+              <li>
+                heavy coat
+              </li>
+              <li>
+                close-toed shoes
+              </li>
+              <li>
+                scarf
+              </li>
+              <li>
+                gloves
+              </li>
+              <li>
+                warm hat
+              </li>
+              <li>
+                sunglasses
+              </li>
+              <li>
+                sunscreen
+              </li>
+              <li>
+                hat
+              </li>
+            </ul>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "What to Pack:",
+            },
+            "ref": null,
+            "rendered": "What to Pack:",
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <li>
+                  heavy coat
+                </li>,
+                <li>
+                  close-toed shoes
+                </li>,
+                <li>
+                  scarf
+                </li>,
+                <li>
+                  gloves
+                </li>,
+                <li>
+                  warm hat
+                </li>,
+                <li>
+                  sunglasses
+                </li>,
+                <li>
+                  sunscreen
+                </li>,
+                <li>
+                  hat
+                </li>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "heavy coat",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "heavy coat",
+                },
+                "ref": null,
+                "rendered": "heavy coat",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": "close-toed shoes",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "close-toed shoes",
+                },
+                "ref": null,
+                "rendered": "close-toed shoes",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": "scarf",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "scarf",
+                },
+                "ref": null,
+                "rendered": "scarf",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": "gloves",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "gloves",
+                },
+                "ref": null,
+                "rendered": "gloves",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": "warm hat",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "warm hat",
+                },
+                "ref": null,
+                "rendered": "warm hat",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": "sunglasses",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "sunglasses",
+                },
+                "ref": null,
+                "rendered": "sunglasses",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": "sunscreen",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "sunscreen",
+                },
+                "ref": null,
+                "rendered": "sunscreen",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": "hat",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "hat",
+                },
+                "ref": null,
+                "rendered": "hat",
+                "type": "li",
+              },
+            ],
+            "type": "ul",
+          },
+        ],
+        "type": "section",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="wc-weather-container"
+          >
+            <h2>
+              Day undefined: Denver
+            </h2>
+            <section
+              className="wc-temp-icon-container"
+            >
+              <img
+                className="wc-icon"
+                src={
+                  Object {
+                    "ReactComponent": [Function],
+                    "__esModule": true,
+                    "default": "clear-day-gradient.svg",
+                  }
+                }
+              />
+              <section
+                className="wc-temp-container"
+              >
+                <p>
+                  High: 
+                  39
+                </p>
+                <p>
+                  Low: 
+                  38
+                </p>
+                <p
+                  className="wc-summary"
+                />
+              </section>
+            </section>
+          </div>,
+          <section>
+            <h3>
+              What to Pack:
+            </h3>
+            <ul>
+              <li>
+                heavy coat
+              </li>
+              <li>
+                close-toed shoes
+              </li>
+              <li>
+                scarf
+              </li>
+              <li>
+                gloves
+              </li>
+              <li>
+                warm hat
+              </li>
+              <li>
+                sunglasses
+              </li>
+              <li>
+                sunscreen
+              </li>
+              <li>
+                hat
+              </li>
+            </ul>
+          </section>,
+        ],
+        "className": "wc-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h2>
+                Day undefined: Denver
+              </h2>,
+              <section
+                className="wc-temp-icon-container"
+              >
+                <img
+                  className="wc-icon"
+                  src={
+                    Object {
+                      "ReactComponent": [Function],
+                      "__esModule": true,
+                      "default": "clear-day-gradient.svg",
+                    }
+                  }
+                />
+                <section
+                  className="wc-temp-container"
+                >
+                  <p>
+                    High: 
+                    39
+                  </p>
+                  <p>
+                    Low: 
+                    38
+                  </p>
+                  <p
+                    className="wc-summary"
+                  />
+                </section>
+              </section>,
+            ],
+            "className": "wc-weather-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Day undefined: Denver",
+              },
+              "ref": null,
+              "rendered": "Day undefined: Denver",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <img
+                    className="wc-icon"
+                    src={
+                      Object {
+                        "ReactComponent": [Function],
+                        "__esModule": true,
+                        "default": "clear-day-gradient.svg",
+                      }
+                    }
+                  />,
+                  <section
+                    className="wc-temp-container"
+                  >
+                    <p>
+                      High: 
+                      39
+                    </p>
+                    <p>
+                      Low: 
+                      38
+                    </p>
+                    <p
+                      className="wc-summary"
+                    />
+                  </section>,
+                ],
+                "className": "wc-temp-icon-container",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "wc-icon",
+                    "src": Object {
+                      "ReactComponent": [Function],
+                      "__esModule": true,
+                      "default": "clear-day-gradient.svg",
+                    },
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "img",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <p>
+                        High: 
+                        39
+                      </p>,
+                      <p>
+                        Low: 
+                        38
+                      </p>,
+                      <p
+                        className="wc-summary"
+                      />,
+                    ],
+                    "className": "wc-temp-container",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "High: ",
+                          "39",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "High: ",
+                        "39",
+                      ],
+                      "type": "p",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "Low: ",
+                          "38",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "Low: ",
+                        "38",
+                      ],
+                      "type": "p",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": undefined,
+                        "className": "wc-summary",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "p",
+                    },
+                  ],
+                  "type": "section",
+                },
+              ],
+              "type": "section",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h3>
+                What to Pack:
+              </h3>,
+              <ul>
+                <li>
+                  heavy coat
+                </li>
+                <li>
+                  close-toed shoes
+                </li>
+                <li>
+                  scarf
+                </li>
+                <li>
+                  gloves
+                </li>
+                <li>
+                  warm hat
+                </li>
+                <li>
+                  sunglasses
+                </li>
+                <li>
+                  sunscreen
+                </li>
+                <li>
+                  hat
+                </li>
+              </ul>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "What to Pack:",
+              },
+              "ref": null,
+              "rendered": "What to Pack:",
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <li>
+                    heavy coat
+                  </li>,
+                  <li>
+                    close-toed shoes
+                  </li>,
+                  <li>
+                    scarf
+                  </li>,
+                  <li>
+                    gloves
+                  </li>,
+                  <li>
+                    warm hat
+                  </li>,
+                  <li>
+                    sunglasses
+                  </li>,
+                  <li>
+                    sunscreen
+                  </li>,
+                  <li>
+                    hat
+                  </li>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": "heavy coat",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "heavy coat",
+                  },
+                  "ref": null,
+                  "rendered": "heavy coat",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": "close-toed shoes",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "close-toed shoes",
+                  },
+                  "ref": null,
+                  "rendered": "close-toed shoes",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": "scarf",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "scarf",
+                  },
+                  "ref": null,
+                  "rendered": "scarf",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": "gloves",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "gloves",
+                  },
+                  "ref": null,
+                  "rendered": "gloves",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": "warm hat",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "warm hat",
+                  },
+                  "ref": null,
+                  "rendered": "warm hat",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": "sunglasses",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "sunglasses",
+                  },
+                  "ref": null,
+                  "rendered": "sunglasses",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": "sunscreen",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "sunscreen",
+                  },
+                  "ref": null,
+                  "rendered": "sunscreen",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": "hat",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "hat",
+                  },
+                  "ref": null,
+                  "rendered": "hat",
+                  "type": "li",
+                },
+              ],
+              "type": "ul",
+            },
+          ],
+          "type": "section",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
