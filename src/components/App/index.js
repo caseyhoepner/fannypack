@@ -9,17 +9,19 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Switch>
-          <Route 
-            exact path='/' 
-            component={ TravelForm } />
-          <Route 
-            path='/results'
-            component={ WeatherResults } />
-          <Route 
-            component={ PathError } />
-        </Switch>
+      <div className='app-container'>
+        <div className="App">
+          <Switch>
+            <Route 
+              exact path='/' 
+              component={ TravelForm } />
+            <Route 
+              path='/results'
+              component={ WeatherResults } />
+            <Route 
+              component={ PathError } />
+          </Switch>
+        </div>
       </div>
     );
   }

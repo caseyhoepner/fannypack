@@ -1,5 +1,5 @@
 .tf-form {
-  width: 50%;
+  width: 30%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -9,7 +9,7 @@
 
 .tf-title {
   font-size: 1.5rem;
-  margin: 40px 0 20px;
+  margin: 20px 0 20px;
 }
 
 .tf-input-component {
@@ -17,6 +17,15 @@
   border: none;
   margin-bottom: 5px;
   font-color: grey;
+  width: 100%;
+  color: #77AFED;
+  font-size: 1rem;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.tf-input-component::placeholder {
+  color: black;
 }
 
 .tf-btn {
@@ -28,6 +37,7 @@
   height: 50px;
   font-family: 'Shrikhand', cursive;
   font-size: 1.75rem;
+  color: #fff;
 }
 
 .tf-form-components {
@@ -40,7 +50,8 @@
 }
 
 .tf-day {
-  width: 100px;
+  width: 120px;
+  padding-right: 20px;
 }
 
 .hide {
@@ -49,12 +60,12 @@
 
 .tf-add-btn {
   color: #E45C8F;
-}
-
-.parent-container {
-  height: 100vh;
-}
-
-.tf-form-components {
-  font-color: grey;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  border: 2px solid #E45C8F;
+  border-radius: 50px;
+  height: 30px;
+  width: 30px;
 }
