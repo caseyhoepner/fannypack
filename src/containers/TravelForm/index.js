@@ -142,7 +142,7 @@ export class TravelForm extends Component {
                   />
               </section>              
               <button 
-                className='tf-add-btn'>+ Add a Day
+                className='tf-add-btn'>+
               </button>
               <button 
                 className='tf-form-component tf-btn'>
