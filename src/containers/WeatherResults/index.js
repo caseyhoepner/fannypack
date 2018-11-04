@@ -5,7 +5,7 @@ import Header from '../Header';
 
 import WeatherCard from '../../components/WeatherCard';
 import './WeatherResults.css';
-import loadingGif from '../../assets/loading.gif';
+import suitcase from '../../assets/suitcase.svg';
 
 const WeatherResults = ({ weatherData, isLoaded }) => {
   let results;
@@ -13,7 +13,7 @@ const WeatherResults = ({ weatherData, isLoaded }) => {
   if (!isLoaded) {
     results = 
       <section className='wr-loading-container'>
-        <img className='wr-loading-gif'src={loadingGif} />
+        <img className='wr-suitcase'src={suitcase} />
         <div className='typewriter'>
           <h1>Compiling your packing lists...</h1>
         </div>
