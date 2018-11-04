@@ -44,10 +44,18 @@ const WeatherCard = ({ highTemp = 90, lowTemp, summary, icon, city, day}) => {
     }, []);
   }
 
+  const formatCity = function (city) {
+    city = city.toLowerCase().split(' ');
+    for (var i = 0; i < city.length; i++) {
+      city[i] = city[i].charAt(0).toUpperCase() + city[i].slice(1);
+    }
+    return city.join(' ');
+  };
+
   return (
     <div className="wc-container">
       <div className='wc-weather-container'>
-        <h2>{`Day ${day}: ${city}`}</h2>
+        <h2>{`Day ${day}: ${formatCity(city)}`}</h2>
           <section className='wc-temp-icon-container'>
             <img className='wc-icon' src={require(`../../assets/${icon}-gradient.svg`)} />
             <section className='wc-temp-container'>
