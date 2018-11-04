@@ -12,4 +12,13 @@ describe('actions', () => {
 
     expect(result).toEqual(expectedAction);
   })
+
+  it('should have a type of CHANGE_TO_LOADED', () => {
+    const bool = true;
+    const expectedAction = {
+      type: 'CHANGE_TO_LOADED',
+      isLoaded: true
+    }
+    const result = Actions.changeToLoaded(bool)
+  })
 })
