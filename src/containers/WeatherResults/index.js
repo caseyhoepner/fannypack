@@ -6,6 +6,7 @@ import Header from '../Header';
 import WeatherCard from '../../components/WeatherCard';
 import './WeatherResults.css';
 import suitcase from '../../assets/suitcase.svg';
+const uuidv1 = require('uuid/v1');
 
 const WeatherResults = ({ weatherData, isLoaded }) => {
   let results;
@@ -20,7 +21,7 @@ const WeatherResults = ({ weatherData, isLoaded }) => {
       </section>
   } else {
     results = weatherData.map(city => {
-      return <WeatherCard {...city} key={weatherData.summary}/>;
+      return <WeatherCard {...city} key={uuidv1()}/>;
     })
   };
 

@@ -48,10 +48,14 @@ const WeatherCard = ({ highTemp = 90, lowTemp, summary, icon, city, day}) => {
     <div className="wc-container">
       <div className='wc-weather-container'>
         <h2>{`Day ${day}: ${city}`}</h2>
-          <p>High: {highTemp.toFixed(0)}</p>
-          <p>Low: {lowTemp.toFixed(0)}</p>
-          <p>{summary}</p>
-          <img className='wc-icon' src={require(`../../assets/${icon}-gradient.svg`)} />
+          <section className='wc-temp-icon-container'>
+            <img className='wc-icon' src={require(`../../assets/${icon}-gradient.svg`)} />
+            <section className='wc-temp-container'>
+              <p>High: {highTemp.toFixed(0)}</p>
+              <p>Low: {lowTemp.toFixed(0)}</p>
+              <p className='wc-summary'>{summary}</p>
+            </section>
+          </section>
       </div>
       <section>
         <h3>What to Pack:</h3>
