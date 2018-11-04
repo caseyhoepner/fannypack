@@ -8,7 +8,7 @@ describe('actions', () => {
       type: 'SET_WEATHER',
       weatherData
     }
-    const result = Actions.setWeather(mockWeatherData);
+    const result = Actions.setWeather(mockWeatherData, 'Denver', 1);
 
     expect(result).toEqual(expectedAction);
   })

@@ -18,8 +18,8 @@ describe('weatherReducer', () => {
 
   it('should return state with weatherData', () => {
     const initialState = [];
-    const expected = weather;
-    const result = weatherReducer(initialState, Actions.setWeather(weather));
+    const expected = [weather];
+    const result = weatherReducer(initialState, Actions.setWeather(weather, 'Denver', 1));
 
     expect(result).toEqual(expected);
   })

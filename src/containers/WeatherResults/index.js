@@ -8,7 +8,7 @@ import './WeatherResults.css';
 import suitcase from '../../assets/suitcase.svg';
 const uuidv1 = require('uuid/v1');
 
-const WeatherResults = ({ weatherData, isLoaded }) => {
+export const WeatherResults = ({ weatherData, isLoaded }) => {
   let results;
 
   if (!isLoaded) {
@@ -35,7 +35,7 @@ const WeatherResults = ({ weatherData, isLoaded }) => {
     )
 };
 
-const mapStateToProps = (state) => ({
+export const mapStateToProps = (state) => ({
   weatherData: state.weatherData,
   isLoaded: state.isLoaded
 });

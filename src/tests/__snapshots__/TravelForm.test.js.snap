@@ -1,9 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TravelForm should match the snapshot 1`] = `
+exports[`TravelForm TravelForm Component should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <TravelForm />,
+  Symbol(enzyme.__unrendered__): <TravelForm
+    changeToLoaded={[MockFunction]}
+    setWeather={[MockFunction]}
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -40,7 +43,7 @@ ShallowWrapper {
                 Tomorrow
               </p>
               <input
-                className="tf-form-component tf-input-component"
+                className="test-input tf-form-component tf-input-component"
                 name="day1"
                 onChange={[Function]}
                 placeholder="Destination"
@@ -192,7 +195,7 @@ ShallowWrapper {
                   Tomorrow
                 </p>
                 <input
-                  className="tf-form-component tf-input-component"
+                  className="test-input tf-form-component tf-input-component"
                   name="day1"
                   onChange={[Function]}
                   placeholder="Destination"
@@ -339,7 +342,7 @@ ShallowWrapper {
                     Tomorrow
                   </p>
                   <input
-                    className="tf-form-component tf-input-component"
+                    className="test-input tf-form-component tf-input-component"
                     name="day1"
                     onChange={[Function]}
                     placeholder="Destination"
@@ -469,7 +472,7 @@ ShallowWrapper {
                       Tomorrow
                     </p>,
                     <input
-                      className="tf-form-component tf-input-component"
+                      className="test-input tf-form-component tf-input-component"
                       name="day1"
                       onChange={[Function]}
                       placeholder="Destination"
@@ -497,7 +500,7 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "className": "tf-form-component tf-input-component",
+                      "className": "test-input tf-form-component tf-input-component",
                       "name": "day1",
                       "onChange": [Function],
                       "placeholder": "Destination",
@@ -890,7 +893,7 @@ ShallowWrapper {
                   Tomorrow
                 </p>
                 <input
-                  className="tf-form-component tf-input-component"
+                  className="test-input tf-form-component tf-input-component"
                   name="day1"
                   onChange={[Function]}
                   placeholder="Destination"
@@ -1042,7 +1045,7 @@ ShallowWrapper {
                     Tomorrow
                   </p>
                   <input
-                    className="tf-form-component tf-input-component"
+                    className="test-input tf-form-component tf-input-component"
                     name="day1"
                     onChange={[Function]}
                     placeholder="Destination"
@@ -1189,7 +1192,7 @@ ShallowWrapper {
                       Tomorrow
                     </p>
                     <input
-                      className="tf-form-component tf-input-component"
+                      className="test-input tf-form-component tf-input-component"
                       name="day1"
                       onChange={[Function]}
                       placeholder="Destination"
@@ -1319,7 +1322,7 @@ ShallowWrapper {
                         Tomorrow
                       </p>,
                       <input
-                        className="tf-form-component tf-input-component"
+                        className="test-input tf-form-component tf-input-component"
                         name="day1"
                         onChange={[Function]}
                         placeholder="Destination"
@@ -1347,7 +1350,7 @@ ShallowWrapper {
                       "key": undefined,
                       "nodeType": "host",
                       "props": Object {
-                        "className": "tf-form-component tf-input-component",
+                        "className": "test-input tf-form-component tf-input-component",
                         "name": "day1",
                         "onChange": [Function],
                         "placeholder": "Destination",
@@ -1729,5 +1732,17 @@ ShallowWrapper {
       },
     },
   },
+}
+`;
+
+exports[`TravelForm TravelForm Component state should match the snapshot 1`] = `
+Object {
+  "day1": "",
+  "day2": "",
+  "day3": "",
+  "day4": "",
+  "day5": "",
+  "day6": "",
+  "day7": "",
 }
 `;

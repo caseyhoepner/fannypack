@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { packingData } from '../../utils/packingData';
 import './WeatherCard.css';
 
-const WeatherCard = ({ highTemp = 90, lowTemp, summary, icon, city, day}) => {
+export const WeatherCard = ({ highTemp, lowTemp, summary, icon, city, day}) => {
 
   const getEssentials = () => {
     let essentials = [];
@@ -75,7 +75,7 @@ const WeatherCard = ({ highTemp = 90, lowTemp, summary, icon, city, day}) => {
   );
 }
 
-const mapStateToProps = (state) => ({
+export const mapStateToProps = (state) => ({
   weatherData: state.weatherData
 })
 
