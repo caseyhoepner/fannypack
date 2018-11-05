@@ -9,6 +9,7 @@
     "moment-timezone": "^0.5.23",
     "node-geocoder": "^3.22.0",
     "prop-types": "^15.6.2",
+    "proptypes": "^1.1.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-geocode": "^0.1.2",
@@ -37,5 +38,13 @@
   "devDependencies": {
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.6.0"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!src/index.js",
+      "!src/serviceWorker.js",
+      "!src/setupTests.js"
+    ]
   }
 }

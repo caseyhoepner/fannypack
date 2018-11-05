@@ -1,11 +1,12 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
-import Header from '../Header';
+import PropTypes from 'prop-types';
 
+import Header from '../Header';
 import WeatherCard from '../../components/WeatherCard';
-import './WeatherResults.css';
 import suitcase from '../../assets/suitcase.svg';
+import './WeatherResults.css';
 const uuidv1 = require('uuid/v1');
 
 export const WeatherResults = ({ weatherData, isLoaded }) => {
@@ -39,5 +40,10 @@ export const mapStateToProps = (state) => ({
   weatherData: state.weatherData,
   isLoaded: state.isLoaded
 });
+
+WeatherResults.propTypes = {
+  weatherData: PropTypes.object.isRequired,
+  isLoaded: PropTypes.bool.isRequired,
+};
 
 export default withRouter(connect(mapStateToProps)(WeatherResults));
