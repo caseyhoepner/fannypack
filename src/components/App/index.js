@@ -6,7 +6,7 @@ import WeatherResults from '../../containers/WeatherResults';
 import PathError from '../PathError';
 import './App.css';
 
-class App extends Component {
+const App () => {
   render() {
     return (
       <div className='app-container'>
