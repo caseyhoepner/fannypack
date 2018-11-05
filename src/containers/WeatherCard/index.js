@@ -81,7 +81,7 @@ export const mapStateToProps = (state) => ({
 })
 
 WeatherCard.propTypes = {
-  weatherData: PropTypes.object.isRequired,
+  weatherData: PropTypes.object
 };
 
 export default withRouter(connect(mapStateToProps)(WeatherCard));

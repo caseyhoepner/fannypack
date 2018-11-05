@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { WeatherCard, mapStateToProps } from '../components/WeatherCard';
+import { WeatherCard, mapStateToProps } from '../containers/WeatherCard';
 import { mockWeatherData } from './testMocks';
 
 describe('WeatherCard', () => {
