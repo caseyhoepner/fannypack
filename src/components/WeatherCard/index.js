@@ -1,6 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 
 import { packingData } from '../../utils/packingData';
 import './WeatherCard.css';
@@ -78,5 +79,9 @@ export const WeatherCard = ({ highTemp, lowTemp, summary, icon, city, day}) => {
 export const mapStateToProps = (state) => ({
   weatherData: state.weatherData
 })
+
+WeatherCard.propTypes = {
+  weatherData: PropTypes.object.isRequired,
+};
 
 export default withRouter(connect(mapStateToProps)(WeatherCard));
