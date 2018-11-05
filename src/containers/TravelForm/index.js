@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import { setWeather, changeToLoaded } from '../../actions';
 
 import Header from '../../containers/Header';
@@ -173,6 +174,11 @@ export class TravelForm extends Component {
 export const mapDispatchToProps = (dispatch) => ({
   setWeather: (weatherData, city, day) => dispatch(setWeather(weatherData, city, day)), 
   changeToLoaded: (bool) => dispatch(changeToLoaded(bool))
-})
+});
+
+TravelForm.propTypes = {
+  setWeather: PropTypes.func.isRequired,
+  changeToLoaded: PropTypes.func.isRequired
+};
 
 export default withRouter(connect(null, mapDispatchToProps)(TravelForm));
