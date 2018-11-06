@@ -3,6 +3,7 @@ import { shallow, mount } from 'enzyme'
 import { mockWeatherData } from './testMocks';
 import { TravelForm, mapDispatchToProps } from '../containers/TravelForm'
 import * as Actions from '../actions'
+import * as API from '../utils'
 
 describe('TravelForm', () => {
   describe('TravelForm Component', () => {
@@ -52,30 +53,127 @@ describe('TravelForm', () => {
       expect(spy).toHaveBeenCalled()
     })
 
-    // it('calls getWeatherData in handleSubmit', () => {
-    //   const getWeatherData = jest.fn();
+    it('calls getWeatherData in handleSubmit', () => {
+      wrapper = shallow(<TravelForm setWeather={setWeather} history={[]} changeToLoaded={changeToLoaded}/>);
+      let mockEvent = { preventDefault: jest.fn() }
+      const spy = spyOn(wrapper.instance(), 'getWeatherData')
 
-    //   wrapper.instance().handleSubmit()
+      wrapper.instance().handleSubmit(mockEvent)
 
-    //   expect(getWeatherData).toHaveBeenCalled();
-    // })
+      expect(spy).toHaveBeenCalled();
+    })
 
-    // it('should fetch weather data for day1', () => {
-    //   wrapper.state = {
-    //   day1: 'denver',
-    //   day2: '',
-    //   day3: '',
-    //   day4: '',
-    //   day5: '',
-    //   day6: '',
-    //   day7: '',
-    //   }
+    it('should call fetchWeather in getWeatherData', async () => {
+      wrapper.instance().setState({
+        day1: 'Denver',
+        day2: '',
+        day3: '',
+        day4: '',
+        day5: '',
+        day6: '',
+        day7: ''
+      })
 
-    //   wrapper.instance().getWeatherData();
+      API.fetchWeather = jest.fn();
+      await wrapper.instance().getWeatherData();
+      expect(API.fetchWeather).toHaveBeenCalledWith('Denver', 1)
+    })
 
-    //   expect(wrapper.instance.fetchWeather).toHaveBeenCalledWith(wrapper.state.day1)
+      it('should call fetchWeather in getWeatherData', async () => {
+      wrapper.instance().setState({
+        day1: '',
+        day2: 'Denver',
+        day3: '',
+        day4: '',
+        day5: '',
+        day6: '',
+        day7: ''
+      })
 
-    // })
+      API.fetchWeather = jest.fn();
+      await wrapper.instance().getWeatherData();
+      expect(API.fetchWeather).toHaveBeenCalledWith('Denver', 2)
+    })
+
+      it('should call fetchWeather in getWeatherData', async () => {
+      wrapper.instance().setState({
+        day1: '',
+        day2: '',
+        day3: 'Denver',
+        day4: '',
+        day5: '',
+        day6: '',
+        day7: ''
+      })
+
+      API.fetchWeather = jest.fn();
+      await wrapper.instance().getWeatherData();
+      expect(API.fetchWeather).toHaveBeenCalledWith('Denver', 3)
+    })
+
+      it('should call fetchWeather in getWeatherData', async () => {
+      wrapper.instance().setState({
+        day1: '',
+        day2: '',
+        day3: '',
+        day4: 'Denver',
+        day5: '',
+        day6: '',
+        day7: ''
+      })
+
+      API.fetchWeather = jest.fn();
+      await wrapper.instance().getWeatherData();
+      expect(API.fetchWeather).toHaveBeenCalledWith('Denver', 4)
+    })
+
+      it('should call fetchWeather in getWeatherData', async () => {
+      wrapper.instance().setState({
+        day1: '',
+        day2: '',
+        day3: '',
+        day4: '',
+        day5: 'Denver',
+        day6: '',
+        day7: ''
+      })
+
+      API.fetchWeather = jest.fn();
+      await wrapper.instance().getWeatherData();
+      expect(API.fetchWeather).toHaveBeenCalledWith('Denver', 5)
+    })
+
+      it('should call fetchWeather in getWeatherData', async () => {
+      wrapper.instance().setState({
+        day1: '',
+        day2: '',
+        day3: '',
+        day4: '',
+        day5: '',
+        day6: 'Denver',
+        day7: ''
+      })
+
+      API.fetchWeather = jest.fn();
+      await wrapper.instance().getWeatherData();
+      expect(API.fetchWeather).toHaveBeenCalledWith('Denver', 6)
+    })
+
+      it('should call fetchWeather in getWeatherData', async () => {
+      wrapper.instance().setState({
+        day1: '',
+        day2: '',
+        day3: '',
+        day4: '',
+        day5: '',
+        day6: '',
+        day7: 'Denver'
+      })
+
+      API.fetchWeather = jest.fn();
+      await wrapper.instance().getWeatherData();
+      expect(API.fetchWeather).toHaveBeenCalledWith('Denver', 7)
+    })
   })
 
   describe('mapDispatchToProps', () => {
@@ -85,6 +183,16 @@ describe('TravelForm', () => {
 
       const mappedProps = mapDispatchToProps(mockDispatch)
       mappedProps.setWeather(mockWeatherData, 'Denver', 1)
+
+      expect(mockDispatch).toHaveBeenCalledWith(expected)
+    })
+
+    it('should call dispatch with the changeToLoaded action', () => {
+      const mockDispatch = jest.fn()
+      const expected = Actions.changeToLoaded(true)
+
+      const mappedProps = mapDispatchToProps(mockDispatch)
+      mappedProps.changeToLoaded(true)
 
       expect(mockDispatch).toHaveBeenCalledWith(expected)
     })

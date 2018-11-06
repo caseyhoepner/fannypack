@@ -32,7 +32,7 @@ export const WeatherCard = ({ highTemp, lowTemp, summary, icon, city, day}) => {
     const filteredEssentials = filterEssentials(essentials)
 
     return filteredEssentials.map(filteredEssential => {
-      return <li key={filteredEssential}>{filteredEssential}</li>
+      return <li className='wc-essentials-list'key={filteredEssential}>{filteredEssential}</li>
       })
   }
 
@@ -56,24 +56,24 @@ export const WeatherCard = ({ highTemp, lowTemp, summary, icon, city, day}) => {
   return (
     <div className="wc-container">
       <div className='wc-weather-container'>
-        <h2>{`Day ${day}: ${formatCity(city)}`}</h2>
+        <h2 className='wc-day'>{`Day ${day}: ${formatCity(city)}`}</h2>
           <section className='wc-temp-icon-container'>
-            <img className='wc-icon' src={require(`../../assets/${icon}-gradient.svg`)} />
+            <img className='wc-icon' src={require(`../../assets/${icon}.svg`)} />
             <section className='wc-temp-container'>
-              <p>High: {highTemp.toFixed(0)}</p>
-              <p>Low: {lowTemp.toFixed(0)}</p>
-              <p className='wc-summary'>{summary}</p>
+              <p className='wc-high'>High: {highTemp.toFixed(0)}&#176;</p>
+              <p className='wc-low'>Low: {lowTemp.toFixed(0)}&#176;</p>
             </section>
-          </section>
+          </section>  
+          <p className='wc-summary'>{summary}</p>
       </div>
-      <section>
-        <h3>What to Pack:</h3>
-          <ul>
+      <section className='wc-essentials'>
+        <h3 className='wc-essentials-title'>What to Pack:</h3>
+          <ul className='wc-essentials-list'>
             { getEssentials() }
           </ul>
       </section>
     </div>
-  );
+  )
 }
 
 export const mapStateToProps = (state) => ({
@@ -81,7 +81,7 @@ export const mapStateToProps = (state) => ({
 })
 
 WeatherCard.propTypes = {
-  weatherData: PropTypes.object
+  weatherData: PropTypes.array
 };
 
 export default withRouter(connect(mapStateToProps)(WeatherCard));

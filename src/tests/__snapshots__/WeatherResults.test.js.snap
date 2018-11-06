@@ -79,7 +79,7 @@ ShallowWrapper {
         "rendered": Array [
           Object {
             "instance": null,
-            "key": "07f9d160-e09d-11e8-ad35-17774c59875c",
+            "key": "1",
             "nodeType": "function",
             "props": Object {
               "city": "Denver",
@@ -153,7 +153,7 @@ ShallowWrapper {
           "rendered": Array [
             Object {
               "instance": null,
-              "key": "07f9d160-e09d-11e8-ad35-17774c59875c",
+              "key": "1",
               "nodeType": "function",
               "props": Object {
                 "city": "Denver",

@@ -26,7 +26,9 @@ ShallowWrapper {
         <div
           className="wc-weather-container"
         >
-          <h2>
+          <h2
+            className="wc-day"
+          >
             Day undefined: Denver
           </h2>
           <section
@@ -38,48 +40,77 @@ ShallowWrapper {
                 Object {
                   "ReactComponent": [Function],
                   "__esModule": true,
-                  "default": "clear-day-gradient.svg",
+                  "default": "clear-day.svg",
                 }
               }
             />
             <section
               className="wc-temp-container"
             >
-              <p>
+              <p
+                className="wc-high"
+              >
                 High: 
                 81
-              </p>
-              <p>
-                Low: 
-                80
+                °
               </p>
               <p
-                className="wc-summary"
-              />
+                className="wc-low"
+              >
+                Low: 
+                80
+                °
+              </p>
             </section>
           </section>
+          <p
+            className="wc-summary"
+          />
         </div>,
-        <section>
-          <h3>
+        <section
+          className="wc-essentials"
+        >
+          <h3
+            className="wc-essentials-title"
+          >
             What to Pack:
           </h3>
-          <ul>
-            <li>
+          <ul
+            className="wc-essentials-list"
+          >
+            <li
+              className="wc-essentials-list"
+            >
               short-sleeves
             </li>
-            <li>
+            <li
+              className="wc-essentials-list"
+            >
               shorts/skirt
             </li>
-            <li>
+            <li
+              className="wc-essentials-list"
+            >
               open-toed shoes
             </li>
-            <li>
+            <li
+              className="wc-essentials-list"
+            >
+              fanny pack
+            </li>
+            <li
+              className="wc-essentials-list"
+            >
               sunglasses
             </li>
-            <li>
+            <li
+              className="wc-essentials-list"
+            >
               sunscreen
             </li>
-            <li>
+            <li
+              className="wc-essentials-list"
+            >
               hat
             </li>
           </ul>
@@ -95,7 +126,9 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <h2>
+            <h2
+              className="wc-day"
+            >
               Day undefined: Denver
             </h2>,
             <section
@@ -107,26 +140,32 @@ ShallowWrapper {
                   Object {
                     "ReactComponent": [Function],
                     "__esModule": true,
-                    "default": "clear-day-gradient.svg",
+                    "default": "clear-day.svg",
                   }
                 }
               />
               <section
                 className="wc-temp-container"
               >
-                <p>
+                <p
+                  className="wc-high"
+                >
                   High: 
                   81
-                </p>
-                <p>
-                  Low: 
-                  80
+                  °
                 </p>
                 <p
-                  className="wc-summary"
-                />
+                  className="wc-low"
+                >
+                  Low: 
+                  80
+                  °
+                </p>
               </section>
             </section>,
+            <p
+              className="wc-summary"
+            />,
           ],
           "className": "wc-weather-container",
         },
@@ -138,6 +177,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "Day undefined: Denver",
+              "className": "wc-day",
             },
             "ref": null,
             "rendered": "Day undefined: Denver",
@@ -155,24 +195,27 @@ ShallowWrapper {
                     Object {
                       "ReactComponent": [Function],
                       "__esModule": true,
-                      "default": "clear-day-gradient.svg",
+                      "default": "clear-day.svg",
                     }
                   }
                 />,
                 <section
                   className="wc-temp-container"
                 >
-                  <p>
+                  <p
+                    className="wc-high"
+                  >
                     High: 
                     81
-                  </p>
-                  <p>
-                    Low: 
-                    80
+                    °
                   </p>
                   <p
-                    className="wc-summary"
-                  />
+                    className="wc-low"
+                  >
+                    Low: 
+                    80
+                    °
+                  </p>
                 </section>,
               ],
               "className": "wc-temp-icon-container",
@@ -188,7 +231,7 @@ ShallowWrapper {
                   "src": Object {
                     "ReactComponent": [Function],
                     "__esModule": true,
-                    "default": "clear-day-gradient.svg",
+                    "default": "clear-day.svg",
                   },
                 },
                 "ref": null,
@@ -201,17 +244,20 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
-                    <p>
+                    <p
+                      className="wc-high"
+                    >
                       High: 
                       81
-                    </p>,
-                    <p>
-                      Low: 
-                      80
+                      °
                     </p>,
                     <p
-                      className="wc-summary"
-                    />,
+                      className="wc-low"
+                    >
+                      Low: 
+                      80
+                      °
+                    </p>,
                   ],
                   "className": "wc-temp-container",
                 },
@@ -225,12 +271,15 @@ ShallowWrapper {
                       "children": Array [
                         "High: ",
                         "81",
+                        "°",
                       ],
+                      "className": "wc-high",
                     },
                     "ref": null,
                     "rendered": Array [
                       "High: ",
                       "81",
+                      "°",
                     ],
                     "type": "p",
                   },
@@ -242,25 +291,16 @@ ShallowWrapper {
                       "children": Array [
                         "Low: ",
                         "80",
+                        "°",
                       ],
+                      "className": "wc-low",
                     },
                     "ref": null,
                     "rendered": Array [
                       "Low: ",
                       "80",
+                      "°",
                     ],
-                    "type": "p",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": undefined,
-                      "className": "wc-summary",
-                    },
-                    "ref": null,
-                    "rendered": null,
                     "type": "p",
                   },
                 ],
@@ -268,6 +308,18 @@ ShallowWrapper {
               },
             ],
             "type": "section",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+              "className": "wc-summary",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "p",
           },
         ],
         "type": "div",
@@ -278,30 +330,52 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <h3>
+            <h3
+              className="wc-essentials-title"
+            >
               What to Pack:
             </h3>,
-            <ul>
-              <li>
+            <ul
+              className="wc-essentials-list"
+            >
+              <li
+                className="wc-essentials-list"
+              >
                 short-sleeves
               </li>
-              <li>
+              <li
+                className="wc-essentials-list"
+              >
                 shorts/skirt
               </li>
-              <li>
+              <li
+                className="wc-essentials-list"
+              >
                 open-toed shoes
               </li>
-              <li>
+              <li
+                className="wc-essentials-list"
+              >
+                fanny pack
+              </li>
+              <li
+                className="wc-essentials-list"
+              >
                 sunglasses
               </li>
-              <li>
+              <li
+                className="wc-essentials-list"
+              >
                 sunscreen
               </li>
-              <li>
+              <li
+                className="wc-essentials-list"
+              >
                 hat
               </li>
             </ul>,
           ],
+          "className": "wc-essentials",
         },
         "ref": null,
         "rendered": Array [
@@ -311,6 +385,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "What to Pack:",
+              "className": "wc-essentials-title",
             },
             "ref": null,
             "rendered": "What to Pack:",
@@ -322,25 +397,43 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                <li>
+                <li
+                  className="wc-essentials-list"
+                >
                   short-sleeves
                 </li>,
-                <li>
+                <li
+                  className="wc-essentials-list"
+                >
                   shorts/skirt
                 </li>,
-                <li>
+                <li
+                  className="wc-essentials-list"
+                >
                   open-toed shoes
                 </li>,
-                <li>
+                <li
+                  className="wc-essentials-list"
+                >
+                  fanny pack
+                </li>,
+                <li
+                  className="wc-essentials-list"
+                >
                   sunglasses
                 </li>,
-                <li>
+                <li
+                  className="wc-essentials-list"
+                >
                   sunscreen
                 </li>,
-                <li>
+                <li
+                  className="wc-essentials-list"
+                >
                   hat
                 </li>,
               ],
+              "className": "wc-essentials-list",
             },
             "ref": null,
             "rendered": Array [
@@ -350,6 +443,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "short-sleeves",
+                  "className": "wc-essentials-list",
                 },
                 "ref": null,
                 "rendered": "short-sleeves",
@@ -361,6 +455,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "shorts/skirt",
+                  "className": "wc-essentials-list",
                 },
                 "ref": null,
                 "rendered": "shorts/skirt",
@@ -372,9 +467,22 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "open-toed shoes",
+                  "className": "wc-essentials-list",
                 },
                 "ref": null,
                 "rendered": "open-toed shoes",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": "fanny pack",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "fanny pack",
+                  "className": "wc-essentials-list",
+                },
+                "ref": null,
+                "rendered": "fanny pack",
                 "type": "li",
               },
               Object {
@@ -383,6 +491,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "sunglasses",
+                  "className": "wc-essentials-list",
                 },
                 "ref": null,
                 "rendered": "sunglasses",
@@ -394,6 +503,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "sunscreen",
+                  "className": "wc-essentials-list",
                 },
                 "ref": null,
                 "rendered": "sunscreen",
@@ -405,6 +515,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "hat",
+                  "className": "wc-essentials-list",
                 },
                 "ref": null,
                 "rendered": "hat",
@@ -429,7 +540,9 @@ ShallowWrapper {
           <div
             className="wc-weather-container"
           >
-            <h2>
+            <h2
+              className="wc-day"
+            >
               Day undefined: Denver
             </h2>
             <section
@@ -441,48 +554,77 @@ ShallowWrapper {
                   Object {
                     "ReactComponent": [Function],
                     "__esModule": true,
-                    "default": "clear-day-gradient.svg",
+                    "default": "clear-day.svg",
                   }
                 }
               />
               <section
                 className="wc-temp-container"
               >
-                <p>
+                <p
+                  className="wc-high"
+                >
                   High: 
                   81
-                </p>
-                <p>
-                  Low: 
-                  80
+                  °
                 </p>
                 <p
-                  className="wc-summary"
-                />
+                  className="wc-low"
+                >
+                  Low: 
+                  80
+                  °
+                </p>
               </section>
             </section>
+            <p
+              className="wc-summary"
+            />
           </div>,
-          <section>
-            <h3>
+          <section
+            className="wc-essentials"
+          >
+            <h3
+              className="wc-essentials-title"
+            >
               What to Pack:
             </h3>
-            <ul>
-              <li>
+            <ul
+              className="wc-essentials-list"
+            >
+              <li
+                className="wc-essentials-list"
+              >
                 short-sleeves
               </li>
-              <li>
+              <li
+                className="wc-essentials-list"
+              >
                 shorts/skirt
               </li>
-              <li>
+              <li
+                className="wc-essentials-list"
+              >
                 open-toed shoes
               </li>
-              <li>
+              <li
+                className="wc-essentials-list"
+              >
+                fanny pack
+              </li>
+              <li
+                className="wc-essentials-list"
+              >
                 sunglasses
               </li>
-              <li>
+              <li
+                className="wc-essentials-list"
+              >
                 sunscreen
               </li>
-              <li>
+              <li
+                className="wc-essentials-list"
+              >
                 hat
               </li>
             </ul>
@@ -498,7 +640,9 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <h2>
+              <h2
+                className="wc-day"
+              >
                 Day undefined: Denver
               </h2>,
               <section
@@ -510,26 +654,32 @@ ShallowWrapper {
                     Object {
                       "ReactComponent": [Function],
                       "__esModule": true,
-                      "default": "clear-day-gradient.svg",
+                      "default": "clear-day.svg",
                     }
                   }
                 />
                 <section
                   className="wc-temp-container"
                 >
-                  <p>
+                  <p
+                    className="wc-high"
+                  >
                     High: 
                     81
-                  </p>
-                  <p>
-                    Low: 
-                    80
+                    °
                   </p>
                   <p
-                    className="wc-summary"
-                  />
+                    className="wc-low"
+                  >
+                    Low: 
+                    80
+                    °
+                  </p>
                 </section>
               </section>,
+              <p
+                className="wc-summary"
+              />,
             ],
             "className": "wc-weather-container",
           },
@@ -541,6 +691,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "Day undefined: Denver",
+                "className": "wc-day",
               },
               "ref": null,
               "rendered": "Day undefined: Denver",
@@ -558,24 +709,27 @@ ShallowWrapper {
                       Object {
                         "ReactComponent": [Function],
                         "__esModule": true,
-                        "default": "clear-day-gradient.svg",
+                        "default": "clear-day.svg",
                       }
                     }
                   />,
                   <section
                     className="wc-temp-container"
                   >
-                    <p>
+                    <p
+                      className="wc-high"
+                    >
                       High: 
                       81
-                    </p>
-                    <p>
-                      Low: 
-                      80
+                      °
                     </p>
                     <p
-                      className="wc-summary"
-                    />
+                      className="wc-low"
+                    >
+                      Low: 
+                      80
+                      °
+                    </p>
                   </section>,
                 ],
                 "className": "wc-temp-icon-container",
@@ -591,7 +745,7 @@ ShallowWrapper {
                     "src": Object {
                       "ReactComponent": [Function],
                       "__esModule": true,
-                      "default": "clear-day-gradient.svg",
+                      "default": "clear-day.svg",
                     },
                   },
                   "ref": null,
@@ -604,17 +758,20 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
-                      <p>
+                      <p
+                        className="wc-high"
+                      >
                         High: 
                         81
-                      </p>,
-                      <p>
-                        Low: 
-                        80
+                        °
                       </p>,
                       <p
-                        className="wc-summary"
-                      />,
+                        className="wc-low"
+                      >
+                        Low: 
+                        80
+                        °
+                      </p>,
                     ],
                     "className": "wc-temp-container",
                   },
@@ -628,12 +785,15 @@ ShallowWrapper {
                         "children": Array [
                           "High: ",
                           "81",
+                          "°",
                         ],
+                        "className": "wc-high",
                       },
                       "ref": null,
                       "rendered": Array [
                         "High: ",
                         "81",
+                        "°",
                       ],
                       "type": "p",
                     },
@@ -645,25 +805,16 @@ ShallowWrapper {
                         "children": Array [
                           "Low: ",
                           "80",
+                          "°",
                         ],
+                        "className": "wc-low",
                       },
                       "ref": null,
                       "rendered": Array [
                         "Low: ",
                         "80",
+                        "°",
                       ],
-                      "type": "p",
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": undefined,
-                        "className": "wc-summary",
-                      },
-                      "ref": null,
-                      "rendered": null,
                       "type": "p",
                     },
                   ],
@@ -671,6 +822,18 @@ ShallowWrapper {
                 },
               ],
               "type": "section",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+                "className": "wc-summary",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "p",
             },
           ],
           "type": "div",
@@ -681,30 +844,52 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <h3>
+              <h3
+                className="wc-essentials-title"
+              >
                 What to Pack:
               </h3>,
-              <ul>
-                <li>
+              <ul
+                className="wc-essentials-list"
+              >
+                <li
+                  className="wc-essentials-list"
+                >
                   short-sleeves
                 </li>
-                <li>
+                <li
+                  className="wc-essentials-list"
+                >
                   shorts/skirt
                 </li>
-                <li>
+                <li
+                  className="wc-essentials-list"
+                >
                   open-toed shoes
                 </li>
-                <li>
+                <li
+                  className="wc-essentials-list"
+                >
+                  fanny pack
+                </li>
+                <li
+                  className="wc-essentials-list"
+                >
                   sunglasses
                 </li>
-                <li>
+                <li
+                  className="wc-essentials-list"
+                >
                   sunscreen
                 </li>
-                <li>
+                <li
+                  className="wc-essentials-list"
+                >
                   hat
                 </li>
               </ul>,
             ],
+            "className": "wc-essentials",
           },
           "ref": null,
           "rendered": Array [
@@ -714,6 +899,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "What to Pack:",
+                "className": "wc-essentials-title",
               },
               "ref": null,
               "rendered": "What to Pack:",
@@ -725,25 +911,43 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  <li>
+                  <li
+                    className="wc-essentials-list"
+                  >
                     short-sleeves
                   </li>,
-                  <li>
+                  <li
+                    className="wc-essentials-list"
+                  >
                     shorts/skirt
                   </li>,
-                  <li>
+                  <li
+                    className="wc-essentials-list"
+                  >
                     open-toed shoes
                   </li>,
-                  <li>
+                  <li
+                    className="wc-essentials-list"
+                  >
+                    fanny pack
+                  </li>,
+                  <li
+                    className="wc-essentials-list"
+                  >
                     sunglasses
                   </li>,
-                  <li>
+                  <li
+                    className="wc-essentials-list"
+                  >
                     sunscreen
                   </li>,
-                  <li>
+                  <li
+                    className="wc-essentials-list"
+                  >
                     hat
                   </li>,
                 ],
+                "className": "wc-essentials-list",
               },
               "ref": null,
               "rendered": Array [
@@ -753,6 +957,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "short-sleeves",
+                    "className": "wc-essentials-list",
                   },
                   "ref": null,
                   "rendered": "short-sleeves",
@@ -764,6 +969,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "shorts/skirt",
+                    "className": "wc-essentials-list",
                   },
                   "ref": null,
                   "rendered": "shorts/skirt",
@@ -775,9 +981,22 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "open-toed shoes",
+                    "className": "wc-essentials-list",
                   },
                   "ref": null,
                   "rendered": "open-toed shoes",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": "fanny pack",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "fanny pack",
+                    "className": "wc-essentials-list",
+                  },
+                  "ref": null,
+                  "rendered": "fanny pack",
                   "type": "li",
                 },
                 Object {
@@ -786,6 +1005,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "sunglasses",
+                    "className": "wc-essentials-list",
                   },
                   "ref": null,
                   "rendered": "sunglasses",
@@ -797,6 +1017,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "sunscreen",
+                    "className": "wc-essentials-list",
                   },
                   "ref": null,
                   "rendered": "sunscreen",
@@ -808,6 +1029,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "hat",
+                    "className": "wc-essentials-list",
                   },
                   "ref": null,
                   "rendered": "hat",
@@ -869,7 +1091,9 @@ ShallowWrapper {
         <div
           className="wc-weather-container"
         >
-          <h2>
+          <h2
+            className="wc-day"
+          >
             Day undefined: Denver
           </h2>
           <section
@@ -881,45 +1105,72 @@ ShallowWrapper {
                 Object {
                   "ReactComponent": [Function],
                   "__esModule": true,
-                  "default": "clear-day-gradient.svg",
+                  "default": "clear-day.svg",
                 }
               }
             />
             <section
               className="wc-temp-container"
             >
-              <p>
+              <p
+                className="wc-high"
+              >
                 High: 
                 79
-              </p>
-              <p>
-                Low: 
-                71
+                °
               </p>
               <p
-                className="wc-summary"
-              />
+                className="wc-low"
+              >
+                Low: 
+                71
+                °
+              </p>
             </section>
           </section>
+          <p
+            className="wc-summary"
+          />
         </div>,
-        <section>
-          <h3>
+        <section
+          className="wc-essentials"
+        >
+          <h3
+            className="wc-essentials-title"
+          >
             What to Pack:
           </h3>
-          <ul>
-            <li>
+          <ul
+            className="wc-essentials-list"
+          >
+            <li
+              className="wc-essentials-list"
+            >
               short-sleeves
             </li>
-            <li>
+            <li
+              className="wc-essentials-list"
+            >
               open-toed shoes
             </li>
-            <li>
+            <li
+              className="wc-essentials-list"
+            >
+              fanny pack
+            </li>
+            <li
+              className="wc-essentials-list"
+            >
               sunglasses
             </li>
-            <li>
+            <li
+              className="wc-essentials-list"
+            >
               sunscreen
             </li>
-            <li>
+            <li
+              className="wc-essentials-list"
+            >
               hat
             </li>
           </ul>
@@ -935,7 +1186,9 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <h2>
+            <h2
+              className="wc-day"
+            >
               Day undefined: Denver
             </h2>,
             <section
@@ -947,26 +1200,32 @@ ShallowWrapper {
                   Object {
                     "ReactComponent": [Function],
                     "__esModule": true,
-                    "default": "clear-day-gradient.svg",
+                    "default": "clear-day.svg",
                   }
                 }
               />
               <section
                 className="wc-temp-container"
               >
-                <p>
+                <p
+                  className="wc-high"
+                >
                   High: 
                   79
-                </p>
-                <p>
-                  Low: 
-                  71
+                  °
                 </p>
                 <p
-                  className="wc-summary"
-                />
+                  className="wc-low"
+                >
+                  Low: 
+                  71
+                  °
+                </p>
               </section>
             </section>,
+            <p
+              className="wc-summary"
+            />,
           ],
           "className": "wc-weather-container",
         },
@@ -978,6 +1237,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "Day undefined: Denver",
+              "className": "wc-day",
             },
             "ref": null,
             "rendered": "Day undefined: Denver",
@@ -995,24 +1255,27 @@ ShallowWrapper {
                     Object {
                       "ReactComponent": [Function],
                       "__esModule": true,
-                      "default": "clear-day-gradient.svg",
+                      "default": "clear-day.svg",
                     }
                   }
                 />,
                 <section
                   className="wc-temp-container"
                 >
-                  <p>
+                  <p
+                    className="wc-high"
+                  >
                     High: 
                     79
-                  </p>
-                  <p>
-                    Low: 
-                    71
+                    °
                   </p>
                   <p
-                    className="wc-summary"
-                  />
+                    className="wc-low"
+                  >
+                    Low: 
+                    71
+                    °
+                  </p>
                 </section>,
               ],
               "className": "wc-temp-icon-container",
@@ -1028,7 +1291,7 @@ ShallowWrapper {
                   "src": Object {
                     "ReactComponent": [Function],
                     "__esModule": true,
-                    "default": "clear-day-gradient.svg",
+                    "default": "clear-day.svg",
                   },
                 },
                 "ref": null,
@@ -1041,17 +1304,20 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
-                    <p>
+                    <p
+                      className="wc-high"
+                    >
                       High: 
                       79
-                    </p>,
-                    <p>
-                      Low: 
-                      71
+                      °
                     </p>,
                     <p
-                      className="wc-summary"
-                    />,
+                      className="wc-low"
+                    >
+                      Low: 
+                      71
+                      °
+                    </p>,
                   ],
                   "className": "wc-temp-container",
                 },
@@ -1065,12 +1331,15 @@ ShallowWrapper {
                       "children": Array [
                         "High: ",
                         "79",
+                        "°",
                       ],
+                      "className": "wc-high",
                     },
                     "ref": null,
                     "rendered": Array [
                       "High: ",
                       "79",
+                      "°",
                     ],
                     "type": "p",
                   },
@@ -1082,25 +1351,16 @@ ShallowWrapper {
                       "children": Array [
                         "Low: ",
                         "71",
+                        "°",
                       ],
+                      "className": "wc-low",
                     },
                     "ref": null,
                     "rendered": Array [
                       "Low: ",
                       "71",
+                      "°",
                     ],
-                    "type": "p",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": undefined,
-                      "className": "wc-summary",
-                    },
-                    "ref": null,
-                    "rendered": null,
                     "type": "p",
                   },
                 ],
@@ -1108,6 +1368,18 @@ ShallowWrapper {
               },
             ],
             "type": "section",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+              "className": "wc-summary",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "p",
           },
         ],
         "type": "div",
@@ -1118,27 +1390,47 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <h3>
+            <h3
+              className="wc-essentials-title"
+            >
               What to Pack:
             </h3>,
-            <ul>
-              <li>
+            <ul
+              className="wc-essentials-list"
+            >
+              <li
+                className="wc-essentials-list"
+              >
                 short-sleeves
               </li>
-              <li>
+              <li
+                className="wc-essentials-list"
+              >
                 open-toed shoes
               </li>
-              <li>
+              <li
+                className="wc-essentials-list"
+              >
+                fanny pack
+              </li>
+              <li
+                className="wc-essentials-list"
+              >
                 sunglasses
               </li>
-              <li>
+              <li
+                className="wc-essentials-list"
+              >
                 sunscreen
               </li>
-              <li>
+              <li
+                className="wc-essentials-list"
+              >
                 hat
               </li>
             </ul>,
           ],
+          "className": "wc-essentials",
         },
         "ref": null,
         "rendered": Array [
@@ -1148,6 +1440,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "What to Pack:",
+              "className": "wc-essentials-title",
             },
             "ref": null,
             "rendered": "What to Pack:",
@@ -1159,22 +1452,38 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                <li>
+                <li
+                  className="wc-essentials-list"
+                >
                   short-sleeves
                 </li>,
-                <li>
+                <li
+                  className="wc-essentials-list"
+                >
                   open-toed shoes
                 </li>,
-                <li>
+                <li
+                  className="wc-essentials-list"
+                >
+                  fanny pack
+                </li>,
+                <li
+                  className="wc-essentials-list"
+                >
                   sunglasses
                 </li>,
-                <li>
+                <li
+                  className="wc-essentials-list"
+                >
                   sunscreen
                 </li>,
-                <li>
+                <li
+                  className="wc-essentials-list"
+                >
                   hat
                 </li>,
               ],
+              "className": "wc-essentials-list",
             },
             "ref": null,
             "rendered": Array [
@@ -1184,6 +1493,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "short-sleeves",
+                  "className": "wc-essentials-list",
                 },
                 "ref": null,
                 "rendered": "short-sleeves",
@@ -1195,9 +1505,22 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "open-toed shoes",
+                  "className": "wc-essentials-list",
                 },
                 "ref": null,
                 "rendered": "open-toed shoes",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": "fanny pack",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "fanny pack",
+                  "className": "wc-essentials-list",
+                },
+                "ref": null,
+                "rendered": "fanny pack",
                 "type": "li",
               },
               Object {
@@ -1206,6 +1529,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "sunglasses",
+                  "className": "wc-essentials-list",
                 },
                 "ref": null,
                 "rendered": "sunglasses",
@@ -1217,6 +1541,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "sunscreen",
+                  "className": "wc-essentials-list",
                 },
                 "ref": null,
                 "rendered": "sunscreen",
@@ -1228,6 +1553,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "hat",
+                  "className": "wc-essentials-list",
                 },
                 "ref": null,
                 "rendered": "hat",
@@ -1252,7 +1578,9 @@ ShallowWrapper {
           <div
             className="wc-weather-container"
           >
-            <h2>
+            <h2
+              className="wc-day"
+            >
               Day undefined: Denver
             </h2>
             <section
@@ -1264,45 +1592,72 @@ ShallowWrapper {
                   Object {
                     "ReactComponent": [Function],
                     "__esModule": true,
-                    "default": "clear-day-gradient.svg",
+                    "default": "clear-day.svg",
                   }
                 }
               />
               <section
                 className="wc-temp-container"
               >
-                <p>
+                <p
+                  className="wc-high"
+                >
                   High: 
                   79
-                </p>
-                <p>
-                  Low: 
-                  71
+                  °
                 </p>
                 <p
-                  className="wc-summary"
-                />
+                  className="wc-low"
+                >
+                  Low: 
+                  71
+                  °
+                </p>
               </section>
             </section>
+            <p
+              className="wc-summary"
+            />
           </div>,
-          <section>
-            <h3>
+          <section
+            className="wc-essentials"
+          >
+            <h3
+              className="wc-essentials-title"
+            >
               What to Pack:
             </h3>
-            <ul>
-              <li>
+            <ul
+              className="wc-essentials-list"
+            >
+              <li
+                className="wc-essentials-list"
+              >
                 short-sleeves
               </li>
-              <li>
+              <li
+                className="wc-essentials-list"
+              >
                 open-toed shoes
               </li>
-              <li>
+              <li
+                className="wc-essentials-list"
+              >
+                fanny pack
+              </li>
+              <li
+                className="wc-essentials-list"
+              >
                 sunglasses
               </li>
-              <li>
+              <li
+                className="wc-essentials-list"
+              >
                 sunscreen
               </li>
-              <li>
+              <li
+                className="wc-essentials-list"
+              >
                 hat
               </li>
             </ul>
@@ -1318,7 +1673,9 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <h2>
+              <h2
+                className="wc-day"
+              >
                 Day undefined: Denver
               </h2>,
               <section
@@ -1330,26 +1687,32 @@ ShallowWrapper {
                     Object {
                       "ReactComponent": [Function],
                       "__esModule": true,
-                      "default": "clear-day-gradient.svg",
+                      "default": "clear-day.svg",
                     }
                   }
                 />
                 <section
                   className="wc-temp-container"
                 >
-                  <p>
+                  <p
+                    className="wc-high"
+                  >
                     High: 
                     79
-                  </p>
-                  <p>
-                    Low: 
-                    71
+                    °
                   </p>
                   <p
-                    className="wc-summary"
-                  />
+                    className="wc-low"
+                  >
+                    Low: 
+                    71
+                    °
+                  </p>
                 </section>
               </section>,
+              <p
+                className="wc-summary"
+              />,
             ],
             "className": "wc-weather-container",
           },
@@ -1361,6 +1724,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "Day undefined: Denver",
+                "className": "wc-day",
               },
               "ref": null,
               "rendered": "Day undefined: Denver",
@@ -1378,24 +1742,27 @@ ShallowWrapper {
                       Object {
                         "ReactComponent": [Function],
                         "__esModule": true,
-                        "default": "clear-day-gradient.svg",
+                        "default": "clear-day.svg",
                       }
                     }
                   />,
                   <section
                     className="wc-temp-container"
                   >
-                    <p>
+                    <p
+                      className="wc-high"
+                    >
                       High: 
                       79
-                    </p>
-                    <p>
-                      Low: 
-                      71
+                      °
                     </p>
                     <p
-                      className="wc-summary"
-                    />
+                      className="wc-low"
+                    >
+                      Low: 
+                      71
+                      °
+                    </p>
                   </section>,
                 ],
                 "className": "wc-temp-icon-container",
@@ -1411,7 +1778,7 @@ ShallowWrapper {
                     "src": Object {
                       "ReactComponent": [Function],
                       "__esModule": true,
-                      "default": "clear-day-gradient.svg",
+                      "default": "clear-day.svg",
                     },
                   },
                   "ref": null,
@@ -1424,17 +1791,20 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
-                      <p>
+                      <p
+                        className="wc-high"
+                      >
                         High: 
                         79
-                      </p>,
-                      <p>
-                        Low: 
-                        71
+                        °
                       </p>,
                       <p
-                        className="wc-summary"
-                      />,
+                        className="wc-low"
+                      >
+                        Low: 
+                        71
+                        °
+                      </p>,
                     ],
                     "className": "wc-temp-container",
                   },
@@ -1448,12 +1818,15 @@ ShallowWrapper {
                         "children": Array [
                           "High: ",
                           "79",
+                          "°",
                         ],
+                        "className": "wc-high",
                       },
                       "ref": null,
                       "rendered": Array [
                         "High: ",
                         "79",
+                        "°",
                       ],
                       "type": "p",
                     },
@@ -1465,25 +1838,16 @@ ShallowWrapper {
                         "children": Array [
                           "Low: ",
                           "71",
+                          "°",
                         ],
+                        "className": "wc-low",
                       },
                       "ref": null,
                       "rendered": Array [
                         "Low: ",
                         "71",
+                        "°",
                       ],
-                      "type": "p",
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": undefined,
-                        "className": "wc-summary",
-                      },
-                      "ref": null,
-                      "rendered": null,
                       "type": "p",
                     },
                   ],
@@ -1491,6 +1855,18 @@ ShallowWrapper {
                 },
               ],
               "type": "section",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+                "className": "wc-summary",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "p",
             },
           ],
           "type": "div",
@@ -1501,27 +1877,47 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <h3>
+              <h3
+                className="wc-essentials-title"
+              >
                 What to Pack:
               </h3>,
-              <ul>
-                <li>
+              <ul
+                className="wc-essentials-list"
+              >
+                <li
+                  className="wc-essentials-list"
+                >
                   short-sleeves
                 </li>
-                <li>
+                <li
+                  className="wc-essentials-list"
+                >
                   open-toed shoes
                 </li>
-                <li>
+                <li
+                  className="wc-essentials-list"
+                >
+                  fanny pack
+                </li>
+                <li
+                  className="wc-essentials-list"
+                >
                   sunglasses
                 </li>
-                <li>
+                <li
+                  className="wc-essentials-list"
+                >
                   sunscreen
                 </li>
-                <li>
+                <li
+                  className="wc-essentials-list"
+                >
                   hat
                 </li>
               </ul>,
             ],
+            "className": "wc-essentials",
           },
           "ref": null,
           "rendered": Array [
@@ -1531,6 +1927,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "What to Pack:",
+                "className": "wc-essentials-title",
               },
               "ref": null,
               "rendered": "What to Pack:",
@@ -1542,22 +1939,38 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  <li>
+                  <li
+                    className="wc-essentials-list"
+                  >
                     short-sleeves
                   </li>,
-                  <li>
+                  <li
+                    className="wc-essentials-list"
+                  >
                     open-toed shoes
                   </li>,
-                  <li>
+                  <li
+                    className="wc-essentials-list"
+                  >
+                    fanny pack
+                  </li>,
+                  <li
+                    className="wc-essentials-list"
+                  >
                     sunglasses
                   </li>,
-                  <li>
+                  <li
+                    className="wc-essentials-list"
+                  >
                     sunscreen
                   </li>,
-                  <li>
+                  <li
+                    className="wc-essentials-list"
+                  >
                     hat
                   </li>,
                 ],
+                "className": "wc-essentials-list",
               },
               "ref": null,
               "rendered": Array [
@@ -1567,6 +1980,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "short-sleeves",
+                    "className": "wc-essentials-list",
                   },
                   "ref": null,
                   "rendered": "short-sleeves",
@@ -1578,9 +1992,22 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "open-toed shoes",
+                    "className": "wc-essentials-list",
                   },
                   "ref": null,
                   "rendered": "open-toed shoes",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": "fanny pack",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "fanny pack",
+                    "className": "wc-essentials-list",
+                  },
+                  "ref": null,
+                  "rendered": "fanny pack",
                   "type": "li",
                 },
                 Object {
@@ -1589,6 +2016,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "sunglasses",
+                    "className": "wc-essentials-list",
                   },
                   "ref": null,
                   "rendered": "sunglasses",
@@ -1600,6 +2028,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "sunscreen",
+                    "className": "wc-essentials-list",
                   },
                   "ref": null,
                   "rendered": "sunscreen",
@@ -1611,6 +2040,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "hat",
+                    "className": "wc-essentials-list",
                   },
                   "ref": null,
                   "rendered": "hat",
@@ -1672,7 +2102,9 @@ ShallowWrapper {
         <div
           className="wc-weather-container"
         >
-          <h2>
+          <h2
+            className="wc-day"
+          >
             Day undefined: Denver
           </h2>
           <section
@@ -1684,48 +2116,77 @@ ShallowWrapper {
                 Object {
                   "ReactComponent": [Function],
                   "__esModule": true,
-                  "default": "clear-day-gradient.svg",
+                  "default": "clear-day.svg",
                 }
               }
             />
             <section
               className="wc-temp-container"
             >
-              <p>
+              <p
+                className="wc-high"
+              >
                 High: 
                 69
-              </p>
-              <p>
-                Low: 
-                41
+                °
               </p>
               <p
-                className="wc-summary"
-              />
+                className="wc-low"
+              >
+                Low: 
+                41
+                °
+              </p>
             </section>
           </section>
+          <p
+            className="wc-summary"
+          />
         </div>,
-        <section>
-          <h3>
+        <section
+          className="wc-essentials"
+        >
+          <h3
+            className="wc-essentials-title"
+          >
             What to Pack:
           </h3>
-          <ul>
-            <li>
+          <ul
+            className="wc-essentials-list"
+          >
+            <li
+              className="wc-essentials-list"
+            >
               jacket
             </li>
-            <li>
+            <li
+              className="wc-essentials-list"
+            >
               warm hat
             </li>
-            <li>
+            <li
+              className="wc-essentials-list"
+            >
               close-toed shoes
             </li>
-            <li>
+            <li
+              className="wc-essentials-list"
+            >
+              fanny pack
+            </li>
+            <li
+              className="wc-essentials-list"
+            >
               sunglasses
             </li>
-            <li>
+            <li
+              className="wc-essentials-list"
+            >
               sunscreen
             </li>
-            <li>
+            <li
+              className="wc-essentials-list"
+            >
               hat
             </li>
           </ul>
@@ -1741,7 +2202,9 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <h2>
+            <h2
+              className="wc-day"
+            >
               Day undefined: Denver
             </h2>,
             <section
@@ -1753,26 +2216,32 @@ ShallowWrapper {
                   Object {
                     "ReactComponent": [Function],
                     "__esModule": true,
-                    "default": "clear-day-gradient.svg",
+                    "default": "clear-day.svg",
                   }
                 }
               />
               <section
                 className="wc-temp-container"
               >
-                <p>
+                <p
+                  className="wc-high"
+                >
                   High: 
                   69
-                </p>
-                <p>
-                  Low: 
-                  41
+                  °
                 </p>
                 <p
-                  className="wc-summary"
-                />
+                  className="wc-low"
+                >
+                  Low: 
+                  41
+                  °
+                </p>
               </section>
             </section>,
+            <p
+              className="wc-summary"
+            />,
           ],
           "className": "wc-weather-container",
         },
@@ -1784,6 +2253,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "Day undefined: Denver",
+              "className": "wc-day",
             },
             "ref": null,
             "rendered": "Day undefined: Denver",
@@ -1801,24 +2271,27 @@ ShallowWrapper {
                     Object {
                       "ReactComponent": [Function],
                       "__esModule": true,
-                      "default": "clear-day-gradient.svg",
+                      "default": "clear-day.svg",
                     }
                   }
                 />,
                 <section
                   className="wc-temp-container"
                 >
-                  <p>
+                  <p
+                    className="wc-high"
+                  >
                     High: 
                     69
-                  </p>
-                  <p>
-                    Low: 
-                    41
+                    °
                   </p>
                   <p
-                    className="wc-summary"
-                  />
+                    className="wc-low"
+                  >
+                    Low: 
+                    41
+                    °
+                  </p>
                 </section>,
               ],
               "className": "wc-temp-icon-container",
@@ -1834,7 +2307,7 @@ ShallowWrapper {
                   "src": Object {
                     "ReactComponent": [Function],
                     "__esModule": true,
-                    "default": "clear-day-gradient.svg",
+                    "default": "clear-day.svg",
                   },
                 },
                 "ref": null,
@@ -1847,17 +2320,20 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
-                    <p>
+                    <p
+                      className="wc-high"
+                    >
                       High: 
                       69
-                    </p>,
-                    <p>
-                      Low: 
-                      41
+                      °
                     </p>,
                     <p
-                      className="wc-summary"
-                    />,
+                      className="wc-low"
+                    >
+                      Low: 
+                      41
+                      °
+                    </p>,
                   ],
                   "className": "wc-temp-container",
                 },
@@ -1871,12 +2347,15 @@ ShallowWrapper {
                       "children": Array [
                         "High: ",
                         "69",
+                        "°",
                       ],
+                      "className": "wc-high",
                     },
                     "ref": null,
                     "rendered": Array [
                       "High: ",
                       "69",
+                      "°",
                     ],
                     "type": "p",
                   },
@@ -1888,25 +2367,16 @@ ShallowWrapper {
                       "children": Array [
                         "Low: ",
                         "41",
+                        "°",
                       ],
+                      "className": "wc-low",
                     },
                     "ref": null,
                     "rendered": Array [
                       "Low: ",
                       "41",
+                      "°",
                     ],
-                    "type": "p",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": undefined,
-                      "className": "wc-summary",
-                    },
-                    "ref": null,
-                    "rendered": null,
                     "type": "p",
                   },
                 ],
@@ -1914,6 +2384,18 @@ ShallowWrapper {
               },
             ],
             "type": "section",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+              "className": "wc-summary",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "p",
           },
         ],
         "type": "div",
@@ -1924,30 +2406,52 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <h3>
+            <h3
+              className="wc-essentials-title"
+            >
               What to Pack:
             </h3>,
-            <ul>
-              <li>
+            <ul
+              className="wc-essentials-list"
+            >
+              <li
+                className="wc-essentials-list"
+              >
                 jacket
               </li>
-              <li>
+              <li
+                className="wc-essentials-list"
+              >
                 warm hat
               </li>
-              <li>
+              <li
+                className="wc-essentials-list"
+              >
                 close-toed shoes
               </li>
-              <li>
+              <li
+                className="wc-essentials-list"
+              >
+                fanny pack
+              </li>
+              <li
+                className="wc-essentials-list"
+              >
                 sunglasses
               </li>
-              <li>
+              <li
+                className="wc-essentials-list"
+              >
                 sunscreen
               </li>
-              <li>
+              <li
+                className="wc-essentials-list"
+              >
                 hat
               </li>
             </ul>,
           ],
+          "className": "wc-essentials",
         },
         "ref": null,
         "rendered": Array [
@@ -1957,6 +2461,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "What to Pack:",
+              "className": "wc-essentials-title",
             },
             "ref": null,
             "rendered": "What to Pack:",
@@ -1968,25 +2473,43 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                <li>
+                <li
+                  className="wc-essentials-list"
+                >
                   jacket
                 </li>,
-                <li>
+                <li
+                  className="wc-essentials-list"
+                >
                   warm hat
                 </li>,
-                <li>
+                <li
+                  className="wc-essentials-list"
+                >
                   close-toed shoes
                 </li>,
-                <li>
+                <li
+                  className="wc-essentials-list"
+                >
+                  fanny pack
+                </li>,
+                <li
+                  className="wc-essentials-list"
+                >
                   sunglasses
                 </li>,
-                <li>
+                <li
+                  className="wc-essentials-list"
+                >
                   sunscreen
                 </li>,
-                <li>
+                <li
+                  className="wc-essentials-list"
+                >
                   hat
                 </li>,
               ],
+              "className": "wc-essentials-list",
             },
             "ref": null,
             "rendered": Array [
@@ -1996,6 +2519,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "jacket",
+                  "className": "wc-essentials-list",
                 },
                 "ref": null,
                 "rendered": "jacket",
@@ -2007,6 +2531,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "warm hat",
+                  "className": "wc-essentials-list",
                 },
                 "ref": null,
                 "rendered": "warm hat",
@@ -2018,9 +2543,22 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "close-toed shoes",
+                  "className": "wc-essentials-list",
                 },
                 "ref": null,
                 "rendered": "close-toed shoes",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": "fanny pack",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "fanny pack",
+                  "className": "wc-essentials-list",
+                },
+                "ref": null,
+                "rendered": "fanny pack",
                 "type": "li",
               },
               Object {
@@ -2029,6 +2567,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "sunglasses",
+                  "className": "wc-essentials-list",
                 },
                 "ref": null,
                 "rendered": "sunglasses",
@@ -2040,6 +2579,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "sunscreen",
+                  "className": "wc-essentials-list",
                 },
                 "ref": null,
                 "rendered": "sunscreen",
@@ -2051,6 +2591,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "hat",
+                  "className": "wc-essentials-list",
                 },
                 "ref": null,
                 "rendered": "hat",
@@ -2075,7 +2616,9 @@ ShallowWrapper {
           <div
             className="wc-weather-container"
           >
-            <h2>
+            <h2
+              className="wc-day"
+            >
               Day undefined: Denver
             </h2>
             <section
@@ -2087,48 +2630,77 @@ ShallowWrapper {
                   Object {
                     "ReactComponent": [Function],
                     "__esModule": true,
-                    "default": "clear-day-gradient.svg",
+                    "default": "clear-day.svg",
                   }
                 }
               />
               <section
                 className="wc-temp-container"
               >
-                <p>
+                <p
+                  className="wc-high"
+                >
                   High: 
                   69
-                </p>
-                <p>
-                  Low: 
-                  41
+                  °
                 </p>
                 <p
-                  className="wc-summary"
-                />
+                  className="wc-low"
+                >
+                  Low: 
+                  41
+                  °
+                </p>
               </section>
             </section>
+            <p
+              className="wc-summary"
+            />
           </div>,
-          <section>
-            <h3>
+          <section
+            className="wc-essentials"
+          >
+            <h3
+              className="wc-essentials-title"
+            >
               What to Pack:
             </h3>
-            <ul>
-              <li>
+            <ul
+              className="wc-essentials-list"
+            >
+              <li
+                className="wc-essentials-list"
+              >
                 jacket
               </li>
-              <li>
+              <li
+                className="wc-essentials-list"
+              >
                 warm hat
               </li>
-              <li>
+              <li
+                className="wc-essentials-list"
+              >
                 close-toed shoes
               </li>
-              <li>
+              <li
+                className="wc-essentials-list"
+              >
+                fanny pack
+              </li>
+              <li
+                className="wc-essentials-list"
+              >
                 sunglasses
               </li>
-              <li>
+              <li
+                className="wc-essentials-list"
+              >
                 sunscreen
               </li>
-              <li>
+              <li
+                className="wc-essentials-list"
+              >
                 hat
               </li>
             </ul>
@@ -2144,7 +2716,9 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <h2>
+              <h2
+                className="wc-day"
+              >
                 Day undefined: Denver
               </h2>,
               <section
@@ -2156,26 +2730,32 @@ ShallowWrapper {
                     Object {
                       "ReactComponent": [Function],
                       "__esModule": true,
-                      "default": "clear-day-gradient.svg",
+                      "default": "clear-day.svg",
                     }
                   }
                 />
                 <section
                   className="wc-temp-container"
                 >
-                  <p>
+                  <p
+                    className="wc-high"
+                  >
                     High: 
                     69
-                  </p>
-                  <p>
-                    Low: 
-                    41
+                    °
                   </p>
                   <p
-                    className="wc-summary"
-                  />
+                    className="wc-low"
+                  >
+                    Low: 
+                    41
+                    °
+                  </p>
                 </section>
               </section>,
+              <p
+                className="wc-summary"
+              />,
             ],
             "className": "wc-weather-container",
           },
@@ -2187,6 +2767,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "Day undefined: Denver",
+                "className": "wc-day",
               },
               "ref": null,
               "rendered": "Day undefined: Denver",
@@ -2204,24 +2785,27 @@ ShallowWrapper {
                       Object {
                         "ReactComponent": [Function],
                         "__esModule": true,
-                        "default": "clear-day-gradient.svg",
+                        "default": "clear-day.svg",
                       }
                     }
                   />,
                   <section
                     className="wc-temp-container"
                   >
-                    <p>
+                    <p
+                      className="wc-high"
+                    >
                       High: 
                       69
-                    </p>
-                    <p>
-                      Low: 
-                      41
+                      °
                     </p>
                     <p
-                      className="wc-summary"
-                    />
+                      className="wc-low"
+                    >
+                      Low: 
+                      41
+                      °
+                    </p>
                   </section>,
                 ],
                 "className": "wc-temp-icon-container",
@@ -2237,7 +2821,7 @@ ShallowWrapper {
                     "src": Object {
                       "ReactComponent": [Function],
                       "__esModule": true,
-                      "default": "clear-day-gradient.svg",
+                      "default": "clear-day.svg",
                     },
                   },
                   "ref": null,
@@ -2250,17 +2834,20 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
-                      <p>
+                      <p
+                        className="wc-high"
+                      >
                         High: 
                         69
-                      </p>,
-                      <p>
-                        Low: 
-                        41
+                        °
                       </p>,
                       <p
-                        className="wc-summary"
-                      />,
+                        className="wc-low"
+                      >
+                        Low: 
+                        41
+                        °
+                      </p>,
                     ],
                     "className": "wc-temp-container",
                   },
@@ -2274,12 +2861,15 @@ ShallowWrapper {
                         "children": Array [
                           "High: ",
                           "69",
+                          "°",
                         ],
+                        "className": "wc-high",
                       },
                       "ref": null,
                       "rendered": Array [
                         "High: ",
                         "69",
+                        "°",
                       ],
                       "type": "p",
                     },
@@ -2291,25 +2881,16 @@ ShallowWrapper {
                         "children": Array [
                           "Low: ",
                           "41",
+                          "°",
                         ],
+                        "className": "wc-low",
                       },
                       "ref": null,
                       "rendered": Array [
                         "Low: ",
                         "41",
+                        "°",
                       ],
-                      "type": "p",
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": undefined,
-                        "className": "wc-summary",
-                      },
-                      "ref": null,
-                      "rendered": null,
                       "type": "p",
                     },
                   ],
@@ -2317,6 +2898,18 @@ ShallowWrapper {
                 },
               ],
               "type": "section",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+                "className": "wc-summary",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "p",
             },
           ],
           "type": "div",
@@ -2327,30 +2920,52 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <h3>
+              <h3
+                className="wc-essentials-title"
+              >
                 What to Pack:
               </h3>,
-              <ul>
-                <li>
+              <ul
+                className="wc-essentials-list"
+              >
+                <li
+                  className="wc-essentials-list"
+                >
                   jacket
                 </li>
-                <li>
+                <li
+                  className="wc-essentials-list"
+                >
                   warm hat
                 </li>
-                <li>
+                <li
+                  className="wc-essentials-list"
+                >
                   close-toed shoes
                 </li>
-                <li>
+                <li
+                  className="wc-essentials-list"
+                >
+                  fanny pack
+                </li>
+                <li
+                  className="wc-essentials-list"
+                >
                   sunglasses
                 </li>
-                <li>
+                <li
+                  className="wc-essentials-list"
+                >
                   sunscreen
                 </li>
-                <li>
+                <li
+                  className="wc-essentials-list"
+                >
                   hat
                 </li>
               </ul>,
             ],
+            "className": "wc-essentials",
           },
           "ref": null,
           "rendered": Array [
@@ -2360,6 +2975,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "What to Pack:",
+                "className": "wc-essentials-title",
               },
               "ref": null,
               "rendered": "What to Pack:",
@@ -2371,25 +2987,43 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  <li>
+                  <li
+                    className="wc-essentials-list"
+                  >
                     jacket
                   </li>,
-                  <li>
+                  <li
+                    className="wc-essentials-list"
+                  >
                     warm hat
                   </li>,
-                  <li>
+                  <li
+                    className="wc-essentials-list"
+                  >
                     close-toed shoes
                   </li>,
-                  <li>
+                  <li
+                    className="wc-essentials-list"
+                  >
+                    fanny pack
+                  </li>,
+                  <li
+                    className="wc-essentials-list"
+                  >
                     sunglasses
                   </li>,
-                  <li>
+                  <li
+                    className="wc-essentials-list"
+                  >
                     sunscreen
                   </li>,
-                  <li>
+                  <li
+                    className="wc-essentials-list"
+                  >
                     hat
                   </li>,
                 ],
+                "className": "wc-essentials-list",
               },
               "ref": null,
               "rendered": Array [
@@ -2399,6 +3033,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "jacket",
+                    "className": "wc-essentials-list",
                   },
                   "ref": null,
                   "rendered": "jacket",
@@ -2410,6 +3045,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "warm hat",
+                    "className": "wc-essentials-list",
                   },
                   "ref": null,
                   "rendered": "warm hat",
@@ -2421,9 +3057,22 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "close-toed shoes",
+                    "className": "wc-essentials-list",
                   },
                   "ref": null,
                   "rendered": "close-toed shoes",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": "fanny pack",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "fanny pack",
+                    "className": "wc-essentials-list",
+                  },
+                  "ref": null,
+                  "rendered": "fanny pack",
                   "type": "li",
                 },
                 Object {
@@ -2432,6 +3081,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "sunglasses",
+                    "className": "wc-essentials-list",
                   },
                   "ref": null,
                   "rendered": "sunglasses",
@@ -2443,6 +3093,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "sunscreen",
+                    "className": "wc-essentials-list",
                   },
                   "ref": null,
                   "rendered": "sunscreen",
@@ -2454,6 +3105,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "hat",
+                    "className": "wc-essentials-list",
                   },
                   "ref": null,
                   "rendered": "hat",
@@ -2515,7 +3167,9 @@ ShallowWrapper {
         <div
           className="wc-weather-container"
         >
-          <h2>
+          <h2
+            className="wc-day"
+          >
             Day undefined: Denver
           </h2>
           <section
@@ -2527,54 +3181,87 @@ ShallowWrapper {
                 Object {
                   "ReactComponent": [Function],
                   "__esModule": true,
-                  "default": "clear-day-gradient.svg",
+                  "default": "clear-day.svg",
                 }
               }
             />
             <section
               className="wc-temp-container"
             >
-              <p>
+              <p
+                className="wc-high"
+              >
                 High: 
                 39
-              </p>
-              <p>
-                Low: 
-                38
+                °
               </p>
               <p
-                className="wc-summary"
-              />
+                className="wc-low"
+              >
+                Low: 
+                38
+                °
+              </p>
             </section>
           </section>
+          <p
+            className="wc-summary"
+          />
         </div>,
-        <section>
-          <h3>
+        <section
+          className="wc-essentials"
+        >
+          <h3
+            className="wc-essentials-title"
+          >
             What to Pack:
           </h3>
-          <ul>
-            <li>
+          <ul
+            className="wc-essentials-list"
+          >
+            <li
+              className="wc-essentials-list"
+            >
               heavy coat
             </li>
-            <li>
+            <li
+              className="wc-essentials-list"
+            >
               close-toed shoes
             </li>
-            <li>
+            <li
+              className="wc-essentials-list"
+            >
               scarf
             </li>
-            <li>
+            <li
+              className="wc-essentials-list"
+            >
               gloves
             </li>
-            <li>
+            <li
+              className="wc-essentials-list"
+            >
               warm hat
             </li>
-            <li>
+            <li
+              className="wc-essentials-list"
+            >
+              fanny pack
+            </li>
+            <li
+              className="wc-essentials-list"
+            >
               sunglasses
             </li>
-            <li>
+            <li
+              className="wc-essentials-list"
+            >
               sunscreen
             </li>
-            <li>
+            <li
+              className="wc-essentials-list"
+            >
               hat
             </li>
           </ul>
@@ -2590,7 +3277,9 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <h2>
+            <h2
+              className="wc-day"
+            >
               Day undefined: Denver
             </h2>,
             <section
@@ -2602,26 +3291,32 @@ ShallowWrapper {
                   Object {
                     "ReactComponent": [Function],
                     "__esModule": true,
-                    "default": "clear-day-gradient.svg",
+                    "default": "clear-day.svg",
                   }
                 }
               />
               <section
                 className="wc-temp-container"
               >
-                <p>
+                <p
+                  className="wc-high"
+                >
                   High: 
                   39
-                </p>
-                <p>
-                  Low: 
-                  38
+                  °
                 </p>
                 <p
-                  className="wc-summary"
-                />
+                  className="wc-low"
+                >
+                  Low: 
+                  38
+                  °
+                </p>
               </section>
             </section>,
+            <p
+              className="wc-summary"
+            />,
           ],
           "className": "wc-weather-container",
         },
@@ -2633,6 +3328,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "Day undefined: Denver",
+              "className": "wc-day",
             },
             "ref": null,
             "rendered": "Day undefined: Denver",
@@ -2650,24 +3346,27 @@ ShallowWrapper {
                     Object {
                       "ReactComponent": [Function],
                       "__esModule": true,
-                      "default": "clear-day-gradient.svg",
+                      "default": "clear-day.svg",
                     }
                   }
                 />,
                 <section
                   className="wc-temp-container"
                 >
-                  <p>
+                  <p
+                    className="wc-high"
+                  >
                     High: 
                     39
-                  </p>
-                  <p>
-                    Low: 
-                    38
+                    °
                   </p>
                   <p
-                    className="wc-summary"
-                  />
+                    className="wc-low"
+                  >
+                    Low: 
+                    38
+                    °
+                  </p>
                 </section>,
               ],
               "className": "wc-temp-icon-container",
@@ -2683,7 +3382,7 @@ ShallowWrapper {
                   "src": Object {
                     "ReactComponent": [Function],
                     "__esModule": true,
-                    "default": "clear-day-gradient.svg",
+                    "default": "clear-day.svg",
                   },
                 },
                 "ref": null,
@@ -2696,17 +3395,20 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
-                    <p>
+                    <p
+                      className="wc-high"
+                    >
                       High: 
                       39
-                    </p>,
-                    <p>
-                      Low: 
-                      38
+                      °
                     </p>,
                     <p
-                      className="wc-summary"
-                    />,
+                      className="wc-low"
+                    >
+                      Low: 
+                      38
+                      °
+                    </p>,
                   ],
                   "className": "wc-temp-container",
                 },
@@ -2720,12 +3422,15 @@ ShallowWrapper {
                       "children": Array [
                         "High: ",
                         "39",
+                        "°",
                       ],
+                      "className": "wc-high",
                     },
                     "ref": null,
                     "rendered": Array [
                       "High: ",
                       "39",
+                      "°",
                     ],
                     "type": "p",
                   },
@@ -2737,25 +3442,16 @@ ShallowWrapper {
                       "children": Array [
                         "Low: ",
                         "38",
+                        "°",
                       ],
+                      "className": "wc-low",
                     },
                     "ref": null,
                     "rendered": Array [
                       "Low: ",
                       "38",
+                      "°",
                     ],
-                    "type": "p",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": undefined,
-                      "className": "wc-summary",
-                    },
-                    "ref": null,
-                    "rendered": null,
                     "type": "p",
                   },
                 ],
@@ -2763,6 +3459,18 @@ ShallowWrapper {
               },
             ],
             "type": "section",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+              "className": "wc-summary",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "p",
           },
         ],
         "type": "div",
@@ -2773,36 +3481,62 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <h3>
+            <h3
+              className="wc-essentials-title"
+            >
               What to Pack:
             </h3>,
-            <ul>
-              <li>
+            <ul
+              className="wc-essentials-list"
+            >
+              <li
+                className="wc-essentials-list"
+              >
                 heavy coat
               </li>
-              <li>
+              <li
+                className="wc-essentials-list"
+              >
                 close-toed shoes
               </li>
-              <li>
+              <li
+                className="wc-essentials-list"
+              >
                 scarf
               </li>
-              <li>
+              <li
+                className="wc-essentials-list"
+              >
                 gloves
               </li>
-              <li>
+              <li
+                className="wc-essentials-list"
+              >
                 warm hat
               </li>
-              <li>
+              <li
+                className="wc-essentials-list"
+              >
+                fanny pack
+              </li>
+              <li
+                className="wc-essentials-list"
+              >
                 sunglasses
               </li>
-              <li>
+              <li
+                className="wc-essentials-list"
+              >
                 sunscreen
               </li>
-              <li>
+              <li
+                className="wc-essentials-list"
+              >
                 hat
               </li>
             </ul>,
           ],
+          "className": "wc-essentials",
         },
         "ref": null,
         "rendered": Array [
@@ -2812,6 +3546,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "What to Pack:",
+              "className": "wc-essentials-title",
             },
             "ref": null,
             "rendered": "What to Pack:",
@@ -2823,31 +3558,53 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                <li>
+                <li
+                  className="wc-essentials-list"
+                >
                   heavy coat
                 </li>,
-                <li>
+                <li
+                  className="wc-essentials-list"
+                >
                   close-toed shoes
                 </li>,
-                <li>
+                <li
+                  className="wc-essentials-list"
+                >
                   scarf
                 </li>,
-                <li>
+                <li
+                  className="wc-essentials-list"
+                >
                   gloves
                 </li>,
-                <li>
+                <li
+                  className="wc-essentials-list"
+                >
                   warm hat
                 </li>,
-                <li>
+                <li
+                  className="wc-essentials-list"
+                >
+                  fanny pack
+                </li>,
+                <li
+                  className="wc-essentials-list"
+                >
                   sunglasses
                 </li>,
-                <li>
+                <li
+                  className="wc-essentials-list"
+                >
                   sunscreen
                 </li>,
-                <li>
+                <li
+                  className="wc-essentials-list"
+                >
                   hat
                 </li>,
               ],
+              "className": "wc-essentials-list",
             },
             "ref": null,
             "rendered": Array [
@@ -2857,6 +3614,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "heavy coat",
+                  "className": "wc-essentials-list",
                 },
                 "ref": null,
                 "rendered": "heavy coat",
@@ -2868,6 +3626,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "close-toed shoes",
+                  "className": "wc-essentials-list",
                 },
                 "ref": null,
                 "rendered": "close-toed shoes",
@@ -2879,6 +3638,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "scarf",
+                  "className": "wc-essentials-list",
                 },
                 "ref": null,
                 "rendered": "scarf",
@@ -2890,6 +3650,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "gloves",
+                  "className": "wc-essentials-list",
                 },
                 "ref": null,
                 "rendered": "gloves",
@@ -2901,9 +3662,22 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "warm hat",
+                  "className": "wc-essentials-list",
                 },
                 "ref": null,
                 "rendered": "warm hat",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": "fanny pack",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "fanny pack",
+                  "className": "wc-essentials-list",
+                },
+                "ref": null,
+                "rendered": "fanny pack",
                 "type": "li",
               },
               Object {
@@ -2912,6 +3686,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "sunglasses",
+                  "className": "wc-essentials-list",
                 },
                 "ref": null,
                 "rendered": "sunglasses",
@@ -2923,6 +3698,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "sunscreen",
+                  "className": "wc-essentials-list",
                 },
                 "ref": null,
                 "rendered": "sunscreen",
@@ -2934,6 +3710,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "hat",
+                  "className": "wc-essentials-list",
                 },
                 "ref": null,
                 "rendered": "hat",
@@ -2958,7 +3735,9 @@ ShallowWrapper {
           <div
             className="wc-weather-container"
           >
-            <h2>
+            <h2
+              className="wc-day"
+            >
               Day undefined: Denver
             </h2>
             <section
@@ -2970,54 +3749,87 @@ ShallowWrapper {
                   Object {
                     "ReactComponent": [Function],
                     "__esModule": true,
-                    "default": "clear-day-gradient.svg",
+                    "default": "clear-day.svg",
                   }
                 }
               />
               <section
                 className="wc-temp-container"
               >
-                <p>
+                <p
+                  className="wc-high"
+                >
                   High: 
                   39
-                </p>
-                <p>
-                  Low: 
-                  38
+                  °
                 </p>
                 <p
-                  className="wc-summary"
-                />
+                  className="wc-low"
+                >
+                  Low: 
+                  38
+                  °
+                </p>
               </section>
             </section>
+            <p
+              className="wc-summary"
+            />
           </div>,
-          <section>
-            <h3>
+          <section
+            className="wc-essentials"
+          >
+            <h3
+              className="wc-essentials-title"
+            >
               What to Pack:
             </h3>
-            <ul>
-              <li>
+            <ul
+              className="wc-essentials-list"
+            >
+              <li
+                className="wc-essentials-list"
+              >
                 heavy coat
               </li>
-              <li>
+              <li
+                className="wc-essentials-list"
+              >
                 close-toed shoes
               </li>
-              <li>
+              <li
+                className="wc-essentials-list"
+              >
                 scarf
               </li>
-              <li>
+              <li
+                className="wc-essentials-list"
+              >
                 gloves
               </li>
-              <li>
+              <li
+                className="wc-essentials-list"
+              >
                 warm hat
               </li>
-              <li>
+              <li
+                className="wc-essentials-list"
+              >
+                fanny pack
+              </li>
+              <li
+                className="wc-essentials-list"
+              >
                 sunglasses
               </li>
-              <li>
+              <li
+                className="wc-essentials-list"
+              >
                 sunscreen
               </li>
-              <li>
+              <li
+                className="wc-essentials-list"
+              >
                 hat
               </li>
             </ul>
@@ -3033,7 +3845,9 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <h2>
+              <h2
+                className="wc-day"
+              >
                 Day undefined: Denver
               </h2>,
               <section
@@ -3045,26 +3859,32 @@ ShallowWrapper {
                     Object {
                       "ReactComponent": [Function],
                       "__esModule": true,
-                      "default": "clear-day-gradient.svg",
+                      "default": "clear-day.svg",
                     }
                   }
                 />
                 <section
                   className="wc-temp-container"
                 >
-                  <p>
+                  <p
+                    className="wc-high"
+                  >
                     High: 
                     39
-                  </p>
-                  <p>
-                    Low: 
-                    38
+                    °
                   </p>
                   <p
-                    className="wc-summary"
-                  />
+                    className="wc-low"
+                  >
+                    Low: 
+                    38
+                    °
+                  </p>
                 </section>
               </section>,
+              <p
+                className="wc-summary"
+              />,
             ],
             "className": "wc-weather-container",
           },
@@ -3076,6 +3896,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "Day undefined: Denver",
+                "className": "wc-day",
               },
               "ref": null,
               "rendered": "Day undefined: Denver",
@@ -3093,24 +3914,27 @@ ShallowWrapper {
                       Object {
                         "ReactComponent": [Function],
                         "__esModule": true,
-                        "default": "clear-day-gradient.svg",
+                        "default": "clear-day.svg",
                       }
                     }
                   />,
                   <section
                     className="wc-temp-container"
                   >
-                    <p>
+                    <p
+                      className="wc-high"
+                    >
                       High: 
                       39
-                    </p>
-                    <p>
-                      Low: 
-                      38
+                      °
                     </p>
                     <p
-                      className="wc-summary"
-                    />
+                      className="wc-low"
+                    >
+                      Low: 
+                      38
+                      °
+                    </p>
                   </section>,
                 ],
                 "className": "wc-temp-icon-container",
@@ -3126,7 +3950,7 @@ ShallowWrapper {
                     "src": Object {
                       "ReactComponent": [Function],
                       "__esModule": true,
-                      "default": "clear-day-gradient.svg",
+                      "default": "clear-day.svg",
                     },
                   },
                   "ref": null,
@@ -3139,17 +3963,20 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
-                      <p>
+                      <p
+                        className="wc-high"
+                      >
                         High: 
                         39
-                      </p>,
-                      <p>
-                        Low: 
-                        38
+                        °
                       </p>,
                       <p
-                        className="wc-summary"
-                      />,
+                        className="wc-low"
+                      >
+                        Low: 
+                        38
+                        °
+                      </p>,
                     ],
                     "className": "wc-temp-container",
                   },
@@ -3163,12 +3990,15 @@ ShallowWrapper {
                         "children": Array [
                           "High: ",
                           "39",
+                          "°",
                         ],
+                        "className": "wc-high",
                       },
                       "ref": null,
                       "rendered": Array [
                         "High: ",
                         "39",
+                        "°",
                       ],
                       "type": "p",
                     },
@@ -3180,25 +4010,16 @@ ShallowWrapper {
                         "children": Array [
                           "Low: ",
                           "38",
+                          "°",
                         ],
+                        "className": "wc-low",
                       },
                       "ref": null,
                       "rendered": Array [
                         "Low: ",
                         "38",
+                        "°",
                       ],
-                      "type": "p",
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": undefined,
-                        "className": "wc-summary",
-                      },
-                      "ref": null,
-                      "rendered": null,
                       "type": "p",
                     },
                   ],
@@ -3206,6 +4027,18 @@ ShallowWrapper {
                 },
               ],
               "type": "section",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+                "className": "wc-summary",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "p",
             },
           ],
           "type": "div",
@@ -3216,36 +4049,62 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <h3>
+              <h3
+                className="wc-essentials-title"
+              >
                 What to Pack:
               </h3>,
-              <ul>
-                <li>
+              <ul
+                className="wc-essentials-list"
+              >
+                <li
+                  className="wc-essentials-list"
+                >
                   heavy coat
                 </li>
-                <li>
+                <li
+                  className="wc-essentials-list"
+                >
                   close-toed shoes
                 </li>
-                <li>
+                <li
+                  className="wc-essentials-list"
+                >
                   scarf
                 </li>
-                <li>
+                <li
+                  className="wc-essentials-list"
+                >
                   gloves
                 </li>
-                <li>
+                <li
+                  className="wc-essentials-list"
+                >
                   warm hat
                 </li>
-                <li>
+                <li
+                  className="wc-essentials-list"
+                >
+                  fanny pack
+                </li>
+                <li
+                  className="wc-essentials-list"
+                >
                   sunglasses
                 </li>
-                <li>
+                <li
+                  className="wc-essentials-list"
+                >
                   sunscreen
                 </li>
-                <li>
+                <li
+                  className="wc-essentials-list"
+                >
                   hat
                 </li>
               </ul>,
             ],
+            "className": "wc-essentials",
           },
           "ref": null,
           "rendered": Array [
@@ -3255,6 +4114,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "What to Pack:",
+                "className": "wc-essentials-title",
               },
               "ref": null,
               "rendered": "What to Pack:",
@@ -3266,31 +4126,53 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  <li>
+                  <li
+                    className="wc-essentials-list"
+                  >
                     heavy coat
                   </li>,
-                  <li>
+                  <li
+                    className="wc-essentials-list"
+                  >
                     close-toed shoes
                   </li>,
-                  <li>
+                  <li
+                    className="wc-essentials-list"
+                  >
                     scarf
                   </li>,
-                  <li>
+                  <li
+                    className="wc-essentials-list"
+                  >
                     gloves
                   </li>,
-                  <li>
+                  <li
+                    className="wc-essentials-list"
+                  >
                     warm hat
                   </li>,
-                  <li>
+                  <li
+                    className="wc-essentials-list"
+                  >
+                    fanny pack
+                  </li>,
+                  <li
+                    className="wc-essentials-list"
+                  >
                     sunglasses
                   </li>,
-                  <li>
+                  <li
+                    className="wc-essentials-list"
+                  >
                     sunscreen
                   </li>,
-                  <li>
+                  <li
+                    className="wc-essentials-list"
+                  >
                     hat
                   </li>,
                 ],
+                "className": "wc-essentials-list",
               },
               "ref": null,
               "rendered": Array [
@@ -3300,6 +4182,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "heavy coat",
+                    "className": "wc-essentials-list",
                   },
                   "ref": null,
                   "rendered": "heavy coat",
@@ -3311,6 +4194,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "close-toed shoes",
+                    "className": "wc-essentials-list",
                   },
                   "ref": null,
                   "rendered": "close-toed shoes",
@@ -3322,6 +4206,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "scarf",
+                    "className": "wc-essentials-list",
                   },
                   "ref": null,
                   "rendered": "scarf",
@@ -3333,6 +4218,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "gloves",
+                    "className": "wc-essentials-list",
                   },
                   "ref": null,
                   "rendered": "gloves",
@@ -3344,9 +4230,22 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "warm hat",
+                    "className": "wc-essentials-list",
                   },
                   "ref": null,
                   "rendered": "warm hat",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": "fanny pack",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "fanny pack",
+                    "className": "wc-essentials-list",
+                  },
+                  "ref": null,
+                  "rendered": "fanny pack",
                   "type": "li",
                 },
                 Object {
@@ -3355,6 +4254,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "sunglasses",
+                    "className": "wc-essentials-list",
                   },
                   "ref": null,
                   "rendered": "sunglasses",
@@ -3366,6 +4266,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "sunscreen",
+                    "className": "wc-essentials-list",
                   },
                   "ref": null,
                   "rendered": "sunscreen",
@@ -3377,6 +4278,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "hat",
+                    "className": "wc-essentials-list",
                   },
                   "ref": null,
                   "rendered": "hat",
