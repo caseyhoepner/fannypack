@@ -9,9 +9,6 @@ React Router
 Enzyme
 Jest
 
-### See it live
-https://jetpack-turing.herokuapp.com/
-
 ### How to view locally:
 
 1. clone down this repo
