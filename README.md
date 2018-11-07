@@ -1,6 +1,13 @@
 # JetPack
 
-Going on a trip, but unsure what you need to pack? JetPack is a single-page React Redux web application and your one-stop-shop for getting a weather summary and a list of essentials you'll need to bring to make sure you're prepared for anything mother nature has in store. Simply give JetPack your destination cities and it will do the rest. Pack your bag and then rest easy the night before your trip knowing you have everything you'll need to be warm and dry on your journey.
+Going on a trip, but unsure what you need to pack? JetPack is a single-page web application and your one-stop-shop for getting a weather summary and a list of essentials you'll need to bring to make sure you're prepared for anything mother nature has in store. Simply give JetPack your destination cities and it will do the rest. Pack your bag and then rest easy the night before your trip knowing you have everything you'll need to be warm and dry on your journey.
+
+### Technologies Used
+React
+Redux
+React Router
+Enzyme
+Jest
 
 ### See it live
 https://jetpack-turing.herokuapp.com/
@@ -8,16 +15,16 @@ https://jetpack-turing.herokuapp.com/
 ### How to view locally:
 
 1. clone down this repo
-2. 'npm start' in your terminal
-3. go to 'localhost:3000' in your browser
+2. npm install
+3. npm start
 
 ### Landing Page:
 
-<img width="826" alt="screen shot 2018-11-07 at 06 17 32" src="https://user-images.githubusercontent.com/36767936/48133984-cc26ea00-e255-11e8-968f-508b8e385b4c.png">
+<img width="826" alt="landing page" src="https://user-images.githubusercontent.com/36767936/48133984-cc26ea00-e255-11e8-968f-508b8e385b4c.png">
 
-<img width="695" alt="screen shot 2018-11-07 at 06 19 40" src="https://user-images.githubusercontent.com/36767936/48133986-cdf0ad80-e255-11e8-962a-f46713401199.png">
+<img width="695" alt="loading page" src="https://user-images.githubusercontent.com/36767936/48133986-cdf0ad80-e255-11e8-962a-f46713401199.png">
 
-<img width="984" alt="screen shot 2018-11-07 at 06 23 27" src="https://user-images.githubusercontent.com/36767936/48133991-d0530780-e255-11e8-81e9-9e17a1010843.png">
+<img width="984" alt="results page" src="https://user-images.githubusercontent.com/36767936/48133991-d0530780-e255-11e8-81e9-9e17a1010843.png">
 
 ## Wireframes
 
