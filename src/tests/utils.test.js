@@ -17,7 +17,7 @@ describe('API', () => {
 
     // it('should call fetch with the correct url', async () => {
 
-    //   // const getLatLong = jest.fn(() => Promise.resolve({lat: 1, lng: 2}));
+    //   const getLatLong = jest.fn(() => Promise.resolve({lat: 1, lng: 2}));
 
     //   const getTimezone = jest.fn(() => Promise.resolve('America/Denver'));
 
@@ -35,6 +35,13 @@ describe('API', () => {
 
       expect(window.fetch).toHaveBeenCalledWith(expected);
     })
+
+    // it('should get the time', () => {
+    //   const result = API.getTime('America/Denver', 1)
+    //   const expected = '2018-11-07T12:44:10-07:00'
+      
+    //   expect(result).toEqual(expected);
+    // })
 
     it('should clean weather data', () => {
       const result = API.cleanData(mockWeatherDataClean);

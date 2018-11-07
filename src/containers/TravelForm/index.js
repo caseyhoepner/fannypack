@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { setWeather, changeToLoaded } from '../../actions';
 
+import { setWeather, changeToLoaded } from '../../actions';
 import Header from '../../components/Header';
-import { withRouter } from 'react-router-dom';
 import * as API from '../../utils/';
-import './TravelForm.css'
+import './TravelForm.css';
 
 export class TravelForm extends Component {
   constructor() {
@@ -23,14 +22,13 @@ export class TravelForm extends Component {
   }
 
   handleChange = (event) => {
-    event.preventDefault()
+    event.preventDefault();
     const { name, value } = event.target;
-
-    this.setState({[name]: value})
+    this.setState({[name]: value});
   }
 
   handleSubmit = (event) => {
-    event.preventDefault()
+    event.preventDefault();
     this.props.history.push('/results');
     this.getWeatherData();
   }
@@ -39,9 +37,17 @@ export class TravelForm extends Component {
     const { day1, day2, day3, day4, day5, day6, day7 } = this.state;
     const { setWeather, changeToLoaded } = this.props;
 
+    // for(let i = 1; i < 8; i++) {
+    //   console.log(`day${i}`)
+    //   if (`day${i}`) {
+    //     const weatherData = await API.fetchWeather(`day${i}, ${i}`);
+    //     setWeather(weatherData, `day${i}, ${i}`) 
+    //   }
+    // }
+
     if (day1) {
       const weatherData = await API.fetchWeather(day1, 1);
-      setWeather(weatherData, day1, 1) 
+      setWeather(weatherData, day1, 1);
     }
 
     if (day2) {
@@ -51,28 +57,29 @@ export class TravelForm extends Component {
 
     if (day3) {
       const weatherData = await API.fetchWeather(day3, 3);
-      setWeather(weatherData, day3, 3) 
+      setWeather(weatherData, day3, 3);
     }
 
     if (day4) {
       const weatherData = await API.fetchWeather(day4, 4);
-      setWeather(weatherData, day4, 4) 
+      setWeather(weatherData, day4, 4);
     }
 
     if (day5) {
       const weatherData = await API.fetchWeather(day5, 5);
-      setWeather(weatherData, day5, 5) 
+      setWeather(weatherData, day5, 5);
     }
 
     if (day6) {
       const weatherData = await API.fetchWeather(day6, 6);
-      setWeather(weatherData, day6, 6) 
+      setWeather(weatherData, day6, 6);
     }
 
     if (day7) {
       const weatherData = await API.fetchWeather(day7, 7);
       setWeather(weatherData, day7, 7);
     }
+    
     changeToLoaded(true);
   }
 
@@ -158,9 +165,6 @@ export class TravelForm extends Component {
                   />
               </section>              
               <button 
-                className='tf-add-btn'>+
-              </button>
-              <button 
                 className='tf-form-component tf-btn'>
                 Get Packing List
               </button>
@@ -181,4 +185,4 @@ TravelForm.propTypes = {
   changeToLoaded: PropTypes.func.isRequired,
 };
 
-export default withRouter(connect(null, mapDispatchToProps)(TravelForm));
+export default connect(null, mapDispatchToProps)(TravelForm);

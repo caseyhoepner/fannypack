@@ -58,7 +58,7 @@ export const WeatherCard = ({ highTemp, lowTemp, summary, icon, city, day}) => {
       <div className='wc-weather-container'>
         <h2 className='wc-day'>{`Day ${day}: ${formatCity(city)}`}</h2>
           <section className='wc-temp-icon-container'>
-            <img className='wc-icon' src={require(`../../assets/${icon}.svg`)} />
+            <img className='wc-icon' src={require(`../../assets/${icon}.svg`)} alt='An icon for visualizing the weather on the given day.' />
             <section className='wc-temp-container'>
               <p className='wc-high'>High: {highTemp.toFixed(0)}&#176;</p>
               <p className='wc-low'>Low: {lowTemp.toFixed(0)}&#176;</p>

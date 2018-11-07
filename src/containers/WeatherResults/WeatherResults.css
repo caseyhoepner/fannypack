@@ -40,3 +40,9 @@
   from, to { border-color: transparent }
   50% { border-color: orange; }
 }
+
+@media only screen and (max-width: 764px) {
+  .wr-container {
+    width: 90%;
+  }
+}

@@ -96,7 +96,7 @@ ShallowWrapper {
             <li
               className="wc-essentials-list"
             >
-              fanny pack
+              jetpack
             </li>
             <li
               className="wc-essentials-list"
@@ -356,7 +356,7 @@ ShallowWrapper {
               <li
                 className="wc-essentials-list"
               >
-                fanny pack
+                jetpack
               </li>
               <li
                 className="wc-essentials-list"
@@ -415,7 +415,7 @@ ShallowWrapper {
                 <li
                   className="wc-essentials-list"
                 >
-                  fanny pack
+                  jetpack
                 </li>,
                 <li
                   className="wc-essentials-list"
@@ -475,14 +475,14 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": "fanny pack",
+                "key": "jetpack",
                 "nodeType": "host",
                 "props": Object {
-                  "children": "fanny pack",
+                  "children": "jetpack",
                   "className": "wc-essentials-list",
                 },
                 "ref": null,
-                "rendered": "fanny pack",
+                "rendered": "jetpack",
                 "type": "li",
               },
               Object {
@@ -610,7 +610,7 @@ ShallowWrapper {
               <li
                 className="wc-essentials-list"
               >
-                fanny pack
+                jetpack
               </li>
               <li
                 className="wc-essentials-list"
@@ -870,7 +870,7 @@ ShallowWrapper {
                 <li
                   className="wc-essentials-list"
                 >
-                  fanny pack
+                  jetpack
                 </li>
                 <li
                   className="wc-essentials-list"
@@ -929,7 +929,7 @@ ShallowWrapper {
                   <li
                     className="wc-essentials-list"
                   >
-                    fanny pack
+                    jetpack
                   </li>,
                   <li
                     className="wc-essentials-list"
@@ -989,14 +989,14 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": "fanny pack",
+                  "key": "jetpack",
                   "nodeType": "host",
                   "props": Object {
-                    "children": "fanny pack",
+                    "children": "jetpack",
                     "className": "wc-essentials-list",
                   },
                   "ref": null,
-                  "rendered": "fanny pack",
+                  "rendered": "jetpack",
                   "type": "li",
                 },
                 Object {
@@ -1156,7 +1156,7 @@ ShallowWrapper {
             <li
               className="wc-essentials-list"
             >
-              fanny pack
+              jetpack
             </li>
             <li
               className="wc-essentials-list"
@@ -1411,7 +1411,7 @@ ShallowWrapper {
               <li
                 className="wc-essentials-list"
               >
-                fanny pack
+                jetpack
               </li>
               <li
                 className="wc-essentials-list"
@@ -1465,7 +1465,7 @@ ShallowWrapper {
                 <li
                   className="wc-essentials-list"
                 >
-                  fanny pack
+                  jetpack
                 </li>,
                 <li
                   className="wc-essentials-list"
@@ -1513,14 +1513,14 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": "fanny pack",
+                "key": "jetpack",
                 "nodeType": "host",
                 "props": Object {
-                  "children": "fanny pack",
+                  "children": "jetpack",
                   "className": "wc-essentials-list",
                 },
                 "ref": null,
-                "rendered": "fanny pack",
+                "rendered": "jetpack",
                 "type": "li",
               },
               Object {
@@ -1643,7 +1643,7 @@ ShallowWrapper {
               <li
                 className="wc-essentials-list"
               >
-                fanny pack
+                jetpack
               </li>
               <li
                 className="wc-essentials-list"
@@ -1898,7 +1898,7 @@ ShallowWrapper {
                 <li
                   className="wc-essentials-list"
                 >
-                  fanny pack
+                  jetpack
                 </li>
                 <li
                   className="wc-essentials-list"
@@ -1952,7 +1952,7 @@ ShallowWrapper {
                   <li
                     className="wc-essentials-list"
                   >
-                    fanny pack
+                    jetpack
                   </li>,
                   <li
                     className="wc-essentials-list"
@@ -2000,14 +2000,14 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": "fanny pack",
+                  "key": "jetpack",
                   "nodeType": "host",
                   "props": Object {
-                    "children": "fanny pack",
+                    "children": "jetpack",
                     "className": "wc-essentials-list",
                   },
                   "ref": null,
-                  "rendered": "fanny pack",
+                  "rendered": "jetpack",
                   "type": "li",
                 },
                 Object {
@@ -2172,7 +2172,7 @@ ShallowWrapper {
             <li
               className="wc-essentials-list"
             >
-              fanny pack
+              jetpack
             </li>
             <li
               className="wc-essentials-list"
@@ -2432,7 +2432,7 @@ ShallowWrapper {
               <li
                 className="wc-essentials-list"
               >
-                fanny pack
+                jetpack
               </li>
               <li
                 className="wc-essentials-list"
@@ -2491,7 +2491,7 @@ ShallowWrapper {
                 <li
                   className="wc-essentials-list"
                 >
-                  fanny pack
+                  jetpack
                 </li>,
                 <li
                   className="wc-essentials-list"
@@ -2551,14 +2551,14 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": "fanny pack",
+                "key": "jetpack",
                 "nodeType": "host",
                 "props": Object {
-                  "children": "fanny pack",
+                  "children": "jetpack",
                   "className": "wc-essentials-list",
                 },
                 "ref": null,
-                "rendered": "fanny pack",
+                "rendered": "jetpack",
                 "type": "li",
               },
               Object {
@@ -2686,7 +2686,7 @@ ShallowWrapper {
               <li
                 className="wc-essentials-list"
               >
-                fanny pack
+                jetpack
               </li>
               <li
                 className="wc-essentials-list"
@@ -2946,7 +2946,7 @@ ShallowWrapper {
                 <li
                   className="wc-essentials-list"
                 >
-                  fanny pack
+                  jetpack
                 </li>
                 <li
                   className="wc-essentials-list"
@@ -3005,7 +3005,7 @@ ShallowWrapper {
                   <li
                     className="wc-essentials-list"
                   >
-                    fanny pack
+                    jetpack
                   </li>,
                   <li
                     className="wc-essentials-list"
@@ -3065,14 +3065,14 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": "fanny pack",
+                  "key": "jetpack",
                   "nodeType": "host",
                   "props": Object {
-                    "children": "fanny pack",
+                    "children": "jetpack",
                     "className": "wc-essentials-list",
                   },
                   "ref": null,
-                  "rendered": "fanny pack",
+                  "rendered": "jetpack",
                   "type": "li",
                 },
                 Object {
@@ -3247,7 +3247,7 @@ ShallowWrapper {
             <li
               className="wc-essentials-list"
             >
-              fanny pack
+              jetpack
             </li>
             <li
               className="wc-essentials-list"
@@ -3517,7 +3517,7 @@ ShallowWrapper {
               <li
                 className="wc-essentials-list"
               >
-                fanny pack
+                jetpack
               </li>
               <li
                 className="wc-essentials-list"
@@ -3586,7 +3586,7 @@ ShallowWrapper {
                 <li
                   className="wc-essentials-list"
                 >
-                  fanny pack
+                  jetpack
                 </li>,
                 <li
                   className="wc-essentials-list"
@@ -3670,14 +3670,14 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": "fanny pack",
+                "key": "jetpack",
                 "nodeType": "host",
                 "props": Object {
-                  "children": "fanny pack",
+                  "children": "jetpack",
                   "className": "wc-essentials-list",
                 },
                 "ref": null,
-                "rendered": "fanny pack",
+                "rendered": "jetpack",
                 "type": "li",
               },
               Object {
@@ -3815,7 +3815,7 @@ ShallowWrapper {
               <li
                 className="wc-essentials-list"
               >
-                fanny pack
+                jetpack
               </li>
               <li
                 className="wc-essentials-list"
@@ -4085,7 +4085,7 @@ ShallowWrapper {
                 <li
                   className="wc-essentials-list"
                 >
-                  fanny pack
+                  jetpack
                 </li>
                 <li
                   className="wc-essentials-list"
@@ -4154,7 +4154,7 @@ ShallowWrapper {
                   <li
                     className="wc-essentials-list"
                   >
-                    fanny pack
+                    jetpack
                   </li>,
                   <li
                     className="wc-essentials-list"
@@ -4238,14 +4238,14 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": "fanny pack",
+                  "key": "jetpack",
                   "nodeType": "host",
                   "props": Object {
-                    "children": "fanny pack",
+                    "children": "jetpack",
                     "className": "wc-essentials-list",
                   },
                   "ref": null,
-                  "rendered": "fanny pack",
+                  "rendered": "jetpack",
                   "type": "li",
                 },
                 Object {

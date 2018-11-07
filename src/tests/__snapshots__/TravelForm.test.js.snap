@@ -147,11 +147,6 @@ ShallowWrapper {
               />
             </section>
             <button
-              className="tf-add-btn"
-            >
-              +
-            </button>
-            <button
               className="tf-form-component tf-btn"
             >
               Get Packing List
@@ -299,11 +294,6 @@ ShallowWrapper {
                 />
               </section>
               <button
-                className="tf-add-btn"
-              >
-                +
-              </button>
-              <button
                 className="tf-form-component tf-btn"
               >
                 Get Packing List
@@ -445,11 +435,6 @@ ShallowWrapper {
                     value=""
                   />
                 </section>,
-                <button
-                  className="tf-add-btn"
-                >
-                  +
-                </button>,
                 <button
                   className="tf-form-component tf-btn"
                 >
@@ -836,18 +821,6 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "+",
-                  "className": "tf-add-btn",
-                },
-                "ref": null,
-                "rendered": "+",
-                "type": "button",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
                   "children": "Get Packing List",
                   "className": "tf-form-component tf-btn",
                 },
@@ -997,11 +970,6 @@ ShallowWrapper {
                 />
               </section>
               <button
-                className="tf-add-btn"
-              >
-                +
-              </button>
-              <button
                 className="tf-form-component tf-btn"
               >
                 Get Packing List
@@ -1149,11 +1117,6 @@ ShallowWrapper {
                   />
                 </section>
                 <button
-                  className="tf-add-btn"
-                >
-                  +
-                </button>
-                <button
                   className="tf-form-component tf-btn"
                 >
                   Get Packing List
@@ -1295,11 +1258,6 @@ ShallowWrapper {
                       value=""
                     />
                   </section>,
-                  <button
-                    className="tf-add-btn"
-                  >
-                    +
-                  </button>,
                   <button
                     className="tf-form-component tf-btn"
                   >
@@ -1680,18 +1638,6 @@ ShallowWrapper {
                     },
                   ],
                   "type": "section",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "+",
-                    "className": "tf-add-btn",
-                  },
-                  "ref": null,
-                  "rendered": "+",
-                  "type": "button",
                 },
                 Object {
                   "instance": null,
