@@ -2,6 +2,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+.h-title-section {
+  display: flex;
+  align-items: center;
 }
 
 .h-title {
@@ -23,4 +29,12 @@
   margin-left: 13px;
   width: 60px;
   height: 60px;
+}
+
+.h-search-again {
+  color: #fff;
+}
+
+.hide {
+  display: none;
 }

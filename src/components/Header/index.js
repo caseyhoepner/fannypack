@@ -1,15 +1,30 @@
-import React from 'react';
+import React, { Component } from 'react';
 import jet from '../../assets/jet.svg';
+import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
 
 import './Header.css'
 
-const Header = () => {
-  return (
-    <div className='h-header-container'>
-      <h1 className='h-title'>JetPack</h1>
-      <img className='h-jet' src={jet} alt='Icon of a jet taking off.'/>
-    </div>
-  )
+export class Header extends Component {
+  render() {
+    return (
+      <div className='h-header-container'>
+        <section className='h-title-section'>
+        <h1 className='h-title'>JetPack</h1>
+        <img className='h-jet' src={jet} alt='Icon of a jet taking off.'/>
+        </section>
+        <Link 
+          className={this.props.isLoaded ? 'h-search-again' : 'hide'}
+          to="/">
+          Search Again
+        </Link>
+      </div>
+    )
+  }
 }
 
-export default Header;
+const mapStateToProps = (state) => ({
+  isLoaded: state.isLoaded
+})
+
+export default connect(mapStateToProps)(Header);

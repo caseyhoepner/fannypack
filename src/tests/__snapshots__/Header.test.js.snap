@@ -24,6 +24,7 @@ ShallowWrapper {
           JetPack
         </h1>,
         <img
+          alt="Icon of a jet taking off."
           className="h-jet"
           src="jet.svg"
         />,
@@ -49,6 +50,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
+          "alt": "Icon of a jet taking off.",
           "className": "h-jet",
           "src": "jet.svg",
         },
@@ -72,6 +74,7 @@ ShallowWrapper {
             JetPack
           </h1>,
           <img
+            alt="Icon of a jet taking off."
             className="h-jet"
             src="jet.svg"
           />,
@@ -97,6 +100,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
+            "alt": "Icon of a jet taking off.",
             "className": "h-jet",
             "src": "jet.svg",
           },
