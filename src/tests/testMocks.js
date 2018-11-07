@@ -6,3 +6,34 @@ export const mockWeatherData = {
     summary: 'Mostly cloudy.',
     icon: 'rain-clouds.svg'
   }
+
+export const mockWeatherDataClean = { 
+    hourly: {
+      summary: 'Mostly cloudy.',
+      data: [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {
+          icon: 'rain-clouds.svg'
+        }
+      ]
+    },
+    daily: {
+      data: [
+        {
+          temperatureHigh: 70,
+          temperatureLow: 50,
+        }
+      ]
+    }
+  }

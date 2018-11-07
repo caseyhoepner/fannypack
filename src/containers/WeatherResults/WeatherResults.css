@@ -1,8 +1,9 @@
 .wr-container {
   display: grid;
   grid-gap: 15px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  margin: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  margin: 20px auto;
+  width: 70%;
 }
 
 .wr-loading-container {
@@ -18,8 +19,8 @@
 }
 
 .typewriter h1 {
+  color: #fff;
   padding: 20px 0 0 0;
-  /*font-family: monospace;*/
   overflow: hidden;
   border-right: .15em solid orange;
   white-space: nowrap;

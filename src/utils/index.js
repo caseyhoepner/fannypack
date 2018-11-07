@@ -1,37 +1,51 @@
 import Geocode from "react-geocode";
 import { weatherApiKey, googleApiKey } from './API-key.js'
-import Moment from 'react-moment';
 import 'moment-timezone';
 var moment = require('moment');
 
-export const fetchWeather = async (city) => {
-  const latLong = await getLatLong(city)
-  const time = moment().format(); 
-  const url = `https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/${weatherApiKey}/${latLong.lat},${latLong.lng},${time}`;
+export const fetchWeather = async (city, diff) => {
+  try {
+    const latLong = await getLatLong(city)
+    const timezone = await getTimezone(latLong);
+    const now = moment()
+    const then = now.tz(timezone).add(diff, 'days').format();
+    const url = `https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/${weatherApiKey}/${latLong.lat},${latLong.lng},${then}`;
+    const response = await fetch(url);
 
-// [YYYY]-[MM]-[DD]T[HH]:[MM]:[SS][timezone]
+    if (!response.ok) {
+      console.log(response.statusText)
 
-  const response = await fetch(url);
-  if (!response.ok) {
-    console.log(response.statusText)
-  } else {
-  const weatherData = await response.json();
-  console.log(weatherData)
-  return cleanData(weatherData)
+    } else {
+    const weatherData = await response.json();
+    console.log(weatherData)
+    return cleanData(weatherData)
+    }
+  } catch(error) {
+    console.log(error)
   }
 }
 
-const getLatLong = async (city) => {
+export const getLatLong = async (city) => {
   Geocode.setApiKey(googleApiKey);
-  Geocode.enableDebug();
   const response = await Geocode.fromAddress(city)
   const latLong = await response.results[0].geometry.location;
 
-  return(latLong)
+  return(latLong);
 }
 
-const cleanData = (weatherData) => {
-  const { summary, temperatureHigh, temperatureLow, icon } = weatherData.daily.data[0]
+export const getTimezone = async (latLong) => {
+  const url = `https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/${weatherApiKey}/${latLong.lat},${latLong.lng}`;
+  const response = await fetch(url)
+  const urlData = await response.json();
+
+  return urlData.timezone;
+} 
+
+export const cleanData = (weatherData) => {
+  const { temperatureHigh, temperatureLow } = weatherData.daily.data[0]
+  const { icon } = weatherData.hourly.data[12];
+  const { summary } = weatherData.hourly;
+
   return { 
     highTemp: temperatureHigh,
     lowTemp: temperatureLow,

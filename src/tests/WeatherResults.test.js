@@ -3,6 +3,7 @@ import { shallow, mount } from 'enzyme'
 import { mockWeatherData } from './testMocks';
 import { WeatherResults, mapStateToProps } from '../containers/WeatherResults'
 import * as Actions from '../actions'
+jest.mock('uuid', () => jest.fn(() => 1));
 
 describe('WeatherResults', () => {
   describe('WeatherResults Component', () => {

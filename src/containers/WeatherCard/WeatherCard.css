@@ -1,0 +1,61 @@
+.wc-icon {
+  width: 75px;
+  height: 75px;
+}
+
+.wc-container {
+  border-radius: 10px;
+  letter-spacing: 1px;
+  color: #fff;
+  background-color: rgba(255, 255, 255, .05);
+}
+
+.wc-temp-icon-container {
+  margin: 10px 0 0;
+  display: flex;
+  padding: 0 20px;
+  color: #fff;
+}
+
+.wc-temp-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 0 20px;
+  color: #fff;
+}
+
+.wc-high {
+  color: #fff;
+}
+
+.wc-low {
+  padding-top: 5px;
+  color: #fff;
+}
+
+.wc-summary {
+  padding: 10px 20px;
+  color: #fff;
+}
+
+.wc-day {
+  background-color: rgba(255, 255, 255, .1);
+  padding: 20px;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  color: #fff;
+}
+
+.wc-essentials {
+  padding: 20px;
+  color: #fff;
+}
+
+.wc-essentials-title {
+  color: #fff;
+}
+
+.wc-essentials-list {
+  color: #fff;
+  list-style-type: none;
+}

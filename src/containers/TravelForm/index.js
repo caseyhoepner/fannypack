@@ -3,9 +3,9 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { setWeather, changeToLoaded } from '../../actions';
 
-import Header from '../../containers/Header';
+import Header from '../../components/Header';
 import { withRouter } from 'react-router-dom';
-import * as API from '../../utils';
+import * as API from '../../utils/';
 import './TravelForm.css'
 
 export class TravelForm extends Component {
@@ -29,7 +29,7 @@ export class TravelForm extends Component {
     this.setState({[name]: value})
   }
 
-  handleSubmit = async (event) => {
+  handleSubmit = (event) => {
     event.preventDefault()
     this.props.history.push('/results');
     this.getWeatherData();
@@ -40,38 +40,38 @@ export class TravelForm extends Component {
     const { setWeather, changeToLoaded } = this.props;
 
     if (day1) {
-      const weatherData = await API.fetchWeather(day1);
-      await setWeather(weatherData, day1, 1) 
+      const weatherData = await API.fetchWeather(day1, 1);
+      setWeather(weatherData, day1, 1) 
     }
 
     if (day2) {
-      const weatherData = await API.fetchWeather(day2);
-      await setWeather(weatherData, day2, 2);
+      const weatherData = await API.fetchWeather(day2, 2);
+      setWeather(weatherData, day2, 2);
     }
 
     if (day3) {
-      const weatherData = await API.fetchWeather(day3);
-      await setWeather(weatherData, day3, 3) 
+      const weatherData = await API.fetchWeather(day3, 3);
+      setWeather(weatherData, day3, 3) 
     }
 
     if (day4) {
-      const weatherData = await API.fetchWeather(day4);
-      await setWeather(weatherData, day4, 4) 
+      const weatherData = await API.fetchWeather(day4, 4);
+      setWeather(weatherData, day4, 4) 
     }
 
     if (day5) {
-      const weatherData = await API.fetchWeather(day5);
-      await setWeather(weatherData, day5, 5) 
+      const weatherData = await API.fetchWeather(day5, 5);
+      setWeather(weatherData, day5, 5) 
     }
 
     if (day6) {
-      const weatherData = await API.fetchWeather(day6);
-      await setWeather(weatherData, day6, 6) 
+      const weatherData = await API.fetchWeather(day6, 6);
+      setWeather(weatherData, day6, 6) 
     }
 
     if (day7) {
-      const weatherData = await API.fetchWeather(day7);
-      await setWeather(weatherData, day7, 7);
+      const weatherData = await API.fetchWeather(day7, 7);
+      setWeather(weatherData, day7, 7);
     }
     changeToLoaded(true);
   }
@@ -178,7 +178,7 @@ export const mapDispatchToProps = (dispatch) => ({
 
 TravelForm.propTypes = {
   setWeather: PropTypes.func.isRequired,
-  changeToLoaded: PropTypes.func.isRequired
+  changeToLoaded: PropTypes.func.isRequired,
 };
 
 export default withRouter(connect(null, mapDispatchToProps)(TravelForm));
