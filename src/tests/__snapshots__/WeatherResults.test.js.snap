@@ -32,7 +32,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <Header />,
+        <withRouter(Connect(Header)) />,
         <div
           className="wr-container"
         >
@@ -106,7 +106,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <Header />,
+          <withRouter(Connect(Header)) />,
           <div
             className="wr-container"
           >
@@ -226,7 +226,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <Header />,
+        <withRouter(Connect(Header)) />,
         <div
           className="wr-container"
         >
@@ -359,7 +359,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <Header />,
+          <withRouter(Connect(Header)) />,
           <div
             className="wr-container"
           >

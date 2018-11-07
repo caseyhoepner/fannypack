@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
 import { setWeather, changeToLoaded } from '../../actions';
-import Header from '../../components/Header';
+import Header from '../../containers/Header';
 import * as API from '../../utils/';
 import './TravelForm.css';
 

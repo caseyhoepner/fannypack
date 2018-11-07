@@ -23,7 +23,7 @@ export class Header extends Component {
   }
 }
 
-const mapStateToProps = (state) => ({
+export const mapStateToProps = (state) => ({
   isLoaded: state.isLoaded
 })
 
