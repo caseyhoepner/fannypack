@@ -12,7 +12,7 @@ export const fetchWeather = async (city, diff) => {
     const response = await fetch(url);
 
     if (!response.ok) {
-      throw new Error(response.statusText)
+      console.log(response.statusText)
 
     } else {
     const weatherData = await response.json();
@@ -33,7 +33,7 @@ export const getLatLong = async (city) => {
 
     return (latLong);
   } catch(error) {
-      throw Error(error.message)
+      throw new Error(error.message)
     }
 }
 
@@ -45,7 +45,7 @@ export const getTimezone = async (latLong) => {
 
     return urlData.timezone;
   } catch(error) {
-      throw Error(error.message)
+      throw new Error(error.message)
   }
 } 
 
