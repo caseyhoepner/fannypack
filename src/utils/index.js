@@ -21,7 +21,6 @@ export const fetchWeather = async (city, diff) => {
     }
   } catch(error) {
       console.log(error.message)
-
   }
 }
 

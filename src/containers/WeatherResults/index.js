@@ -1,5 +1,4 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
@@ -46,4 +45,4 @@ WeatherResults.propTypes = {
   isLoaded: PropTypes.bool.isRequired,
 };
 
-export default withRouter(connect(mapStateToProps)(WeatherResults));
+export default connect(mapStateToProps)(WeatherResults);
