@@ -51,7 +51,7 @@ describe('WeatherCard', () => {
   describe('mapStateToProps', () => {
     it('should parse the weatherData from state', () => {
       const mockState = {
-        isLoggedIn: true,
+        isLoaded: true,
         weatherData: mockWeatherData
       }
       const expected = mockWeatherData

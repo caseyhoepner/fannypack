@@ -3,7 +3,7 @@ import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
-import Header from '../../components/Header';
+import Header from '../../containers/Header';
 import WeatherCard from '../../containers/WeatherCard';
 import suitcase from '../../assets/suitcase.svg';
 import './WeatherResults.css';

@@ -46,16 +46,17 @@ describe('TravelForm', () => {
 
     it('calls handleSubmit onSubmit of the form', () => {
       const spy = spyOn(wrapper.instance(), 'handleSubmit')
-      wrapper.instance().forceUpdate()
+      wrapper.instance().forceUpdate();
 
-      wrapper.find('form').simulate('submit')
+      wrapper.find('form').simulate('submit');
 
-      expect(spy).toHaveBeenCalled()
+      expect(spy).toHaveBeenCalled();
     })
 
     it('calls getWeatherData in handleSubmit', () => {
       wrapper = shallow(<TravelForm setWeather={setWeather} history={[]} changeToLoaded={changeToLoaded}/>);
-      let mockEvent = { preventDefault: jest.fn() }
+
+      const mockEvent = { preventDefault: jest.fn() }
       const spy = spyOn(wrapper.instance(), 'getWeatherData')
 
       wrapper.instance().handleSubmit(mockEvent)

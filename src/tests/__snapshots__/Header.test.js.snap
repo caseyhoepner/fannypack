@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Header should match the snapshot 1`] = `
+exports[`Header Header Component should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Header />,
@@ -18,15 +18,27 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <h1
-          className="h-title"
+        <section
+          className="h-title-section"
         >
-          JetPack
-        </h1>,
-        <img
-          className="h-jet"
-          src="jet.svg"
-        />,
+          <h1
+            className="h-title"
+          >
+            JetPack
+          </h1>
+          <img
+            alt="Icon of a jet taking off."
+            className="h-jet"
+            src="jet.svg"
+          />
+        </section>,
+        <Link
+          className="hide"
+          replace={false}
+          to="/"
+        >
+          Search Again
+        </Link>,
       ],
       "className": "h-header-container",
     },
@@ -37,24 +49,63 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "JetPack",
-          "className": "h-title",
+          "children": Array [
+            <h1
+              className="h-title"
+            >
+              JetPack
+            </h1>,
+            <img
+              alt="Icon of a jet taking off."
+              className="h-jet"
+              src="jet.svg"
+            />,
+          ],
+          "className": "h-title-section",
         },
         "ref": null,
-        "rendered": "JetPack",
-        "type": "h1",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "JetPack",
+              "className": "h-title",
+            },
+            "ref": null,
+            "rendered": "JetPack",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "Icon of a jet taking off.",
+              "className": "h-jet",
+              "src": "jet.svg",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+        ],
+        "type": "section",
       },
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
+        "nodeType": "class",
         "props": Object {
-          "className": "h-jet",
-          "src": "jet.svg",
+          "children": "Search Again",
+          "className": "hide",
+          "replace": false,
+          "to": "/",
         },
         "ref": null,
-        "rendered": null,
-        "type": "img",
+        "rendered": "Search Again",
+        "type": [Function],
       },
     ],
     "type": "div",
@@ -66,15 +117,27 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h1
-            className="h-title"
+          <section
+            className="h-title-section"
           >
-            JetPack
-          </h1>,
-          <img
-            className="h-jet"
-            src="jet.svg"
-          />,
+            <h1
+              className="h-title"
+            >
+              JetPack
+            </h1>
+            <img
+              alt="Icon of a jet taking off."
+              className="h-jet"
+              src="jet.svg"
+            />
+          </section>,
+          <Link
+            className="hide"
+            replace={false}
+            to="/"
+          >
+            Search Again
+          </Link>,
         ],
         "className": "h-header-container",
       },
@@ -85,24 +148,295 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "JetPack",
-            "className": "h-title",
+            "children": Array [
+              <h1
+                className="h-title"
+              >
+                JetPack
+              </h1>,
+              <img
+                alt="Icon of a jet taking off."
+                className="h-jet"
+                src="jet.svg"
+              />,
+            ],
+            "className": "h-title-section",
           },
           "ref": null,
-          "rendered": "JetPack",
-          "type": "h1",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "JetPack",
+                "className": "h-title",
+              },
+              "ref": null,
+              "rendered": "JetPack",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "Icon of a jet taking off.",
+                "className": "h-jet",
+                "src": "jet.svg",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+          ],
+          "type": "section",
         },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Search Again",
+            "className": "hide",
+            "replace": false,
+            "to": "/",
+          },
+          "ref": null,
+          "rendered": "Search Again",
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Header Header Component should match the snapshot 2`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Header
+    isLoaded="true"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <section
+          className="h-title-section"
+        >
+          <h1
+            className="h-title"
+          >
+            JetPack
+          </h1>
+          <img
+            alt="Icon of a jet taking off."
+            className="h-jet"
+            src="jet.svg"
+          />
+        </section>,
+        <Link
+          className="h-search-again"
+          replace={false}
+          to="/"
+        >
+          Search Again
+        </Link>,
+      ],
+      "className": "h-header-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1
+              className="h-title"
+            >
+              JetPack
+            </h1>,
+            <img
+              alt="Icon of a jet taking off."
+              className="h-jet"
+              src="jet.svg"
+            />,
+          ],
+          "className": "h-title-section",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "JetPack",
+              "className": "h-title",
+            },
+            "ref": null,
+            "rendered": "JetPack",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "Icon of a jet taking off.",
+              "className": "h-jet",
+              "src": "jet.svg",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+        ],
+        "type": "section",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "Search Again",
+          "className": "h-search-again",
+          "replace": false,
+          "to": "/",
+        },
+        "ref": null,
+        "rendered": "Search Again",
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <section
+            className="h-title-section"
+          >
+            <h1
+              className="h-title"
+            >
+              JetPack
+            </h1>
+            <img
+              alt="Icon of a jet taking off."
+              className="h-jet"
+              src="jet.svg"
+            />
+          </section>,
+          <Link
+            className="h-search-again"
+            replace={false}
+            to="/"
+          >
+            Search Again
+          </Link>,
+        ],
+        "className": "h-header-container",
+      },
+      "ref": null,
+      "rendered": Array [
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "className": "h-jet",
-            "src": "jet.svg",
+            "children": Array [
+              <h1
+                className="h-title"
+              >
+                JetPack
+              </h1>,
+              <img
+                alt="Icon of a jet taking off."
+                className="h-jet"
+                src="jet.svg"
+              />,
+            ],
+            "className": "h-title-section",
           },
           "ref": null,
-          "rendered": null,
-          "type": "img",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "JetPack",
+                "className": "h-title",
+              },
+              "ref": null,
+              "rendered": "JetPack",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "Icon of a jet taking off.",
+                "className": "h-jet",
+                "src": "jet.svg",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+          ],
+          "type": "section",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Search Again",
+            "className": "h-search-again",
+            "replace": false,
+            "to": "/",
+          },
+          "ref": null,
+          "rendered": "Search Again",
+          "type": [Function],
         },
       ],
       "type": "div",

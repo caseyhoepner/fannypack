@@ -32,7 +32,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <Header />,
+        <withRouter(Connect(Header)) />,
         <div
           className="wr-container"
         >
@@ -106,7 +106,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <Header />,
+          <withRouter(Connect(Header)) />,
           <div
             className="wr-container"
           >
@@ -226,7 +226,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <Header />,
+        <withRouter(Connect(Header)) />,
         <div
           className="wr-container"
         >
@@ -234,6 +234,7 @@ ShallowWrapper {
             className="wr-loading-container"
           >
             <img
+              alt="Icon of a suitcase."
               className="wr-suitcase"
               src="suitcase.svg"
             />
@@ -268,6 +269,7 @@ ShallowWrapper {
             className="wr-loading-container"
           >
             <img
+              alt="Icon of a suitcase."
               className="wr-suitcase"
               src="suitcase.svg"
             />
@@ -289,6 +291,7 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <img
+                alt="Icon of a suitcase."
                 className="wr-suitcase"
                 src="suitcase.svg"
               />,
@@ -309,6 +312,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
+                "alt": "Icon of a suitcase.",
                 "className": "wr-suitcase",
                 "src": "suitcase.svg",
               },
@@ -355,7 +359,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <Header />,
+          <withRouter(Connect(Header)) />,
           <div
             className="wr-container"
           >
@@ -363,6 +367,7 @@ ShallowWrapper {
               className="wr-loading-container"
             >
               <img
+                alt="Icon of a suitcase."
                 className="wr-suitcase"
                 src="suitcase.svg"
               />
@@ -397,6 +402,7 @@ ShallowWrapper {
               className="wr-loading-container"
             >
               <img
+                alt="Icon of a suitcase."
                 className="wr-suitcase"
                 src="suitcase.svg"
               />
@@ -418,6 +424,7 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <img
+                  alt="Icon of a suitcase."
                   className="wr-suitcase"
                   src="suitcase.svg"
                 />,
@@ -438,6 +445,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
+                  "alt": "Icon of a suitcase.",
                   "className": "wr-suitcase",
                   "src": "suitcase.svg",
                 },

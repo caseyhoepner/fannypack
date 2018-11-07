@@ -21,7 +21,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <Header />,
+        <withRouter(Connect(Header)) />,
         <form
           className="tf-form"
           onSubmit={[Function]}
@@ -844,7 +844,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <Header />,
+          <withRouter(Connect(Header)) />,
           <form
             className="tf-form"
             onSubmit={[Function]}
