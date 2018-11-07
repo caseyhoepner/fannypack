@@ -7,13 +7,12 @@ export const fetchWeather = async (city, diff) => {
   try {
     const latLong = await getLatLong(city)
     const timezone = await getTimezone(latLong);
-    const now = moment()
-    const then = now.tz(timezone).add(diff, 'days').format();
-    const url = `https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/${weatherApiKey}/${latLong.lat},${latLong.lng},${then}`;
+    const time = getTime(timezone, diff);
+    const url = `https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/${weatherApiKey}/${latLong.lat},${latLong.lng},${time}`;
     const response = await fetch(url);
 
     if (!response.ok) {
-      console.log(response.statusText)
+      throw new Error(response.statusText)
 
     } else {
     const weatherData = await response.json();
@@ -21,25 +20,40 @@ export const fetchWeather = async (city, diff) => {
     return cleanData(weatherData)
     }
   } catch(error) {
-    console.log(error)
+      console.log(error.message)
+
   }
 }
 
 export const getLatLong = async (city) => {
-  Geocode.setApiKey(googleApiKey);
-  const response = await Geocode.fromAddress(city)
-  const latLong = await response.results[0].geometry.location;
+  try {
+    Geocode.setApiKey(googleApiKey);
+    const response = await Geocode.fromAddress(city)
+    const latLong = await response.results[0].geometry.location;
 
-  return(latLong);
+    return (latLong);
+  } catch(error) {
+      throw Error(error.message)
+    }
 }
 
 export const getTimezone = async (latLong) => {
-  const url = `https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/${weatherApiKey}/${latLong.lat},${latLong.lng}`;
-  const response = await fetch(url)
-  const urlData = await response.json();
+  try {
+    const url = `https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/${weatherApiKey}/${latLong.lat},${latLong.lng}`;
+    const response = await fetch(url)
+    const urlData = await response.json();
 
-  return urlData.timezone;
+    return urlData.timezone;
+  } catch(error) {
+      throw Error(error.message)
+  }
 } 
+
+export const getTime = (timezone, diff) => {
+  const now = moment()
+  const time = now.tz(timezone).add(diff, 'days').format();
+  return time;
+}
 
 export const cleanData = (weatherData) => {
   const { temperatureHigh, temperatureLow } = weatherData.daily.data[0]

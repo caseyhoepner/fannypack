@@ -15,7 +15,7 @@ export const WeatherResults = ({ weatherData, isLoaded }) => {
   if (!isLoaded) {
     results = 
       <section className='wr-loading-container'>
-        <img className='wr-suitcase' src={suitcase} />
+        <img className='wr-suitcase' src={suitcase} alt='Icon of a suitcase.'/>
         <div className='typewriter'>
           <h1>Compiling your packing lists...</h1>
         </div>

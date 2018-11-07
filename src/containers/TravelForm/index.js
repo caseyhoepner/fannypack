@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { withRouter } from 'react-router-dom';
 
 import { setWeather, changeToLoaded } from '../../actions';
 import Header from '../../components/Header';
@@ -186,4 +185,4 @@ TravelForm.propTypes = {
   changeToLoaded: PropTypes.func.isRequired,
 };
 
-export default withRouter(connect(null, mapDispatchToProps)(TravelForm));
+export default connect(null, mapDispatchToProps)(TravelForm);
