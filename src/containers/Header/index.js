@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import jet from '../../assets/jet.svg';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import './Header.css'
@@ -27,4 +27,4 @@ const mapStateToProps = (state) => ({
   isLoaded: state.isLoaded
 })
 
-export default connect(mapStateToProps)(Header);
+export default withRouter(connect(mapStateToProps)(Header));
