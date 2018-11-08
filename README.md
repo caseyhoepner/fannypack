@@ -3,11 +3,11 @@
 Going on a trip, but unsure what you need to pack? JetPack is a single-page web application and your one-stop-shop for getting a weather summary and a list of essentials you'll need to bring to make sure you're prepared for anything mother nature has in store. Simply give JetPack your destination cities and it will do the rest. Pack your bag and then rest easy the night before your trip knowing you have everything you'll need to be warm and dry on your journey.
 
 ### Technologies Used
-React
-Redux
-React Router
-Enzyme
-Jest
+React,
+Redux,
+React Router,
+Enzyme,
+Jest,
 
 ### How to view locally:
 
