@@ -6,6 +6,8 @@ Going on a trip, but unsure what you need to pack? JetPack is a single-page web 
 React,
 Redux,
 React Router,
+Geocode, 
+Moment.js,
 Enzyme,
 Jest
 
