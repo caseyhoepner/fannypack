@@ -3,24 +3,24 @@ import Geocode from "react-geocode";
 import 'moment-timezone';
 var moment = require('moment'); 
 
-// const weatherApiKey = process.env.WEATHER_API_KEY;
-// const googleApiKey = process.env.GOOGLE_API_KEY;
+const weatherApiKey = process.env.WEATHER_API_KEY;
+const googleApiKey = process.env.GOOGLE_API_KEY;
 
-const aws = require('aws-sdk');
+// const aws = require('aws-sdk');
 
-let s3 = new aws.S3({
-  weatherApiKey: process.env.WEATHER_API_KEY,
-  googleApiKey: process.env.GOOGLE_API_KEY
-});
+// let s3 = new aws.S3({
+//   weatherApiKey: process.env.WEATHER_API_KEY,
+//   googleApiKey: process.env.GOOGLE_API_KEY
+// });
 
 export const fetchWeather = async (city, diff) => {
-  console.log(s3.config)
+  // console.log(s3.config)
   console.log(process.env)
   try {
     const latLong = await getLatLong(city)
     const timezone = await getTimezone(latLong);
     const time = getTime(timezone, diff);
-    const url = `https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/${s3.config.weatherApiKey}/${latLong.lat},${latLong.lng},${time}`;
+    const url = `https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/${weatherApiKey}/${latLong.lat},${latLong.lng},${time}`;
     const response = await fetch(url);
 
     if (!response.ok) {
@@ -38,7 +38,7 @@ export const fetchWeather = async (city, diff) => {
 
 export const getLatLong = async (city) => {
   try {
-    Geocode.setApiKey(s3.config.googleApiKey);
+    Geocode.setApiKey(googleApiKey);
     const response = await Geocode.fromAddress(city)
     const latLong = await response.results[0].geometry.location;
 
@@ -50,7 +50,7 @@ export const getLatLong = async (city) => {
 
 export const getTimezone = async (latLong) => {
   try {
-    const url = `https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/${s3.config.weatherApiKey}/${latLong.lat},${latLong.lng}`;
+    const url = `https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/${weatherApiKey}/${latLong.lat},${latLong.lng}`;
     const response = await fetch(url)
     const urlData = await response.json();
 
