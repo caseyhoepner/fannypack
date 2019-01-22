@@ -15,6 +15,7 @@ let s3 = new aws.S3({
 
 export const fetchWeather = async (city, diff) => {
   console.log(s3.config)
+  console.log(process.env)
   try {
     const latLong = await getLatLong(city)
     const timezone = await getTimezone(latLong);
