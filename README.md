@@ -2,11 +2,13 @@
 
 Going on a trip, but unsure what you need to pack? JetPack is a single-page web application and your one-stop-shop for getting a weather summary and a list of essentials you'll need to bring to make sure you're prepared for anything mother nature has in store. Simply give JetPack your destination cities and it will do the rest. Pack your bag and then rest easy the night before your trip knowing you have everything you'll need to be warm and dry on your journey.
 
-### Technologies Used
-React
-Redux
-React Router
-Enzyme
+### Technologies Used:
+React,
+Redux,
+React Router,
+Geocode, 
+Moment.js,
+Enzyme,
 Jest
 
 ### How to view locally:
@@ -16,20 +18,13 @@ Jest
 3. npm start
 
 ### Landing Page:
+<img width="845" alt="screen shot 2018-12-16 at 20 49 10" src="https://user-images.githubusercontent.com/36767936/50065564-668f1d00-0174-11e9-828f-b7128436e21d.png">
 
-<img width="826" alt="landing page" src="https://user-images.githubusercontent.com/36767936/48133984-cc26ea00-e255-11e8-968f-508b8e385b4c.png">
+### Loading Page:
+<img width="967" alt="screen shot 2018-12-16 at 20 44 51" src="https://user-images.githubusercontent.com/36767936/50065560-60993c00-0174-11e9-9105-3a51ff1f20b7.png">
 
-<img width="695" alt="loading page" src="https://user-images.githubusercontent.com/36767936/48133986-cdf0ad80-e255-11e8-962a-f46713401199.png">
-
-<img width="984" alt="results page" src="https://user-images.githubusercontent.com/36767936/48133991-d0530780-e255-11e8-81e9-9e17a1010843.png">
-
-## Wireframes
-
-<img width="464" alt="screen shot 2018-11-07 at 07 19 41" src="https://user-images.githubusercontent.com/36767936/48136721-9c7be000-e25d-11e8-96ae-7a87455909ff.png">
-
-<img width="612" alt="screen shot 2018-11-07 at 07 17 04" src="https://user-images.githubusercontent.com/36767936/48136559-2d9e8700-e25d-11e8-910f-1fbd0757d6ec.png">
-
-<img width="870" alt="screen shot 2018-11-07 at 07 11 21" src="https://user-images.githubusercontent.com/36767936/48136272-74d84800-e25c-11e8-9971-4c54efa82623.png">
+### Results Page:
+<img width="1440" alt="screen shot 2018-12-16 at 20 49 57" src="https://user-images.githubusercontent.com/36767936/50065553-570fd400-0174-11e9-9b39-e51cff40b11c.png">
 
 ## App Architecture
 
