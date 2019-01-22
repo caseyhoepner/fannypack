@@ -1,7 +1,7 @@
 import Geocode from "react-geocode";
 import { weatherApiKey, googleApiKey } from './API-key.js'
 import 'moment-timezone';
-var moment = require('moment');
+var moment = require('moment'); 
 
 export const fetchWeather = async (city, diff) => {
   try {
