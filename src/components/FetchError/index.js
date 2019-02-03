@@ -7,7 +7,6 @@ import './FetchError.css';
 
 const FetchError = (props) => {
   const handleClick = () => {
-    const { hasErrored, isLoaded } = this.props;
     toggleLoaded(false);
     toggleErrored(false);
   }
