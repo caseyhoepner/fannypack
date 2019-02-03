@@ -18,7 +18,10 @@ export class TravelForm extends Component {
       day4: '',
       day5: '',
       day6: '',
-      day7: ''
+      day7: '',
+      day8: '',
+      day9: '',
+      day10: ''
     }
   }
 
@@ -34,24 +37,31 @@ export class TravelForm extends Component {
     this.getWeatherData();
   }
 
-  getWeatherData = async () => {
-    const { day1, day2, day3, day4, day5, day6, day7 } = this.state;
-    const { setWeather, toggleLoaded, toggleErrored, hasErrored, history } = this.props;
+  handleError = () => {
+    toggleErrored(true);
+    this.props.history.push('/FetchError');
+  }
 
-    // for(let i = 1; i < 8; i++) {
+  getWeatherData = async () => {
+    const { day1, day2, day3, day4, day5, day6, day7, day8, day9, day10 } = this.state;
+    const { setWeather, toggleLoaded, hasErrored } = this.props;
+
+    // for(let i = 1; i < 9; i++) {
     //   console.log(`day${i}`)
     //   if (`day${i}`) {
     //     const weatherData = await API.fetchWeather(`day${i}, ${i}`);
-    //     setWeather(weatherData, `day${i}, ${i}`) 
+    //     if (weatherData === 'hasErrored') {
+    //     this.handleError();
+    //     } else {
+    //       setWeather(weatherData, `day${i}, ${i}`); 
+    //     }
     //   }
     // }
 
     if (day1) {
       const weatherData = await API.fetchWeather(day1, 1);
-      console.log(weatherData);
       if (weatherData === 'hasErrored') {
-        toggleErrored(true);
-        history.push('/FetchError');
+        this.handleError();
       } else {
         setWeather(weatherData, day1, 1); 
       }
@@ -59,40 +69,92 @@ export class TravelForm extends Component {
 
     if (day2) {
       const weatherData = await API.fetchWeather(day2, 2);
-      setWeather(weatherData, day2, 2);
+      if (weatherData === 'hasErrored') {
+        this.handleError();
+      } else {
+        setWeather(weatherData, day2, 2); 
+      }
     }
 
     if (day3) {
       const weatherData = await API.fetchWeather(day3, 3);
-      setWeather(weatherData, day3, 3);
+      if (weatherData === 'hasErrored') {
+        this.handleError();
+      } else {
+        setWeather(weatherData, day3, 3); 
+      }
     }
 
     if (day4) {
       const weatherData = await API.fetchWeather(day4, 4);
-      setWeather(weatherData, day4, 4);
+      if (weatherData === 'hasErrored') {
+        this.handleError();
+      } else {
+        setWeather(weatherData, day4, 4); 
+      }
     }
 
     if (day5) {
       const weatherData = await API.fetchWeather(day5, 5);
-      setWeather(weatherData, day5, 5);
+      if (weatherData === 'hasErrored') {
+        this.handleError();
+      } else {
+        setWeather(weatherData, day5, 5); 
+      }
     }
 
     if (day6) {
       const weatherData = await API.fetchWeather(day6, 6);
-      setWeather(weatherData, day6, 6);
+      if (weatherData === 'hasErrored') {
+        this.handleError();
+      } else {
+        setWeather(weatherData, day6, 6); 
+      }
     }
 
     if (day7) {
       const weatherData = await API.fetchWeather(day7, 7);
-      setWeather(weatherData, day7, 7);
+      if (weatherData === 'hasErrored') {
+        this.handleError();
+      } else {
+        setWeather(weatherData, day7, 7); 
+      }
     }
+
+    if (day8) {
+      const weatherData = await API.fetchWeather(day8, 8);
+      if (weatherData === 'hasErrored') {
+        this.handleError();
+      } else {
+        setWeather(weatherData, day8, 8); 
+      }
+    }
+
+    if (day9) {
+      const weatherData = await API.fetchWeather(day9, 9);
+      if (weatherData === 'hasErrored') {
+        this.handleError();
+      } else {
+        setWeather(weatherData, day9, 9); 
+      }
+    }
+
+    if (day10) {
+      const weatherData = await API.fetchWeather(day10, 10);
+      if (weatherData === 'hasErrored') {
+        this.handleError();
+      } else {
+        setWeather(weatherData, day10, 10); 
+      }
+    }
+
     if (!hasErrored) {
       toggleLoaded(true);
     }
   }
 
   render() {
-    const { day1, day2, day3, day4, day5, day6, day7 } = this.state;
+    const { day1, day2, day3, day4, day5, day6, day7, day8, day9, day10 } = this.state;
 
     return (
       <div className='parent-container'>
@@ -171,7 +233,37 @@ export class TravelForm extends Component {
                     name='day7'
                     value={day7}
                   />
-              </section>              
+              </section>                
+              <section className='tf-day-8 tf-day-input'>
+                <p className='tf-day'>Day 8</p>
+                  <input 
+                    className='tf-form-component tf-input-component'
+                    onChange={this.handleChange}
+                    placeholder='Destination'
+                    name='day8'
+                    value={day8}
+                  />
+              </section>                 
+              <section className='tf-day-9 tf-day-input'>
+                <p className='tf-day'>Day 9</p>
+                  <input 
+                    className='tf-form-component tf-input-component'
+                    onChange={this.handleChange}
+                    placeholder='Destination'
+                    name='day9'
+                    value={day9}
+                  />
+              </section>                  
+              <section className='tf-day-10 tf-day-input'>
+                <p className='tf-day'>Day 10</p>
+                  <input 
+                    className='tf-form-component tf-input-component'
+                    onChange={this.handleChange}
+                    placeholder='Destination'
+                    name='day10'
+                    value={day10}
+                  />
+              </section>             
               <button 
                 className='tf-form-component tf-btn'>
                 Get Packing List

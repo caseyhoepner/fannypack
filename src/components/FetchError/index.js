@@ -6,7 +6,10 @@ import { toggleLoaded, toggleErrored } from '../../actions';
 import './FetchError.css';
 
 const FetchError = (props) => {
+  
   const handleClick = () => {
+    const { toggleLoaded, toggleErrored } = this.props;
+
     toggleLoaded(false);
     toggleErrored(false);
   }
