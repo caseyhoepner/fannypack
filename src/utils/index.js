@@ -19,11 +19,12 @@ export const fetchWeather = async (city, diff) => {
 
     } else {
     const weatherData = await response.json();
-    
+
     return cleanData(weatherData)
     }
   } catch(error) {
       console.log(error.message)
+      return 'hasErrored';
   }
 }
 

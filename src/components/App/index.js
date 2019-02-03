@@ -4,6 +4,7 @@ import { Route, Switch } from 'react-router-dom';
 import TravelForm from '../../containers/TravelForm';
 import WeatherResults from '../../containers/WeatherResults';
 import PathError from '../PathError';
+import FetchError from '../FetchError';
 import './App.css';
 
 const App = () => {
@@ -17,6 +18,9 @@ const App = () => {
           <Route 
             path='/results'
             component={ WeatherResults } />
+          <Route 
+            path='/FetchError'
+            component={ FetchError } />
           <Route 
             component={ PathError } />
         </Switch>

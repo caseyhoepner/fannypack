@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-import { setWeather, changeToLoaded } from '../../actions';
+import { setWeather, toggleLoaded, toggleErrored } from '../../actions';
 import Header from '../../containers/Header';
 import * as API from '../../utils/';
 import './TravelForm.css';
@@ -35,7 +36,7 @@ export class TravelForm extends Component {
 
   getWeatherData = async () => {
     const { day1, day2, day3, day4, day5, day6, day7 } = this.state;
-    const { setWeather, changeToLoaded } = this.props;
+    const { setWeather, toggleLoaded, toggleErrored, hasErrored, history } = this.props;
 
     // for(let i = 1; i < 8; i++) {
     //   console.log(`day${i}`)
@@ -47,7 +48,13 @@ export class TravelForm extends Component {
 
     if (day1) {
       const weatherData = await API.fetchWeather(day1, 1);
-      setWeather(weatherData, day1, 1);
+      console.log(weatherData);
+      if (weatherData === 'hasErrored') {
+        toggleErrored(true);
+        history.push('/FetchError');
+      } else {
+        setWeather(weatherData, day1, 1); 
+      }
     }
 
     if (day2) {
@@ -79,8 +86,9 @@ export class TravelForm extends Component {
       const weatherData = await API.fetchWeather(day7, 7);
       setWeather(weatherData, day7, 7);
     }
-    
-    changeToLoaded(true);
+    if (!hasErrored) {
+      toggleLoaded(true);
+    }
   }
 
   render() {
@@ -177,12 +185,14 @@ export class TravelForm extends Component {
 
 export const mapDispatchToProps = (dispatch) => ({
   setWeather: (weatherData, city, day) => dispatch(setWeather(weatherData, city, day)), 
-  changeToLoaded: (bool) => dispatch(changeToLoaded(bool))
+  toggleLoaded: (bool) => dispatch(toggleLoaded(bool)),
+  toggleErrored: (bool) => dispatch(toggleErrored(bool))
 });
 
 TravelForm.propTypes = {
   setWeather: PropTypes.func.isRequired,
-  changeToLoaded: PropTypes.func.isRequired,
+  toggleLoaded: PropTypes.func.isRequired,
+  toggleErrored: PropTypes.func.isRequired
 };
 
-export default connect(null, mapDispatchToProps)(TravelForm);
+export default withRouter(connect(null, mapDispatchToProps)(TravelForm));
