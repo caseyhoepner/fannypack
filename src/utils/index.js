@@ -1,21 +1,12 @@
 import Geocode from "react-geocode";
-// import { weatherApiKey, googleApiKey } from './API-key.js'
+import { weatherApiKey, googleApiKey } from './API-key.js'
 import 'moment-timezone';
 var moment = require('moment'); 
 
-const weatherApiKey = process.env.WEATHER_API_KEY;
-const googleApiKey = process.env.GOOGLE_API_KEY;
-
-// const aws = require('aws-sdk');
-
-// let s3 = new aws.S3({
-//   weatherApiKey: process.env.WEATHER_API_KEY,
-//   googleApiKey: process.env.GOOGLE_API_KEY
-// });
+// const weatherApiKey = process.env.REACT_APP_WEATHER_API_KEY;
+// const googleApiKey = process.env.REACT_APP_GOOGLE_API_KEY;
 
 export const fetchWeather = async (city, diff) => {
-  // console.log(s3.config)
-  console.log(process.env)
   try {
     const latLong = await getLatLong(city)
     const timezone = await getTimezone(latLong);
@@ -28,11 +19,12 @@ export const fetchWeather = async (city, diff) => {
 
     } else {
     const weatherData = await response.json();
-    console.log(weatherData)
+
     return cleanData(weatherData)
     }
   } catch(error) {
       console.log(error.message)
+      return 'hasErrored';
   }
 }
 

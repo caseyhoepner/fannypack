@@ -3,11 +3,13 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 50px;
 }
 
 .h-title-section {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .h-title {

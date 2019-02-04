@@ -3,7 +3,16 @@ export const setWeather = (weatherData, city, day) => ({
   weatherData: { ...weatherData, city, day }
 })
 
-export const changeToLoaded = (bool) => ({
-  type: 'CHANGE_TO_LOADED',
-  isLoaded: true
+export const toggleLoaded = (bool) => ({
+  type: 'TOGGLE_LOADED',
+  isLoaded: bool
+})
+
+export const toggleErrored = (bool) => ({
+  type: 'TOGGLE_ERRORED',
+  hasErrored: bool
+})
+
+export const clearState = () => ({
+  type: 'CLEAR_STATE',
 })
