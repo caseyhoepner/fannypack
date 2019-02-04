@@ -228,18 +228,10 @@ export class TravelForm extends Component {
                       name='day1'
                       value={day1}
                     />
-                    <div className={showingDay2 ? 'hide' : 'tf-add-btn-container'}>
-                      <p className='tf-add-btn-text'>Add a day</p>
-                      <button
-                        type='button'
-                        className='tf-add-btn'
-                        name='showingDay2'
-                        onClick={(event) => this.addDay(event)}>+</button>
-                    </div>
                   </div>
               </section>
               <section 
-                className={ showingDay2 ? 'tf-day-2 tf-day-input' : 'hide' }>
+                className='tf-day-2 tf-day-input'>
                 <p className='tf-day'>Day 2</p>
                   <div className='tf-input-and-btn'>
                     <input 
@@ -249,7 +241,7 @@ export class TravelForm extends Component {
                       name='day2'
                       value={day2}
                     />
-                    <div className={showingDay3 ? 'hide' : 'tf-add-btn-container'}>
+                    <div className='hide'>
                       <p className='tf-add-btn-text'>Add a day</p>
                       <button
                         type='button'
@@ -260,7 +252,7 @@ export class TravelForm extends Component {
                   </div>
               </section>              
               <section 
-                className={ showingDay3 ? 'tf-day-3 tf-day-input' : 'hide' }>
+                className='tf-day-3 tf-day-input'>
                 <p className='tf-day'>Day 3</p>
                   <div className='tf-input-and-btn'>
                     <input 
@@ -270,7 +262,7 @@ export class TravelForm extends Component {
                       name='day3'
                       value={day3}
                     />
-                    <div className={showingDay4 ? 'hide' : 'tf-add-btn-container'}>
+                    <div className='hide'>
                       <p className='tf-add-btn-text'>Add a day</p>
                       <button
                         type='button'
@@ -281,7 +273,7 @@ export class TravelForm extends Component {
                   </div>
               </section>              
               <section 
-                className={ showingDay4 ? 'tf-day-4 tf-day-input' : 'hide' }>
+                className='tf-day-4 tf-day-input'>
                 <p className='tf-day'>Day 4</p>
                   <div className='tf-input-and-btn'>
                     <input 
@@ -291,7 +283,7 @@ export class TravelForm extends Component {
                       name='day4'
                       value={day4}
                     />
-                    <div className={showingDay5 ? 'hide' : 'tf-add-btn-container'}>
+                    <div className='hide'>
                       <p className='tf-add-btn-text'>Add a day</p>
                       <button
                         type='button'
@@ -302,7 +294,7 @@ export class TravelForm extends Component {
                   </div>
               </section>              
               <section 
-                className={ showingDay5 ? 'tf-day-5 tf-day-input' : 'hide' }>
+                className='tf-day-5 tf-day-input'>
                 <p className='tf-day'>Day 5</p>
                   <div className='tf-input-and-btn'>
                     <input 
