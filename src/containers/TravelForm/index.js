@@ -199,7 +199,6 @@ export class TravelForm extends Component {
       day8, 
       day9, 
       day10, 
-      showingDay1, 
       showingDay2, 
       showingDay3, 
       showingDay4, 
@@ -216,170 +215,216 @@ export class TravelForm extends Component {
         <Header />
         <form 
           className='tf-form'
-          onSubmit={this.handleSubmit}
-        >
+          onSubmit={this.handleSubmit}>
           <h2 className='tf-title'>Where are you going?</h2>
             <div className='tf-form-components'>
               <section className='tf-tomorrow tf-day-input'>
                 <p className='tf-day'>Tomorrow</p>
-                  <input 
-                    className='test-input tf-form-component tf-input-component'
-                    onChange={this.handleChange}
-                    placeholder='Destination'
-                    name='day1'
-                    value={day1}
-                  />
-                <button
-                  type='button'
-                  className={showingDay2 ? 'hide' : 'tf-add-btn'}
-                  name='showingDay2'
-                  onClick={(event) => this.addDay(event)}>Add a day</button>
+                  <div className='tf-input-and-btn'>
+                    <input 
+                      className='test-input tf-form-component tf-input-component'
+                      onChange={this.handleChange}
+                      placeholder='Destination'
+                      name='day1'
+                      value={day1}
+                    />
+                    <div className={showingDay2 ? 'hide' : 'tf-add-btn-container'}>
+                      <p className='tf-add-btn-text'>Add a day</p>
+                      <button
+                        type='button'
+                        className='tf-add-btn'
+                        name='showingDay2'
+                        onClick={(event) => this.addDay(event)}>+</button>
+                    </div>
+                  </div>
               </section>
               <section 
                 className={ showingDay2 ? 'tf-day-2 tf-day-input' : 'hide' }>
                 <p className='tf-day'>Day 2</p>
-                  <input 
-                    className='tf-form-component tf-input-component'
-                    onChange={this.handleChange}
-                    placeholder='Destination'
-                    name='day2'
-                    value={day2}
-                  />
-                <button
-                  type='button'
-                  className={showingDay3 ? 'hide' : 'tf-add-btn'}
-                  name='showingDay3'
-                  onClick={(event) => this.addDay(event)}>Add a day</button>
+                  <div className='tf-input-and-btn'>
+                    <input 
+                      className='tf-form-component tf-input-component'
+                      onChange={this.handleChange}
+                      placeholder='Destination'
+                      name='day2'
+                      value={day2}
+                    />
+                    <div className={showingDay3 ? 'hide' : 'tf-add-btn-container'}>
+                      <p className='tf-add-btn-text'>Add a day</p>
+                      <button
+                        type='button'
+                        className='tf-add-btn'
+                        name='showingDay3'
+                        onClick={(event) => this.addDay(event)}>+</button>
+                    </div>
+                  </div>
               </section>              
               <section 
                 className={ showingDay3 ? 'tf-day-3 tf-day-input' : 'hide' }>
                 <p className='tf-day'>Day 3</p>
-                  <input 
-                    className='tf-form-component tf-input-component'
-                    onChange={this.handleChange}
-                    placeholder='Destination'
-                    name='day3'
-                    value={day3}
-                  />
-                <button
-                  type='button'
-                  className={showingDay4 ? 'hide' : 'tf-add-btn'}
-                  name='showingDay4'
-                  onClick={(event) => this.addDay(event)}>Add a day</button>
+                  <div className='tf-input-and-btn'>
+                    <input 
+                      className='tf-form-component tf-input-component'
+                      onChange={this.handleChange}
+                      placeholder='Destination'
+                      name='day3'
+                      value={day3}
+                    />
+                    <div className={showingDay4 ? 'hide' : 'tf-add-btn-container'}>
+                      <p className='tf-add-btn-text'>Add a day</p>
+                      <button
+                        type='button'
+                        className='tf-add-btn'
+                        name='showingDay4'
+                        onClick={(event) => this.addDay(event)}>+</button>
+                    </div>
+                  </div>
               </section>              
               <section 
                 className={ showingDay4 ? 'tf-day-4 tf-day-input' : 'hide' }>
                 <p className='tf-day'>Day 4</p>
-                  <input 
-                    className='tf-form-component tf-input-component'
-                    onChange={this.handleChange}
-                    placeholder='Destination'
-                    name='day4'
-                    value={day4}
-                  />
-                <button
-                  type='button'
-                  className={showingDay5 ? 'hide' : 'tf-add-btn'}
-                  name='showingDay5'
-                  onClick={(event) => this.addDay(event)}>Add a day</button>
+                  <div className='tf-input-and-btn'>
+                    <input 
+                      className='tf-form-component tf-input-component'
+                      onChange={this.handleChange}
+                      placeholder='Destination'
+                      name='day4'
+                      value={day4}
+                    />
+                    <div className={showingDay5 ? 'hide' : 'tf-add-btn-container'}>
+                      <p className='tf-add-btn-text'>Add a day</p>
+                      <button
+                        type='button'
+                        className='tf-add-btn'
+                        name='showingDay5'
+                        onClick={(event) => this.addDay(event)}>+</button>
+                    </div>
+                  </div>
               </section>              
               <section 
                 className={ showingDay5 ? 'tf-day-5 tf-day-input' : 'hide' }>
                 <p className='tf-day'>Day 5</p>
-                  <input 
-                    className='tf-form-component tf-input-component'
-                    onChange={this.handleChange}
-                    placeholder='Destination'
-                    name='day5'
-                    value={day5}
-                  />
-                <button
-                  type='button'
-                  className={showingDay6 ? 'hide' : 'tf-add-btn'}
-                  name='showingDay6'
-                  onClick={(event) => this.addDay(event)}>Add a day</button>
+                  <div className='tf-input-and-btn'>
+                    <input 
+                      className='tf-form-component tf-input-component'
+                      onChange={this.handleChange}
+                      placeholder='Destination'
+                      name='day5'
+                      value={day5}
+                    />
+                    <div className={showingDay6 ? 'hide' : 'tf-add-btn-container'}>
+                      <p className='tf-add-btn-text'>Add a day</p>
+                      <button
+                        type='button'
+                        className='tf-add-btn'
+                        name='showingDay6'
+                        onClick={(event) => this.addDay(event)}>+</button>
+                    </div>
+                  </div>
               </section>              
               <section 
                 className={ showingDay6 ? 'tf-day-6 tf-day-input' : 'hide' }>
                 <p className='tf-day'>Day 6</p>
-                  <input 
-                    className='tf-form-component tf-input-component'
-                    onChange={this.handleChange}
-                    placeholder='Destination'
-                    name='day6'
-                    value={day6}
-                  />
-                <button
-                  type='button'
-                  className={showingDay7 ? 'hide' : 'tf-add-btn'}
-                  name='showingDay7'
-                  onClick={(event) => this.addDay(event)}>Add a day</button>
+                  <div className='tf-input-and-btn'>
+                    <input 
+                      className='tf-form-component tf-input-component'
+                      onChange={this.handleChange}
+                      placeholder='Destination'
+                      name='day6'
+                      value={day6}
+                    />
+                    <div className={showingDay7 ? 'hide' : 'tf-add-btn-container'}>
+                      <p className='tf-add-btn-text'>Add a day</p>
+                      <button
+                        type='button'
+                        className='tf-add-btn'
+                        name='showingDay7'
+                        onClick={(event) => this.addDay(event)}>+</button>
+                    </div>
+                  </div>
               </section>              
               <section 
                 className={ showingDay7 ? 'tf-day-7 tf-day-input' : 'hide' }>
                 <p className='tf-day'>Day 7</p>
-                  <input 
-                    className='tf-form-component tf-input-component'
-                    onChange={this.handleChange}
-                    placeholder='Destination'
-                    name='day7'
-                    value={day7}
-                  />
-                <button
-                  type='button'
-                  className={showingDay8 ? 'hide' : 'tf-add-btn'}
-                  name='showingDay8'
-                  onClick={(event) => this.addDay(event)}>Add a day</button>
+                  <div className='tf-input-and-btn'>
+                    <input 
+                      className='tf-form-component tf-input-component'
+                      onChange={this.handleChange}
+                      placeholder='Destination'
+                      name='day7'
+                      value={day7}
+                    />
+                    <div className={showingDay8 ? 'hide' : 'tf-add-btn-container'}>
+                      <p className='tf-add-btn-text'>Add a day</p>
+                      <button
+                        type='button'
+                        className='tf-add-btn'
+                        name='showingDay8'
+                        onClick={(event) => this.addDay(event)}>+</button>
+                    </div>
+                  </div>
               </section>                
               <section 
                 className={ showingDay8 ? 'tf-day-8 tf-day-input' : 'hide' }>
                 <p className='tf-day'>Day 8</p>
-                  <input 
-                    className='tf-form-component tf-input-component'
-                    onChange={this.handleChange}
-                    placeholder='Destination'
-                    name='day8'
-                    value={day8}
-                  />
-                <button
-                  type='button'
-                  className={showingDay9 ? 'hide' : 'tf-add-btn'}
-                  name='showingDay9'
-                  onClick={(event) => this.addDay(event)}>Add a day</button>
+                  <div className='tf-input-and-btn'>
+                    <input 
+                      className='tf-form-component tf-input-component'
+                      onChange={this.handleChange}
+                      placeholder='Destination'
+                      name='day8'
+                      value={day8}
+                    />
+                    <div className={showingDay9 ? 'hide' : 'tf-add-btn-container'}>
+                      <p className='tf-add-btn-text'>Add a day</p>
+                      <button
+                        type='button'
+                        className='tf-add-btn'
+                        name='showingDay9'
+                        onClick={(event) => this.addDay(event)}>+</button>
+                    </div>
+                  </div>
               </section>                 
               <section 
                 className={ showingDay9 ? 'tf-day-9 tf-day-input' : 'hide' }>
                 <p className='tf-day'>Day 9</p>
-                  <input 
-                    className='tf-form-component tf-input-component'
-                    onChange={this.handleChange}
-                    placeholder='Destination'
-                    name='day9'
-                    value={day9}
-                  />
-                <button
-                  type='button'
-                  className={showingDay10 ? 'hide' : 'tf-add-btn'}
-                  name='showingDay10'
-                  onClick={(event) => this.addDay(event)}>Add a day</button>
+                  <div className='tf-input-and-btn'>
+                    <input 
+                      className='tf-form-component tf-input-component'
+                      onChange={this.handleChange}
+                      placeholder='Destination'
+                      name='day9'
+                      value={day9}
+                    />
+                    <div className={showingDay10 ? 'hide' : 'tf-add-btn-container'}>
+                      <p className='tf-add-btn-text'>Add a day</p>
+                      <button
+                        type='button'
+                        className='tf-add-btn'
+                        name='showingDay10'
+                        onClick={(event) => this.addDay(event)}>+</button>
+                    </div>
+                  </div>
               </section>                  
               <section 
                 className={ showingDay10 ? 'tf-day-10 tf-day-input' : 'hide' }>
                 <p className='tf-day'>Day 10</p>
-                  <input 
-                    className='tf-form-component tf-input-component'
-                    onChange={this.handleChange}
-                    placeholder='Destination'
-                    name='day10'
-                    value={day10}
-                  />
-              </section>             
-              <button 
-                className='tf-form-component tf-btn'>
-                Get Packing List
-              </button>
+                  <div className='tf-input-and-btn'>
+                    <input 
+                      className='tf-form-component tf-input-component'
+                      onChange={this.handleChange}
+                      placeholder='Destination'
+                      name='day10'
+                      value={day10}
+                    />
+                  </div>
+              </section>          
+                  <button 
+                    className='tf-form-component tf-btn'>
+                    Get Packing List
+                  </button>
             </div>
-          </form>
+        </form>
       </div>
     )
   }

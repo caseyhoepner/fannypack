@@ -2,10 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link, withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
-
 import jet from '../../assets/jet.svg';
 import { clearState, toggleLoaded } from '../../actions';
-
 import './Header.css'
 
 export class Header extends Component {
