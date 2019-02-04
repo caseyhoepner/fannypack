@@ -23,7 +23,6 @@ export class TravelForm extends Component {
       day9: '',
       day10: '',
       showingDay1: true,
-      showingDay2: false,
       showingDay3: false,
       showingDay4: false,
       showingDay5: false,
@@ -62,124 +61,20 @@ export class TravelForm extends Component {
   }
 
   getWeatherData = async () => {
-    const { 
-      day1, 
-      day2, 
-      day3, 
-      day4, 
-      day5, 
-      day6, 
-      day7, 
-      day8, 
-      day9, 
-      day10 
-    } = this.state;
-    
-    const { 
-      setWeather, 
-      toggleLoaded, 
-      hasErrored 
-    } = this.props;
+    const { day1, day2, day3, day4, day5, day6, day7, day8, day9, day10 } = this.state;
+    const { setWeather, toggleLoaded, hasErrored } = this.props;
+    const days = [ day1, day2, day3, day4, day5, day6, day7, day8, day9, day10 ];
 
-    // for(let i = 1; i < 9; i++) {
-    //   console.log(`day${i}`)
-    //   if (`day${i}`) {
-    //     const weatherData = await API.fetchWeather(`day${i}, ${i}`);
-    //     if (weatherData === 'hasErrored') {
-    //     this.handleError();
-    //     } else {
-    //       setWeather(weatherData, `day${i}, ${i}`); 
-    //     }
-    //   }
-    // }
+    for(let i = 0; i < days.length; i++) {
+      if (days[i] !== '') {
+        const weatherData = await API.fetchWeather(days[i], (i + 1));
 
-    if (day1) {
-      const weatherData = await API.fetchWeather(day1, 1);
-      if (weatherData === 'hasErrored') {
-        this.handleError();
-      } else {
-        setWeather(weatherData, day1, 1); 
-      }
-    }
+        if (weatherData === 'hasErrored') {
+          this.handleError();
 
-    if (day2) {
-      const weatherData = await API.fetchWeather(day2, 2);
-      if (weatherData === 'hasErrored') {
-        this.handleError();
-      } else {
-        setWeather(weatherData, day2, 2); 
-      }
-    }
-
-    if (day3) {
-      const weatherData = await API.fetchWeather(day3, 3);
-      if (weatherData === 'hasErrored') {
-        this.handleError();
-      } else {
-        setWeather(weatherData, day3, 3); 
-      }
-    }
-
-    if (day4) {
-      const weatherData = await API.fetchWeather(day4, 4);
-      if (weatherData === 'hasErrored') {
-        this.handleError();
-      } else {
-        setWeather(weatherData, day4, 4); 
-      }
-    }
-
-    if (day5) {
-      const weatherData = await API.fetchWeather(day5, 5);
-      if (weatherData === 'hasErrored') {
-        this.handleError();
-      } else {
-        setWeather(weatherData, day5, 5); 
-      }
-    }
-
-    if (day6) {
-      const weatherData = await API.fetchWeather(day6, 6);
-      if (weatherData === 'hasErrored') {
-        this.handleError();
-      } else {
-        setWeather(weatherData, day6, 6); 
-      }
-    }
-
-    if (day7) {
-      const weatherData = await API.fetchWeather(day7, 7);
-      if (weatherData === 'hasErrored') {
-        this.handleError();
-      } else {
-        setWeather(weatherData, day7, 7); 
-      }
-    }
-
-    if (day8) {
-      const weatherData = await API.fetchWeather(day8, 8);
-      if (weatherData === 'hasErrored') {
-        this.handleError();
-      } else {
-        setWeather(weatherData, day8, 8); 
-      }
-    }
-
-    if (day9) {
-      const weatherData = await API.fetchWeather(day9, 9);
-      if (weatherData === 'hasErrored') {
-        this.handleError();
-      } else {
-        setWeather(weatherData, day9, 9); 
-      }
-    }
-
-    if (day10) {
-      const weatherData = await API.fetchWeather(day10, 10);
-      if (weatherData === 'hasErrored') {
-        this.handleError();
-      } else {
-        setWeather(weatherData, day10, 10); 
+        } else {
+          setWeather(weatherData, days[i], (i + 1)); 
+        }
       }
     }
 
@@ -198,11 +93,7 @@ export class TravelForm extends Component {
       day7, 
       day8, 
       day9, 
-      day10, 
-      showingDay2, 
-      showingDay3, 
-      showingDay4, 
-      showingDay5, 
+      day10,
       showingDay6, 
       showingDay7, 
       showingDay8, 
@@ -241,14 +132,6 @@ export class TravelForm extends Component {
                       name='day2'
                       value={day2}
                     />
-                    <div className='hide'>
-                      <p className='tf-add-btn-text'>Add a day</p>
-                      <button
-                        type='button'
-                        className='tf-add-btn'
-                        name='showingDay3'
-                        onClick={(event) => this.addDay(event)}>+</button>
-                    </div>
                   </div>
               </section>              
               <section 
@@ -262,14 +145,6 @@ export class TravelForm extends Component {
                       name='day3'
                       value={day3}
                     />
-                    <div className='hide'>
-                      <p className='tf-add-btn-text'>Add a day</p>
-                      <button
-                        type='button'
-                        className='tf-add-btn'
-                        name='showingDay4'
-                        onClick={(event) => this.addDay(event)}>+</button>
-                    </div>
                   </div>
               </section>              
               <section 
@@ -283,14 +158,6 @@ export class TravelForm extends Component {
                       name='day4'
                       value={day4}
                     />
-                    <div className='hide'>
-                      <p className='tf-add-btn-text'>Add a day</p>
-                      <button
-                        type='button'
-                        className='tf-add-btn'
-                        name='showingDay5'
-                        onClick={(event) => this.addDay(event)}>+</button>
-                    </div>
                   </div>
               </section>              
               <section 
