@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 
 import { toggleLoaded, toggleErrored } from '../../actions';
 import './FetchError.css';
@@ -17,7 +18,8 @@ const FetchError = (props) => {
   return (
     <div className='fe-container'>
       <img 
-        className='fe-icon' 
+        className='fe-icon'
+        alt='icon'
         src={require('../../assets/warning.svg')}
       />
       <h1 className='fe-text'>Oops! Something went wrong.</h1>
@@ -37,5 +39,10 @@ export const mapDispatchToProps = (dispatch) => ({
   toggleLoaded: (bool) => dispatch(toggleLoaded(bool)),
   toggleErrored: (bool) => dispatch(toggleErrored(bool))
 })
+
+FetchError.propTypes = {
+  toggleLoaded: PropTypes.func.isRequired,
+  toggleErrored: PropTypes.func.isRequired
+};
 
 export default connect(null, mapDispatchToProps)(FetchError);

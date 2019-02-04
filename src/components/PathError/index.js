@@ -6,7 +6,11 @@ import './PathError.css';
 const PathError = () => {
   return (
     <div className='pe-container'>
-      <img className='pe-icon' src={require('../../assets/sad-page.svg')} />
+      <img 
+        className='pe-icon' 
+        src={require('../../assets/sad-page.svg')}
+        alt='icon' 
+      />
       <h1 className='pe-text'>Uh oh! This page does not exist.</h1>
       <Link 
         className='pe-back-btn' 
