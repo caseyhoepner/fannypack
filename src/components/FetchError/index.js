@@ -15,9 +15,13 @@ const FetchError = (props) => {
   }
 
   return (
-    <div>
-      <h1>Opps! Something went wrong.</h1>
-        <p>Be sure to submit valid city names.</p>
+    <div className='fe-container'>
+      <img 
+        className='fe-icon' 
+        src={require('../../assets/warning.svg')}
+      />
+      <h1 className='fe-text'>Oops! Something went wrong.</h1>
+        <p className='fe-secondary-text'>Be sure to submit valid city names.</p>
         <Link 
           className='fe-back-btn' 
           to="/"
