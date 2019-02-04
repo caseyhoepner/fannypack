@@ -90,7 +90,7 @@
 
 .tf-add-btn:hover {
   cursor: pointer;
-  background-color: rgba(144, 105, 86, .2);
+  background-color: rgba(144, 105, 86, .6);
 }
 
 .tf-add-btn-text {
